@@ -1,0 +1,547 @@
+	Code	Name	Type	Formula	PubChem	IUPAC	Smiles	Weight	Clusters	Symbol	Source	Essential amino acids	Error
+0	Ahad	alpha-amino-hydroxyadipic acid	unknown	C6H11NO5	22326384	2-amino-4-hydroxyhexanedioic acid	NC(CC(O)CC(=O)O)C(=O)O	177.15524	"['Aad*', 'Aad*']"		Norine		
+1	Aad	2-Aminoadipic acid	NRPS	C6H11NO4	469	2-aminohexanedioic acid	NC(CCCC(=O)O)C(=O)O	161.15584	"['Aad*', 'Aad*']"		Norine		
+2	Aib	2-Aminoisobutyric acid	NRPS	C4H9NO2	6119	2-amino-2-methylpropanoic acid	CC(C)(N)C(=O)O	103.11977	"['Aib*', 'Aib*']"		Norine		
+3	Ac-Aib	N-Acetyl-2-aminoisobutyric acid	NRPS	C6H11NO3	233700	2-acetamido-2-methylpropanoic acid	CC(=O)NC(C)(C)C(=O)O	145.15645	"['Aib*', 'Aib*']"		Norine		
+4	bU-dAla	beta-ureido-dehydroAlanine	NRPS	C4H7N3O3			NC(=O)NC=C(N)C(O)=O	145.11667	"['Ala*', 'Ala+Gly']"	A*	Norine		
+5	NMe-Ala	N-Methyl-Alanine	NRPS	C4H9NO2	5683	(2S)-2-methylaminopropanoic acid	CNC(C)C(=O)O	103.11977	"['Ala*', 'Ala+Gly']"	A*	Norine		
+6	NMe-bAla	N-methyl-beta-alanine	NRPS	C4H9NO2	218106	3-methylaminopropanoic acid	CNCCC(=O)O	103.11977	"['Ala*', 'Ala+Gly']"	A*	Norine		
+7	dh-Ala	dehydroalanine	NRPS	C3H5NO2	123991	2-aminoprop-2-enoic acid	C=C(N)C(=O)O	87.0773	"['Ala*', 'Ala+Gly']"	A*	Norine		
+8	NdMe-Ala	N-dimethyl-Alanine	NRPS	C5H11NO2	728583	(2S)-2-dimethylaminopropanoic acid	CC(C(=O)O)N(C)C	117.14634	"['Ala*', 'Ala+Gly']"	A*	Norine		
+9	Ala	Alanine	NRPS	C3H7NO2	5950	(2S)-2-aminopropanoic acid	CC(N)C(=O)O	89.09318	"['Ala*', 'Ala+Gly']"	A	Norine	1	
+10	D-Ala	D-Alanine	NRPS	C3H7NO2	71080	(2R)-2-aminopropanoic acid	CC(N)C(=O)O	89.09318	"['Ala*', 'Ala+Gly']"	A*	Norine		
+11	bAla	beta-Alanine	NRPS	C3H7NO2	239	3-aminopropanoic acid	NCCC(=O)O	89.09318	"['Ala*', 'Ala+Gly']"	A*	Norine		
+12	NFo-Ala	N-formyl-Alanine	unknown	C4H7NO3	10336836	2-formamidopropanoic acid	CC(NC=O)C(=O)O	117.10328	"['Ala*', 'Ala+Gly']"	A*	Norine		
+13	D-3OMe-Ala	D-3-methoxyalanine	NRPS	C4H9NO3	97963	2-amino-3-methoxypropanoic acid	COCC(N)C(=O)O	119.12	"['Ala*', 'Ala+Gly']"	A*	Norine		
+14	D-NFo-Ala	D-N-formyl-Alanine	NRPS	C4H7NO3	10336836	2-formamidopropanoic acid	CC(NC=O)C(=O)O	117.10328	"['Ala*', 'Ala+Gly']"	A*	Norine		
+15	Gly	Glycine	NRPS	C2H5NO2	750	2-aminoacetic acid	NCC(=O)O	75.066605	"['Gly*', 'Ala+Gly']"	G	Norine	1	
+16	NMe-Gly	N-Methyl-Glycine	NRPS	C3H7NO2	1088	2-methylaminoacetic acid	CNCC(=O)O	89.09318	"['Gly*', 'Ala+Gly']"	G*	Norine		
+17	D-F-ph-Gly	D-4-fluoroPhenylGlycin	NRPS	C8H8FNO2	124515	(2R)-2-amino-2-(4-fluorophenyl)acetic acid	NC(C(=O)O)c1ccc(F)cc1	169.15302	"['Gly*', 'Ala+Gly']"	G*	Norine		
+18	NMe-Ph-Gly	N-methyl-phenylglycine	unknown	C9H11NO2	228214	2-methylamino-2-phenylacetic acid	CNC(C(=O)O)c1ccccc1	165.18913	"['Gly*', 'Ala+Gly']"	G*	Norine		
+19	Ph-Gly	phenylglycine	NRPS	C8H9NO2	99291	(2S)-2-amino-2-phenylacetic acid	NC(C(=O)O)c1ccccc1	151.16255	"['Gly*', 'Ala+Gly']"	G*	Norine		
+20	D-ph-Gly	D-PhenylGlycine	NRPS	C8H9NO2	70134	(2R)-2-amino-2-phenylacetic acid	NC(C(=O)O)c1ccccc1	151.16255	"['Gly*', 'Ala+Gly']"	G*	Norine		
+21	Eta	Ethanolamine	NRPS	C2H7NO	700	2-aminoethanol	NCCO	61.08308	"['Gly*', 'Ala+Gly']"	G*	Norine		
+22	aFo-Gly	alpha-formylGlycine	unknown	C3H5NO3	29	2-amino-3-oxopropanoic acid	NC(C=O)C(=O)O	103.076706	"['Gly*', 'Ala+Gly']"	G*	Norine		
+23	bMe-Asn	beta-methyl-asparagine	NRPS	C5H10N2O3	3742490	"2,4-diamino-3-methyl-4-oxobutanoic acid"	CC(C(N)=O)C(N)C(=O)O	146.1445	"['Asn*', 'Asx']"	N*	Norine		
+24	D-OH-Asn	D-HydroxyAsparagine	NRPS	C4H8N2O4	152191	"2,4-diamino-3-hydroxy-4-oxobutanoic acid"	NC(=O)C(O)C(N)C(=O)O	148.11732	"['Asn*', 'Asx']"	N*	Norine		
+25	D-Asn	D-Asparagine	NRPS	C4H8N2O3	439600	"(2R)-2,4-diamino-4-oxobutanoic acid"	NC(=O)CC(N)C(=O)O	132.11792	"['Asn*', 'Asx']"	N*	Norine		
+26	NMe-Asn	N-methylasparagine	unknown	C5H10N2O3	350900	4-amino-2-methylamino-4-oxobutanoic acid	CNC(CC(N)=O)C(=O)O	146.1445	"['Asn*', 'Asx']"	N*	Norine		
+27	D-PO-Asn	D-PhosphateAsparagine	NRPS	C4H9N2O7P			NC(=O)C(OP(O)(=O)O)C(N)C(O)=O	228.09721	"['Asn*', 'Asx']"	N*	Norine		
+28	D-N2Me-Asn	D-N2-methyl-asparagine	NRPS	C5H10N2O3	100393	(2R)-2-amino-4-methylamino-4-oxobutanoic acid	CNC(=O)CC(N)C(=O)O	146.1445	"['Asn*', 'Asx']"	N*	Norine		
+29	OH-Asn	Hydroxyasparagine	NRPS	C4H8N2O4	152191	"2,4-diamino-3-hydroxy-4-oxobutanoic acid"	NC(=O)C(O)C(N)C(=O)O	148.11732	"['Asn*', 'Asx']"	N*	Norine		
+30	Asn	Asparagine	NRPS	C4H8N2O3	6267	"(2S)-2,4-diamino-4-oxobutanoic acid"	NC(=O)CC(N)C(=O)O	132.11792	"['Asn*', 'Asx']"	N	Norine	1	
+31	D-N2Me-bOH-Asn	D-beta-hydroxy-N2-methyl-asparagine	NRPS	C5H10N2O4			CNC(=O)C(O)C(N)C(=O)O	162.1439	"['Asn*', 'Asx']"	N*	Norine		
+32	D-bMe-Asp	D-beta-methyl-aspartic acid	NRPS	C5H9NO4	5287600	(2R)-2-amino-3-methylbutanedioic acid	CC(C(N)C(=O)O)C(=O)O	147.12926	"['Asp*', 'Asx']"	D*	Norine		
+33	Asp	Aspartic Acid	NRPS	C4H7NO4	5960	(2S)-2-aminobutanedioic acid	NC(CC(=O)O)C(=O)O	133.10269	"['Asp*', 'Asx']"	D	Norine	1	
+34	OH-Asp	Hydroxyaspartic acid	NRPS	C4H7NO5	5425	2-amino-3-hydroxybutanedioic acid	NC(C(=O)O)C(O)C(=O)O	149.10208	"['Asp*', 'Asx']"	D*	Norine		
+35	D-Asp	D-Aspartic Acid	NRPS	C4H7NO4	83887	(2R)-2-aminobutanedioic acid	NC(CC(=O)O)C(=O)O	133.10269	"['Asp*', 'Asx']"	D*	Norine		
+36	bOMe-Asp	beta-methoxy-aspartic acid	unknown	C5H9NO4	102699	2-amino-4-methoxy-4-oxobutanoic acid	COC(=O)CC(N)C(=O)O	147.12926	"['Asp*', 'Asx']"	D*	Norine		
+37	D-OH-Asp	D-Hydroxyaspartic acid	NRPS	C4H7NO5	675425	2-amino-3-hydroxybutanedioic acid	NC(C(=O)O)C(O)C(=O)O	149.10208	"['Asp*', 'Asx']"	D*	Norine		
+38	OMe-Asp	methoxyaspartic acid	NRPS	C5H9NO5			CO=C(C(=O)O)C(N)C(=O)O	163.12866	"['Asp*', 'Asx']"	D*	Norine		1
+39	bMe-Asp	beta-methyl-aspartic acid	NRPS	C5H9NO4	151054	(2S)-2-amino-3-methylbutanedioic acid	CC(C(N)C(=O)O)C(=O)O	147.12926	"['Asp*', 'Asx']"	D*	Norine		
+40	Me2-Bmt	"4-butenyl-4-methyl-N,4-methyl threonine"	NRPS	C11H21NO3	7887106	"(E,2S,3R)-3-hydroxy-4,4-dimethyl-2-methylaminooct-6-enoic acid"	CC=CCC(C)(C)C(O)C(NC)C(=O)O	215.28934	"['Bmt*', 'Bmt*']"		Norine		
+41	Bmt	4-butenyl-4-methyl threonine	NRPS	C9H17NO3	14185	"(E,2S,3R,4R)-2-amino-3-hydroxy-4-methyloct-6-enoic acid"	CC=CCC(C)C(O)C(N)C(=O)O	187.23618	"['Bmt*', 'Bmt*']"		Norine		
+42	3d-NMe-Bmt	3-Desoxy-Methyl-4-butenyl-4-methyl threonine	NRPS	C10H19NO2		"(E,2S,3R)-4-methyl-2-methylaminooct-6-enoic acid"	CC=CCC(C)CC(NC)C(=O)O	185.26337	"['Bmt*', 'Bmt*']"		Norine		
+43	NMe-Bmt	N-methyl-4-butenyl-4-methyl threonine	NRPS	C10H19NO3	492347	"(E,2S,3R)-3-hydroxy-4-methyl-2-methylaminooct-6-enoic acid"	CC=CCC(C)C(O)C(NC)C(=O)O	201.26276	"['Bmt*', 'Bmt*']"		Norine		
+44	Gen	gentisic acid		C7H6O4	3469	"2,5-dihydroxybenzoic acid"	Oc1ccc(O)c(c1)C(=O)O	154.121	"['Bz*', 'Bz*']"		Norine		
+45	pNH2-Bz	Para-amino benzoic acid		C7H7NO2			Nc1ccc(cc1)C(=O)O	137.136	"['Bz*', 'Bz*']"		Norine		
+46	Bz	benzoic acid	unknown	C7H6O2	243	benzoic acid	O=C(O)c1ccccc1	122.121346	"['Bz*', 'Bz*']"		Norine		
+47	diOH-Bz	"2,3-dihydroxybenzoic acid"	NRPS	C7H6O4	19		O=C(O)c1cccc(O)c1(O)	154.12015	"['Bz*', 'Bz*']"		Norine		
+48	pOH-Bz	para-hydroxy-benzoic acid	unknown	C7H6O3	135	4-hydroxybenzoic acid	Oc1ccc(cc1)C(=O)O	138.12074	"['Bz*', 'Bz*']"		Norine		
+49	Cap	capreomycidine	NRPS	C6H12N4O2	4627981	"2-amino-2-(2-amino-3,4,5,6-tetrahydropyrimidin-4-yl)acetic acid"	NC1=NCCC(N1)C(N)C(=O)O	172.18507	"['Cap*', 'Cap*']"		Norine		
+50	5OH-Cap	5-hydroxy-capreomycidine	NRPS	C6H12N4O3			N=C1NC(O)CC(N1)C(N)C(=O)O	188.18448	"['Cap*', 'Cap*']"		Norine		
+51	D-Ara	D-arabinose	CS	C5H10O5	6902	"(3S,4R,5R)-oxane-2,3,4,5-tetrol"	OC1COC(O)C(O)C1(O)	150.12991	"['Ara*', 'Carbohydrate']"		Norine		
+52	Ara	arabinose	CS	C5H10O5	439195	"(3R,4S,5S)-oxane-2,3,4,5-tetrol"	OC1COC(O)C(O)C1(O)	150.12991	"['Ara*', 'Carbohydrate']"		Norine		
+53	Oli	L-Olivose	CS	C6H14O4	10888063	"(4R,5S,6R)-6-methyloxane-2,4,5-triol"	CC1OC(O)CC(O)C1(O)	150.17296	"['CH*', 'Carbohydrate']"		Norine		
+54	Ere	L-eremosamine	CS	C7H15NO3			CC1OC(O)CC(C)(N)C1(O)	161.1989	"['CH*', 'Carbohydrate']"		Norine		
+55	Aco	L-acosamine	CS	C6H13NO3	101290229	"(4R,5S,6R)-4-amino-6-methyloxane-2,5-diol"	CC1OC(O)CC(N)C1(O)	147.17233	"['CH*', 'Carbohydrate']"		Norine		
+56	Act	L-actinosamine	CS	C7H15NO3	20377364	4-amino-5-methoxy-6-methyloxan-2-ol	COC1C(N)CC(O)OC1(C)	161.1989	"['CH*', 'Carbohydrate']"		Norine		
+57	D-Man	D-mannose	CS	C6H12O6	18950	"(3S,4S,5S,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol"	OCC1OC(O)C(O)C(O)C1(O)	180.15588	"['CH*', 'Carbohydrate']"		Norine		
+58	Ria	L-ristosamine	CS	C6H13NO3	171083	"(3R,4R,5S)-3-amino-4,5-dihydroxyhexanal"	CC1OC(O)CC(N)C1(O)	147.17233	"['CH*', 'Carbohydrate']"		Norine		
+59	Lyx	lyxose	CS	C5H10O5	439240	"(3S,4S,5R)-oxane-2,3,4,5-tetrol"	OC1COC(O)C(O)C1(O)	150.12991	"['CH*', 'Carbohydrate']"		Norine		
+60	bD-Gal	beta-D-galactose	CS	C6H12O6	439353	"(2R,3R,4S,5R,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol"	OCC1OC(O)C(O)C(O)C1(O)	180.15588	"['Gal*', 'Carbohydrate']"		Norine		
+61	D-Gal	D-galactose	CS	C6H12O6	206	"6-(hydroxymethyl)oxane-2,3,4,5-tetrol"	OCC1OC(O)C(O)C(O)C1(O)	180.15588	"['Gal*', 'Carbohydrate']"		Norine		
+62	Glc	L-glucose	CS	C6H12O6	206	"6-(hydroxymethyl)oxane-2,3,4,5-tetrol"	OCC1OC(O)C(O)C(O)C1(O)	180.15588	"['Glc*', 'Carbohydrate']"		Norine		
+63	D-Glc	D-Glucose	CS	C6H12O6	5793	"(3R,4S,5S,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol"	OCC1OC(O)C(O)C(O)C1(O)	180.15588	"['Glc*', 'Carbohydrate']"		Norine		
+64	2OMe-Rha	O-methyl-L-rhamnose	CS	C7H14O5	5179954	"3-methoxy-6-methyloxane-2,4,5-triol"	COC1C(O)OC(C)C(O)C1(O)	178.18306	"['Rha*', 'Carbohydrate']"		Norine		
+65	Rha	L-rhamnose	CS	C6H12O5	25310	"(3R,4R,5R,6S)-6-methyloxane-2,3,4,5-tetrol"	CC1OC(O)C(O)C(O)C1(O)	164.15648	"['Rha*', 'Carbohydrate']"		Norine		
+66	Van	L-vancosamine	CS	C7H15NO3	11367168	"(1R,3S,4S,5S)-3-amino-2,3,6-trideoxy-3-methyl-alpha-L-arabino-hexopyranose"	CC1OC(O)CC(C)(N)C1(O)	161.1989	"['Van*', 'Carbohydrate']"		Norine		
+67	4oxo-Van	4-oxovancosamine	CS	C7H13NO3			CC1OC(O)CC(C)(N)C1(=O)	159.18303	"['Van*', 'Carbohydrate']"		Norine		
+68	U4oxo-Van	ureido-4-oxovancosamine	CS	C8H14N2O4			CC1OC(O)CC2(C)(NC(=O)NC12(O))	202.20776	"['Van*', 'Carbohydrate']"		Norine		
+69	ChrAct	actinomycin chromophore	other	C16H12N2O6	96175	"2-amino-4,6-dimethyl-3-oxophenoxazine-1,9-dicarboxylic acid"	Cc1ccc(C(=O)O)c2N=C3C(Oc12)=C(C)C(=O)C(N)=C3(C(=O)O)	328.27628	"['Chromophores', 'Chromophores']"		Norine		
+70	ChrA	azotobactins chromophore	NRPS	C14H13N3O5			OC(=O)C2CCN4C(=O)NC3=Cc1cc(O)c(O)cc1N2C34	303.27014	"['Chromophores', 'Chromophores']"		Norine		
+71	ChrP	pyoverdin chromophore	NRPS	C13H15N3O4			NC2=Cc1cc(O)c(O)cc1N3C(CCNC23)C(O)=O	277.2759	"['Chromophores', 'Chromophores']"		Norine		
+72	ChrI	isopyoverdin chromophore	NRPS	C13H15N3O4			NC2=Cc1cc(O)c(O)cc1N3CCC(NC23)C(O)=O	277.2759	"['Chromophores', 'Chromophores']"		Norine		
+73	ChrD	"5,6-dihydropyoverdin chromophore"	NRPS	C13H17N3O4			NC2Cc1cc(O)c(O)cc1N3C(CCNC23)C(O)=O	279.29178	"['Chromophores', 'Chromophores']"		Norine		
+74	Cit	Citrulline	NRPS	C6H13N3O3	9750	(2S)-2-amino-5-(carbamoylamino)pentanoic acid	NC(=O)NCCCC(N)C(=O)O	175.18573	"['Cit*', 'Cit*']"		Norine		
+75	D-Cit	D-Citrulline	NRPS	C6H13N3O3	637599	(2R)-2-amino-5-(carbamoylamino)pentanoic acid	NC(=O)NCCCC(N)C(=O)O	175.18573	"['Cit*', 'Cit*']"		Norine		
+76	CMA	coronamic acid	NRPS	C6H11NO2	133485	1-amino-2-ethylcyclopropane-1-carboxylic acid	CCC1CC1(N)(C(=O)O)	129.15704	"['Cma*', 'Cma*']"		Norine		
+77	norCMA	norcoronamic acid	NRPS	C5H9NO2			CC1CC1(N)C(=O)O	115.13046	"['Cma*', 'Cma*']"		Norine		
+78	NMe-Cys	N-methylcysteine	NRPS	C4H9NO2S	452303	(2R)-2-(methylamino)-3-sulfanylpropanoic acid	CNC(CS)C(=O)O	135.1848	"['Cys*', 'Cys*']"	C*	Norine		
+79	Cys	Cysteine	NRPS	C3H7NO2S	5862	(2R)-2-amino-3-sulfanylpropanoic acid	NC(CS)C(=O)O	121.15817	"['Cys*', 'Cys*']"	C	Norine	1	
+80	diMe-Cys	"N,S-dimethylcysteine"	NRPS	C5H11NO2S	5288874	(2R)-2-(methylamino)-3-methylsulfanylpropanoic acid	CNC(CSC)C(=O)O	149.2113	"['Cys*', 'Cys*']"	C*	Norine		
+81	CysA	cysteic acid	NRPS	C3H7NO5S	72886	(2R)-2-amino-3-sulfopropanoic acid	NC(CS(=O)(=O)O)C(=O)O	169.15637	"['Cys*', 'Cys*']"	C*	Norine		
+82	D-CysA	D-cysteic acid	NRPS	C3H7NO5S	25701	2-amino-3-sulfopropanoic acid	NC(CS(=O)(=O)O)C(=O)O	169.15637	"['Cys*', 'Cys*']"	C*	Norine		
+83	aMe-Cys	alpha-methylcysteine	NRPS	C4H9NO2S	10057562	2-amino-2-methyl-3-sulfanylpropanoic acid	CC(N)(CS)C(=O)O	135.18477	"['Cys*', 'Cys*']"	C*	Norine		
+84	D-Cys	D-Cysteine	NRPS	C3H7NO2S	92851	(2S)-2-amino-3-sulfanylpropanoic acid	NC(CS)C(=O)O	121.15817	"['Cys*', 'Cys*']"	C*	Norine		
+85	dhCys	dehydro-cysteine	NRPS	C3H5NO2S			NC(=CS)C(=O)O	119.1423	"['Cys*', 'Cys*']"	C*	Norine		
+86	Iba	2-amino-4-iminobutanoic acid		C4H8N2O2	146036024	2-amino-4-iminobutanoic acid	C(C=N)C(C(=O)O)N	116.12	"['Dab*', 'Dab*']"		Norine		
+87	Dab	"2,4-diaminobutyric acid"	NRPS	C4H10N2O2	134490	"(2S)-2,4-diaminobutanoic acid"	NCCC(N)C(=O)O	118.1344	"['Dab*', 'Dab*']"		Norine		
+88	D-Dab	"D-2,4-diaminobutyric acid"	NRPS	C4H10N2O2	638153	"(2R)-2,4-diaminobutanoic acid"	NCCC(N)C(=O)O	118.1344	"['Dab*', 'Dab*']"		Norine		
+89	Dol	Dolaproine	unknown	C9H17NO3			COC(C(C)C(O)=O)C1CCCN1	187.23618	"['Dol*', 'Dol*']"		Norine		
+90	dDol	O-desmethyldolaproine	unknown	C8H15NO3			CC(C(=O)O)C(O)C1CCCN1	173.2096	"['Dol*', 'Dol*']"		Norine		
+91	L-Dbu	"(2S,3S)-2,3-diaminobutyric acid"	NRPS	C4H10N2O2	11768553	"(2S,3S)-2,3-diaminobutanoic acid"	CC(N)C(N)C(=O)O	118.1344	"['Dbu*', 'Dbu*']"		Norine		
+92	D-Dbu	"(2R,3R)-2,3-diaminobutyric acid"	NRPS	C4H10N2O2		"(2R,3R)-2,3-diaminobutanoic acid"	CC(N)C(N)C(=O)O	118.1344	"['Dbu*', 'Dbu*']"		Norine		
+93	Dbu	"(2S)-2,3-diaminobutyric acid"	NRPS	C4H10N2O2	11073394	"(2S)-2,3-diaminobutanoic acid"	CC(N)C(N)C(=O)O	118.1344	"['Dbu*', 'Dbu*']"		Norine		
+94	dDil	N-desmethyldolaisoleucine	unknown	C9H19NO3			CCC(C)C(N)C(CC(O)=O)OC	189.25206	"['Dil*', 'Dil*']"		Norine		
+95	Dil	Dolaisoleucine	unknown	C10H21NO3			CCC(C)C(NC)C(CC(O)=O)OC	203.27863	"['Dil*', 'Dil*']"		Norine		
+96	Dap	"2,3-Diaminopropionic acid"	NRPS	C3H8N2O2	364	"2,3-diaminopropanoic acid"	NCC(N)C(=O)O	104.10782	"['Dap*', 'Dap*']"		Norine		
+97	NAc-Dap	"N1-acetyl-2,3-Diaminopropionic acid"	unknown	C5H10N2O3			CC(=O)NC(CN)C(=O)O	146.1445	"['Dap*', 'Dap*']"		Norine		
+98	NFo-Dap	"N1-formyl-2,3-Diaminopropionic acid"	unknown	C4H8N2O3			NCC(NC=O)C(=O)O	132.11792	"['Dap*', 'Dap*']"		Norine		
+99	D-End	D-enduracididine	NRPS	C6H12N4O2			N=C1NCC(CC(N)C(O)=O)N1	172.18507	"['End*', 'End*']"		Norine		
+100	End	enduracididine	NRPS	C6H12N4O2			N=C1NCC(CC(N)C(O)=O)N1	172.18507	"['End*', 'End*']"		Norine		
+101	C12:0	dodecanoic acid	FAS	C12H24O2	3893	dodecanoic acid	CCCCCCCCCCCC(=O)O	200.31776	"['FA*', 'FA']"		Norine		
+102	Isovaleric_acid	3-methylbutanoic acid		C5H10O2	10430	3-methylbutanoic acid	CC(C)CC(=O)O	102.133	"['FA*', 'FA']"		Norine		
+103	iC9:2(2.t4)	"2,trans4-7-methyl-octenoic acid"	FAS	C9H14O2			CC(C)CC=CC=CC(=O)O	154.20625	"['FA*', 'FA']"		Norine		
+104	iC9:0	7-methyloctanoic acid	FAS	C9H18O2	33635	7-methyloctanoic acid	CC(C)CCCCCC(=O)O	158.238	"['FA*', 'FA']"		Norine		
+105	iC8:0	6-methylheptanoic acid	FAS	C8H16O2	90716	6-methylheptanoic acid	CC(C)CCCCC(=O)O	144.21144	"['FA*', 'FA']"		Norine		
+106	iC7:0	5-methyl-hexanoic acid	FAS	C7H14O2	12344	5-methylhexanoic acid	CC(C)CCCC(=O)O	130.18488	"['FA*', 'FA']"		Norine		
+107	iC5:0-OH(2)-CA(4)	2-hydroxy-3-methyl-butanedioic acid	unknown	C5H8O5	558882	2-hydroxy-3-methylbutanedioic acid	CC(C(=O)O)C(O)C(=O)O	148.11403	"['FA*', 'FA']"		Norine		
+108	aC9:0-OH(2)-NH2(3)	alpha-hydroxy-6-methyl-3-aminooctanoic acid	unknown	C9H19NO3			CCC(C)CCC(N)C(O)C(=O)O	189.25206	"['FA*', 'FA']"		Norine		
+109	iC17:0-NH2(3)	3-amino-15-methyl-hexadecanoic acid	FAS	C17H35NO2			CC(C)CCCCCCCCCCCC(N)CC(O)=O	285.4653	"['FA*', 'FA']"		Norine		
+110	iC16:0-NH2(3)	3-amino-14-methyl-pentadecanoic acid	FAS	C16H33NO2			CC(C)CCCCCCCCCCC(N)CC(O)=O	271.43872	"['FA*', 'FA']"		Norine		
+111	iC15:0-NH2(3)	3-amino-13-methyl-tetradecanoic acid	FAS	C15H31NO2			CC(C)CCCCCCCCCC(N)CC(O)=O	257.41214	"['FA*', 'FA']"		Norine		
+112	iC14:1(3)	12-methyl-3-tridecenoic acid	FAS	C14H26O2			CC(C)CCCCCCCC=CCC(O)=O	226.35504	"['FA*', 'FA']"		Norine		
+113	iC14:0-NH2(3)	3-amino-12-methyl-tridecanoic acid	FAS	C14H29NO2	22471993	3-amino-12-methyltridecanoic acid	CC(C)CCCCCCCCC(N)CC(=O)O	243.38556	"['FA*', 'FA']"		Norine		
+114	aC9:0	6-methyloctanoic acid	FAS	C9H18O2	10447	6-methyloctanoic acid	CCC(C)CCCCC(=O)O	158.238	"['FA*', 'FA']"		Norine		
+115	Tig	tiglic acid	FAS	C5H8O2	125468	(E)-2-methylbut-2-enoic acid	CC=C(C)C(=O)O	100.11582	"['FA*', 'FA']"		Norine		
+116	iC14:0	12-methyl-tridecanoic acid	FAS	C14H28O2	520298	12-methyltridecanoic acid	CC(C)CCCCCCCCCCC(=O)O	228.37093	"['FA*', 'FA']"		Norine		
+117	aC17:0-NH2(3)	3-amino-14-methyl-hexadecanoic acid	FAS	C17H35NO2			CCC(C)CCCCCCCCCCC(N)CC(O)=O	285.4653	"['FA*', 'FA']"		Norine		
+118	iC13:1(3)	11-methyl-3-dodecenoic acid	FAS	C13H24O2			CC(C)CCCCCCC=CCC(O)=O	212.32846	"['FA*', 'FA']"		Norine		
+119	iC13:0	11-methyldodecanoic acid	FAS	C13H26O2	33002	11-methyldodecanoic acid	CC(C)CCCCCCCCCC(=O)O	214.34433	"['FA*', 'FA']"		Norine		
+120	iC12:2(2.t4)	"10-methyl-2,trans4-undecanoic acid"	FAS	C12H20O2			CC(C)CCCCC=CC=CC(O)=O	196.286	"['FA*', 'FA']"		Norine		
+121	iC12:0	10-methylundecanoic acid	FAS	C12H24O2	75942	10-methylundecanoic acid	CC(C)CCCCCCCCC(=O)O	200.31776	"['FA*', 'FA']"		Norine		
+122	aC15:1(3)	12-methyl-3-tetradecenoic acid	FAS	C15H28O2			CCC(C)CCCCCCCC=CCC(O)=O	240.38162	"['FA*', 'FA']"		Norine		
+123	iC11:0	9-methyldecanoic acid	FAS	C11H22O2	5312289	9-methyldecanoic acid	CC(C)CCCCCCCC(=O)O	186.29118	"['FA*', 'FA']"		Norine		
+124	iC10:2(2.t4)	"2,trans4-8-methyl-noneoic acid"	FAS	C10H16O2			CC(C)CCC=CC=CC(O)=O	168.23285	"['FA*', 'FA']"		Norine		
+125	iC10:0	8-methylnonanoic acid	FAS	C10H20O2	111470	8-methylnonanoic acid	CC(C)CCCCCCC(=O)O	172.2646	"['FA*', 'FA']"		Norine		
+126	aC15:0-NH2(3)	3-amino-12-methyl-tetradecanoic acid	FAS	C15H31NO2			CCC(C)CCCCCCCCC(N)CC(O)=O	257.41214	"['FA*', 'FA']"		Norine		
+127	aC15:0	12-methyltetradecanoic acid	FAS	C15H30O2	21672	12-methyltetradecanoic acid	CCC(C)CCCCCCCCCCC(=O)O	242.3975	"['FA*', 'FA']"		Norine		
+128	aC13:2(2.t4)	"10-methyl-2,trans4-dodecenoic acid"	FAS	C13H22O2			CCC(C)CCCCC=CC=CC(O)=O	210.31258	"['FA*', 'FA']"		Norine		
+129	aC13:1(3)	10-methyl-3-dodecenoic acid	FAS	C13H24O2			CCC(C)CCCCCC=CCC(O)=O	212.32846	"['FA*', 'FA']"		Norine		
+130	aC13:0	10-methyldodecanoic acid	FAS	C13H26O2	3014565	10-methyldodecanoic acid	CCC(C)CCCCCCCCC(=O)O	214.34433	"['FA*', 'FA']"		Norine		
+131	C10:0	decanoic acid	FAS	C10H20O2	2969	decanoic acid	CCCCCCCCCC(=O)O	172.2646	"['FA*', 'FA']"		Norine		
+132	C10:0-NH2(2)-oxo(8)	2-amino-8-oxo-decanoic acid	unknown	C10H19NO3			CCC(=O)CCCCCC(N)C(=O)O	201.26276	"['FA*', 'FA']"		Norine		
+133	C10:0-OH(2)-NH2(3)	3-amino-2-hydroxy decanoic acid		C10H21NO3	57484230	3-amino-2-hydroxydecanoic acid	CCCCCCCC(N)C(O)C(=O)O	203.282	"['FA*', 'FA']"		Norine		
+134	C10:0-OH(8)-NH2(2)	8-hydroxy-2-amino-decanoic acid	unknown	C10H21NO3			CCC(O)CCCCCC(N)C(=O)O	203.27863	"['FA*', 'FA']"		Norine		
+135	C10:0-OH(9)-NH2(2)	9-hydroxy-2-amino-decanoic acid	unknown	C10H21NO3			CC(O)CCCCCCC(N)C(=O)O	203.27863	"['FA*', 'FA']"		Norine		
+136	C10:0-OH(9)-NH2(2)-oxo(8)	9-hydroxy-2-amino-8-oxo-decanoic acid	unknown	C10H19NO4			CC(O)C(=O)CCCCCC(N)C(=O)O	217.26216	"['FA*', 'FA']"		Norine		
+137	C10:0-oxo(3)	3-oxo-decanoic acid		C10H18O3	5282982	3-oxodecanoic acid	CCCCCCCC(=O)CC(O)=O	186.25	"['FA*', 'FA']"		Norine		
+138	C12:1(5)	2-methyl-5-dodecenoic acid	FAS	C12H22O2	151007	dodec-5-enoic acid	CCCCCCC=CCCCC(=O)O	198.30188	"['FA*', 'FA']"		Norine		
+139	C13:0-NH2(3)	3-amino-tridecanoic acid	FAS	C13H27NO2			CCCCCCCCCCC(N)CC(O)=O	229.35898	"['FA*', 'FA']"		Norine		
+140	C14:0	tetradecanoic acid	FAS	C14H28O2	11005	tetradecanoic acid	CCCCCCCCCCCCCC(=O)O	228.37093	"['FA*', 'FA']"		Norine		
+141	C14:0-NH2(3)	3-amino-tetradecanoic acid	FAS	C14H29NO2	15677578	3-aminotetradecanoic acid	CCCCCCCCCCCC(N)CC(=O)O	243.38556	"['FA*', 'FA']"		Norine		
+142	C14:1(7)	7-tetradecenoic acid	FAS	C14H26O2			CCCCCCC=CCCCCCC(O)=O	226.35504	"['FA*', 'FA']"		Norine		
+143	C15:0-NH2(3)	3-amino-pentadecanoic acid	FAS	C15H31NO2			CCCCCCCCCCCCC(N)CC(O)=O	257.41214	"['FA*', 'FA']"		Norine		
+144	C16:0	hexadecanoic acid	FAS	C16H32O2	985	hexadecanoic acid	CCCCCCCCCCCCCCCC(=O)O	256.42407	"['FA*', 'FA']"		Norine		
+145	C16:0-NH2(3)	3-amino-hexadecanoic acid	FAS	C16H33NO2	17880127	3-aminohexadecanoic acid	CCCCCCCCCCCCCC(N)CC(=O)O	271.43872	"['FA*', 'FA']"		Norine		
+146	C16:1(7)	7-hexadecenoic acid	FAS	C16H30O2			CCCCCCCCC=CCCCCCC(=O)O	254.4082	"['FA*', 'FA']"		Norine		
+147	C16:1(9)	9-hexadecenoic acid	FAS	C16H30O2	5282745	(E)-hexadec-9-enoic acid	CCCCCCC=CCCCCCCCC(=O)O	254.4082	"['FA*', 'FA']"		Norine		
+148	C18:1(9)	9-octadecenoic acid	FAS	C18H34O2	965	octadec-9-enoic acid	CCCCCCCCC=CCCCCCCCC(=O)O	282.46136	"['FA*', 'FA']"		Norine		
+149	C4:0	butanoic acid	unknown	C4H8O2	264	butanoic acid	CCCC(=O)O	88.105125	"['FA*', 'FA']"		Norine		
+150	C4:0-OH(2.3.4)	"2,3,4-trihydroxy-butanoic acid"	unknown	C4H8O5	439535	"2,3,4-trihydroxybutanoic acid"	OCC(O)C(O)C(=O)O	136.10332	"['FA*', 'FA']"		Norine		
+151	C6:0	hexanoic acid	FAS	C6H12O2	8892	hexanoic acid	CCCCCC(=O)O	116.15829	"['FA*', 'FA']"		Norine		
+152	C6:0-OH(3.5)-NH2(4)	3.5-hydroxy-4-amino-hexadecanoic acid	unknown	C6H13NO4			CC(O)C(N)C(O)CC(O)=O	163.17172	"['FA*', 'FA']"		Norine		
+153	C7:0	heptanoic acid	FAS	C7H14O2	8094	heptanoic acid	CCCCCCC(=O)O	130.18488	"['FA*', 'FA']"		Norine		
+154	C8:0	octanoic acid	FAS	C8H16O2	379	octanoic acid	CCCCCCCC(=O)O	144.21144	"['FA*', 'FA']"		Norine		
+155	C8:0:1(7)	oct-7-ynoic acid	unknown	C8H12O2	5312700	oct-7-ynoic acid	C#CCCCCCC(=O)O	140.17967	"['FA*', 'FA']"		Norine		
+156	aC10:0	7-methylnonanoic acid	FAS	C10H20O2	5312329	7-methylnonanoic acid	CCC(C)CCCCCC(=O)O	172.2646	"['FA*', 'FA']"		Norine		
+157	aC11:0	8-methyldecanoic acid	FAS	C11H22O2	21813	8-methyldecanoic acid	CCC(C)CCCCCCC(=O)O	186.29118	"['FA*', 'FA']"		Norine		
+158	C8:2(2.t4)	"2,trans4-octenoic acid"	FAS	C8H12O2			CCCC=CC=CC(=O)O	140.17967	"['FA*', 'FA']"		Norine		
+159	C9:0	nonanoic acid	FAS	C9H18O2	8158	nonanoic acid	CCCCCCCCC(=O)O	158.238	"['FA*', 'FA']"		Norine		
+160	C9:1(4)-Me(2.4.6)-OH(8)	"8-hydroxy-2,4,6-trimethyl-4-nonenoic acid"	unknown	C12H22O3			CC(O)CC(C)C=C(C)CC(C)C(O)=O	214.30128	"['FA-OH*', 'FA']"		Norine		
+161	aC11:2(4.6)-Me(2.6)-OH(2.3)	"2,3-dihydroxy-2,6,8-trimethyldeca-(4Z,6E)-dienoic acid"	unknown	C13H22O4			CCC(C)C=C(C)C=CC(O)C(C)(O)C(O)=O	242.31139	"['FA-OH*', 'FA']"		Norine		
+162	aC13:0-OH(3)	3-hydroxy-10-methyl-dodecanoic acid	FAS	C13H26O3			CCC(C)CCCCCCC(O)CC(O)=O	230.34373	"['FA-OH*', 'FA']"		Norine		
+163	aC15:0-OH(3)	3-hydroxy-12-methyl-tetradecanoic acid	FAS	C15H30O3			CCC(C)CCCCCCCCC(O)CC(O)=O	258.3969	"['FA-OH*', 'FA']"		Norine		
+164	aC17:0-OH(3)	3-hydroxy-14-methyl-hexadecanoic acid	FAS	C17H34O3			CCC(C)CCCCCCCCCCC(O)CC(O)=O	286.45007	"['FA-OH*', 'FA']"		Norine		
+165	aC6:0-OH(2.3)	"2,3-dihydroxy-3-methylpentanoic acid"	FAS	C6H12O4	8	"2,3-dihydroxy-3-methylpentanoic acid"	CCC(C)(O)C(O)C(=O)O	148.15707	"['FA-OH*', 'FA']"		Norine		
+166	aC9:0-OH(3)	3-hydroxy-6-methyloctanoic acid	FAS	C9H18O3	23176793	3-hydroxy-6-methyloctanoic acid	CCC(C)CCC(O)CC(=O)O	174.23743	"['FA-OH*', 'FA']"		Norine		
+167	C10:0-OH(3)	3-hydroxy-decanoic acid	FAS	C10H20O3	26612	3-hydroxydecanoic acid	CCCCCCCC(O)CC(=O)O	188.26399	"['FA-OH*', 'FA']"		Norine		
+168	C11:0-OH(3)	3-hydroxy-undecanoic acid	FAS	C11H22O3	3083221	3-hydroxyundecanoic acid	CCCCCCCCC(O)CC(=O)O	202.29059	"['FA-OH*', 'FA']"		Norine		
+169	C11:2(t2.t8)-Me(2.6.8)-OH(5.7)	"2,6,8-trimethyl-5,7-dihydroxy-trans2,trans8-undecenoic acid"	unknown	C14H24O4			CCC=C(C)C(O)C(C)C(O)CC=C(C)C(O)=O	256.33798	"['FA-OH*', 'FA']"		Norine		
+170	C12:0-OH(3)	3-hydroxy-dodecanoic acid	FAS	C12H24O3	94216	3-hydroxydodecanoic acid	CCCCCCCCCC(O)CC(=O)O	216.31717	"['FA-OH*', 'FA']"		Norine		
+171	C12:1(5)-OH(3)	3-hydroxy-5-dodecenoic acid	FAS	C12H22O3			CCCCCCC=CCC(O)CC(O)=O	214.30128	"['FA-OH*', 'FA']"		Norine		
+172	C13:0-OH(3)	3-hydroxy-tridecanoic acid	FAS	C13H26O3	5312749	3-hydroxytridecanoic acid	CCCCCCCCCCC(O)CC(=O)O	230.34373	"['FA-OH*', 'FA']"		Norine		
+173	C13:2(t4.t6)-OH(2.3)	"2,3-dihydroxy-trans4,trans6-tridecenoic acid"	unknown	C13H22O4			CCCCCCC=CC=CC(O)C(O)C(O)=O	242.31139	"['FA-OH*', 'FA']"		Norine		
+174	C14:0-OH(3)	3-hydroxy-tetradecanoic acid	FAS	C14H28O3	16064	3-hydroxytetradecanoic acid	CCCCCCCCCCCC(O)CC(=O)O	244.37033	"['FA-OH*', 'FA']"		Norine		
+175	C14:0-OH(3.4)	"3,4-dihydroxy-tetradecanoic acid"	FAS	C14H28O4	22667431	"3,4-dihydroxytetradecanoic acid"	CCCCCCCCCCC(O)C(O)CC(=O)O	260.36975	"['FA-OH*', 'FA']"		Norine		
+176	C14:2(t4.t6)-OH(2.3)	"2,3-dihydroxy-trans4,trans6-tetradecenoic acid"	unknown	C14H24O4			CCCCCCCC=CC=CC(O)C(O)C(O)=O	256.33798	"['FA-OH*', 'FA']"		Norine		
+177	C15:0-OH(3)	3-hydroxy-pentadecanoic acid	FAS	C15H30O3	182089	3-hydroxypentadecanoic acid	CCCCCCCCCCCCC(O)CC(=O)O	258.3969	"['FA-OH*', 'FA']"		Norine		
+178	C15:2(t4.t6)-OH(2.3)	"2,3-dihydroxy-trans4,trans6-pentadecenoic acid"	unknown	C15H26O4			CCCCCCCCC=CC=CC(O)C(O)C(O)=O	270.36456	"['FA-OH*', 'FA']"		Norine		
+179	C16:0-OH(3)	3-hydroxy-hexadecanoic acid	FAS	C16H32O3	301590	3-hydroxyhexadecanoic acid	CCCCCCCCCCCCCC(O)CC(=O)O	272.4235	"['FA-OH*', 'FA']"		Norine		
+180	C16:0-OH(3.4)	"3,4-dihydroxy-hexadecanoic acid"	FAS	C16H32O4	22348653	"3,4-dihydroxyhexadecanoic acid"	CCCCCCCCCCCCC(O)C(O)CC(=O)O	288.42288	"['FA-OH*', 'FA']"		Norine		
+181	C16:1(9)-OH(3)	3-hydroxy-9-hexadecenoic acid	FAS	C16H30O3			CCCCCCC=CCCCCCC(O)CC(O)=O	270.4076	"['FA-OH*', 'FA']"		Norine		
+182	C18:1(9)-OH(3)	3-hydroxy-9-octadecenoic acid	FAS	C18H34O3			CCCCCCCCC=CCCCCCC(O)CC(O)=O	298.46075	"['FA-OH*', 'FA']"		Norine		
+183	C4:0-OH(2.3)	"2,3-dihydroxy-butanoic acid"	unknown	C4H8O4	250402	"2,3-dihydroxybutanoic acid"	CC(O)C(O)C(=O)O	120.10393	"['FA-OH*', 'FA']"		Norine		
+184	C4:0-OH(3)	3-hydroxybutanoic acid	unknown	C4H8O3	441	3-hydroxybutanoic acid	CC(O)CC(=O)O	104.10452	"['FA-OH*', 'FA']"		Norine		
+185	C4:1(3)-OH(2)	2-hydroxy-3-butenoic acid	unknown	C4H6O3	160534	2-hydroxybut-3-enoic acid	C=CC(O)C(=O)O	102.08864	"['FA-OH*', 'FA']"		Norine		
+186	C5:1(4)-OH(2)	beta-vinyllactic acid		C5H8O3	172026	2-hydroxypent-4-enoic acid	C=CCC(O)C(=O)O	116.116	"['FA-OH*', 'FA']"		Norine		
+187	C6:0-OH(3)	3-hydroxy-hexanoic acid	FAS	C6H12O3	151492	3-hydroxyhexanoic acid	CCCC(O)CC(=O)O	132.15768	"['FA-OH*', 'FA']"		Norine		
+188	C7:0-OH(3)	3-hydroxy-heptanoic acid	unknown	C7H14O3	3083220	3-hydroxyheptanoic acid	CCCCC(O)CC(=O)O	146.18427	"['FA-OH*', 'FA']"		Norine		
+189	C8:0-OH(3)	3-hydroxy-octanoic acid	FAS	C8H16O3	26613	3-hydroxyoctanoic acid	CCCCCC(O)CC(=O)O	160.21085	"['FA-OH*', 'FA']"		Norine		
+190	C8:1(7)-Me(2.2)-OH(3)	"2,2-dimethyl-3-hydroxy-7-octenoic acid"	unknown	C10H18O3			C=CCCCC(O)C(C)(C)C(O)=O	186.24811	"['FA-OH*', 'FA']"		Norine		
+191	C9:0-OH(3)	3-hydroxy-nonanoic acid	FAS	C9H18O3	36599	3-hydroxynonanoic acid	CCCCCCC(O)CC(=O)O	174.23743	"['FA-OH*', 'FA']"		Norine		
+192	iC11:0-OH(3)	3-hydroxy-9-methyl-decanoic acid	FAS	C11H22O3	15089798	3-hydroxy-9-methyldecanoic acid	CC(C)CCCCCC(O)CC(=O)O	202.29059	"['FA-OH*', 'FA']"		Norine		
+193	iC12:0-OH(3)	3-hydroxy-10-methyl-undecanoic acid	FAS	C12H24O3	15089799	3-hydroxy-10-methylundecanoic acid	CC(C)CCCCCCC(O)CC(=O)O	216.31717	"['FA-OH*', 'FA']"		Norine		
+194	iC13:0-OH(3)	3-hydroxy-11-methyl-dodecanoic acid	FAS	C13H26O3	15089800	3-hydroxy-11-methyldodecanoic acid	CC(C)CCCCCCCC(O)CC(=O)O	230.34373	"['FA-OH*', 'FA']"		Norine		
+195	iC14:0-OH(3)	3-hydroxy-12-methyl-tridecanoic acid	FAS	C14H28O3	22471995	3-hydroxy-12-methyltridecanoic acid	CC(C)CCCCCCCCC(O)CC(=O)O	244.37033	"['FA-OH*', 'FA']"		Norine		
+196	iC15:0-OH(3)	3-hydroxy-13-methyl-tetradecanoic acid	FAS	C15H30O3	11043456	3-hydroxy-13-methyltetradecanoic acid	CC(C)CCCCCCCCCC(O)CC(=O)O	258.3969	"['FA-OH*', 'FA']"		Norine		
+197	iC16:0-OH(3)	3-hydroxy-14-methyl-pentadecanoic acid	FAS	C16H32O3			CC(C)CCCCCCCCCCC(O)CC(O)=O	272.4235	"['FA-OH*', 'FA']"		Norine		
+198	iC17:0-OH(3)	3-hydroxy-15-methyl-hexadecanoic acid	FAS	C17H34O3	161495	3-hydroxy-15-methylhexadecanoic acid	CC(C)CCCCCCCCCCCC(O)CC(=O)O	286.45007	"['FA-OH*', 'FA']"		Norine		
+199	iC5:0-OH(2.3)	"2,3-dihydroxy-3-methyl-butanoic acid"	unknown	C5H10O4	677	"2,3-dihydroxy-3-methylbutanoic acid"	CC(C)(O)C(O)C(=O)O	134.13051	"['FA-OH*', 'FA']"		Norine		
+200	iC5:0-OH(2.4)	"2,4-dihydroxy-3-methyl-butanoic acid"	unknown	C5H10O4			CC(CO)C(O)C(=O)O	134.13051	"['FA-OH*', 'FA']"		Norine		
+201	iC6:0-OH(2.4)	"2,4-dihydroxy-4-methylpentanoic acid"		C6H12O4	55300467	"2,4-dihydroxy-4-methylpentanoic acid"	CC(C)(O)CC(O)C(=O)O	148.158	"['FA-OH*', 'FA']"		Norine		
+202	iC9:0-OH(3)	3-hydroxy-7-methyl-octanoic acid	FAS	C9H18O3	22472006	3-hydroxy-7-methyloctanoic acid	CC(C)CCCC(O)CC(=O)O	174.23743	"['FA-OH*', 'FA']"		Norine		
+203	C5:0-OH(2)-Ep(4)	2-hydroxy-3-(oxiran-2-yl)propanoic acid		C5H8O4	54305979	2-hydroxy-3-(oxiran-2-yl)propanoic acid	O=C(O)C(O)CC1CO1	132.115	"['FAD*', 'FA']"		Norine		
+204	C9:1(Me4)-Me(2.4.6)-OH(8)-Oxo(5)	"5-oxo-8-hydroxy-2,4,6-trimethyl-4-nonaneic acid"	unknown	C12H20O4			CC(O)CC(C)C(=O)C(=C)CC(C)C(O)=O	228.2848	"['FAD*', 'FA']"		Norine		
+205	C8:2(5.7)-Me(6)-OH(4)-NH2(3)-brPh(8)	"3-amino-4-hydroxy-6-methyl-8-(p-bromophenyl)-5,7-octadienoic acid"	unknown	C15H18BrNO3			CC(C=Cc1ccc(cc1)Br)=CC(O)C(N)CC(=O)O	340.2123	"['FAD*', 'FA']"		Norine		
+206	C6:0-Ep(2)	2-epoxy-hexanoic acid	FAS	C6H10O3	13440533	3-propyloxirane-2-carboxylic acid	CCCC1OC1(C(=O)O)	130.1418	"['FAD*', 'FA']"		Norine		
+207	C6:0-Me(2.2)-OH(3)	"2,2-dimethyl-3-hydroxyhexanoic acid"	unknown	C8H16O3			CCCC(O)C(C)(C)C(=O)O	160.21085	"['FAD*', 'FA']"		Norine		
+208	C6:0-Me(2)-NH2(3)	2-methyl-3-aminohexadecanoic acid	unknown	C7H15NO2			CCCC(N)C(C)C(=O)O	145.19951	"['FAD*', 'FA']"		Norine		
+209	C6:0-Me(5.5)-oxo(2)	"5,5-dimethyl-2-oxo-hexanoic acid"	unknown	C8H14O3	21197379	"5,5-dimethyl-2-oxohexanoic acid"	CC(C)(C)CCC(=O)C(=O)O	158.19496	"['FAD*', 'FA']"		Norine		
+210	C10:0-Me(4)-OH(3)	3-hydroxy-4-methyl-decanoic acid	FAS	C11H22O3			CCCCCCC(C)C(O)CC(O)=O	202.29059	"['FAD*', 'FA']"		Norine		
+211	C8:2(5.7)-Me(6)-OH(4)-NH2(3)-Ph(8)	"3-amino-4-hydroxy-6-methyl-8-phenyl-5,7-octadienoic acid"	unknown	C15H19NO3			CC(C=Cc1ccccc1)=CC(O)C(N)CC(=O)O	261.31625	"['FAD*', 'FA']"		Norine		
+212	C6:0-OMe(3)	3-methoxy-hexanoic acid	unknown	C7H14O3	314154	3-methoxyhexanoic acid	CCCC(CC(=O)O)OC	146.18427	"['FAD*', 'FA']"		Norine		
+213	C10:0-Me(2)-OH(3)	3-hydroxy-2-methyl-decanoic acid	unknown	C11H22O3	19591843	3-hydroxy-2-methyldecanoic acid	CCCCCCCC(O)C(C)C(=O)O	202.29059	"['FAD*', 'FA']"		Norine		
+214	C10:0-Me(2.2.4)-OH(3)-OMe(7)	"3-hydroxy-2,2,4-trimethyl-7-methoxydecanoic acid"	unknown	C14H28O4			CCCC(CCC(C)C(O)C(C)(C)C(O)=O)OC	260.36975	"['FAD*', 'FA']"		Norine		
+215	C7:0-Me(2)-OH(3)	3-hydroxy-2-methyl-heptanoic acid	unknown	C8H16O3			CCCCC(O)C(C)C(O)=O	160.21085	"['FAD*', 'FA']"		Norine		
+216	C10:0-Me(2.4)-oxo(9)	"9-oxo-2,4-dimethyldecanoic acid"	unknown	C12H22O3			CC(=O)CCCCC(C)CC(C)C(=O)O	214.30128	"['FAD*', 'FA']"		Norine		
+217	iC8:0-Me(2.4)-OH(3)	"2,4,6-trimethyl-3-hydroxy-heptanoic acid"	unknown	C10H20O3			CC(C)CC(C)C(O)C(C)C(=O)O	188.26399	"['FAD*', 'FA']"		Norine		
+218	C9:0-Me(2)-OH(3)	3-hydroxy-2-methyl-nonanoic acid	unknown	C10H20O3	19591817	3-hydroxy-2-methylnonanoic acid	CCCCCCC(O)C(C)C(=O)O	188.26399	"['FAD*', 'FA']"		Norine		
+219	C8:0:1(7)-Me(2)	2-methylact-7-ynoic acid	unknown	C9H14O2			C#CCCCCC(C)C(O)=O	154.20625	"['FAD*', 'FA']"		Norine		
+220	C8:0:1(7)-Me(2.2)-OH(3)	"2,2-dimethyl-3-hydroxy-7-octynoic acid"	unknown	C10H16O3			C#CCCCC(O)C(C)(C)C(O)=O	184.23224	"['FAD*', 'FA']"		Norine		
+221	C8:0:1(7)-Me(2)-NH2(3)	3-amino-2-methyloct-7-ynoic acid	unknown	C9H15NO2			C#CCCCC(N)C(C)C(=O)O	169.22089	"['FAD*', 'FA']"		Norine		
+222	C8:0:1(7)-Me(2)-OH(3)	2-methyl-3-hydroxy-7-octynoic acid	unknown	C9H14O3			C#CCCCC(O)C(C)C(O)=O	170.20566	"['FAD*', 'FA']"		Norine		
+223	C8:0-Me(2.2)-OH(3)	"2,2-dimethyl-3-hydroxy-octanoic acid"	unknown	C10H20O3			CCCCCC(O)C(C)(C)C(O)=O	188.26399	"['FAD*', 'FA']"		Norine		
+224	C8:0-Me(4)-OH(3)	4-methyl-3-hydroxy-octanoic acid	FAS	C9H18O3	18408232	3-hydroxy-4-methyloctanoic acid	CCCCC(C)C(O)CC(=O)O	174.23743	"['FAD*', 'FA']"		Norine		
+225	C10:0-Me(2.2.4)-OH(3.7)	"3-hydroxy-2,2,4-trimethyl-7-hydroxydecanoic acid"	unknown	C13H26O4			CCCC(O)CCC(C)C(O)C(C)(C)C(=O)O	246.34314	"['FAD*', 'FA']"		Norine		
+226	C12:3(7.9.11)-Me(6)-OH(2.4.5)-NH2(3)-Ph(12)	"3-amino-6-methyl-12-phenyl-2,4,5-trihydroxydodeca-7,9,11-trienoic acid"	unknown	C19H25NO5			CC(C=CC=CC=Cc1ccccc1)C(O)C(O)C(N)C(O)C(O)=O	347.40552	"['FAD*', 'FA']"		Norine		
+227	C10:0:1(9)-Me(2.4)	"2,4-dimethyl-dec-9-ynoic acid"	unknown	C12H20O2			C#CCCCCC(C)CC(C)C(=O)O	196.286	"['FAD*', 'FA']"		Norine		
+228	C12:3(7.9.11)-Me(6.10)-OH(2.4.5)-NH2(3)-Ph(12)	"3-amino-6,10-dimethyl-12-phenyl-2,4,5-trihydroxydodeca-7,9,11-trienoic acid"	unknown	C20H27NO5			CC(=CC=CC(C)C(O)C(O)C(N)C(O)C(O)=O)C=Cc1ccccc1	361.4321	"['FAD*', 'FA']"		Norine		
+229	C8:1(7)-OH(2.4.5)-NH2(3)-Ph(8)	3-amino-8-phenyl-2.4.5-trihydroxyoct-7-enoic acid	unknown	C14H19NO5			NC(C(O)C(O)=O)C(O)C(O)CC=Cc1ccccc1	281.30438	"['FAD*', 'FA']"		Norine		
+230	C4:0-Me(2)	2-methyl-butanoic acid	FAS	C5H10O2	8314	2-methylbutanoic acid	CCC(C)C(=O)O	102.1317	"['FAD*', 'FA']"		Norine		
+231	C12:1(11)-Me(6)-OH(2.4.5)-NH2(3)-mPhe(11)	"3-amino-6-methyl-12-(p-methoxyphenyl)-2,4,5-trihydroxydodec-11-enoic acid"	unknown	C20H31NO6			COc1ccc(C=CCCCCC(C)C(O)C(O)C(N)C(O)C(O)=O)cc1	381.46326	"['FAD*', 'FA']"		Norine		
+232	C9:1(8)-Me(2)	2-methyl-8-noneic acid	unknown	C10H18O2	17824924	2-methylnon-8-enoic acid	C=CCCCCCC(C)C(=O)O	170.24872	"['FAD*', 'FA']"		Norine		
+233	C4:0-OH(2.3)-Cl(4)	"2,3-dihydroxy-4-chloro-butanoic acid"	unknown	C4H7ClO4			O=C(O)C(O)C(O)CCl	154.54898	"['FAD*', 'FA']"		Norine		
+234	C4:0-OH(2)-Ep(3)	2-hydroxy-3-epoxy-butanoic acid	unknown	C4H6O4	21433427	2-hydroxy-2-(oxiran-2-yl)acetic acid	O=C(O)C(O)C1CO1	118.08804	"['FAD*', 'FA']"		Norine		
+235	C11:0-Me(2)-OH(3)	3-hydroxy-2-methyl-undecanoic acid	unknown	C12H24O3	19591812	3-hydroxy-2-methylundecanoic acid	CCCCCCCCC(O)C(C)C(=O)O	216.31717	"['FAD*', 'FA']"		Norine		
+236	C10:2(7.9)-OH(2.4.5)-NH2(3)-ePh(10)	"3-amino-10-(p-ethoxyphenyl)-2,4,5-trihydroxydeca-7,9-dienoic acid"	unknown	C18H25NO6			CCOc1ccc(C=CC=CCC(O)C(O)C(N)C(O)C(O)=O)cc1	351.39423	"['FAD*', 'FA']"		Norine		
+237	C10:0-NH2(2)-Ep(9)-oxo(8)	"2-amino-9,10-epoxi-8-oxodecanoic acid"	unknown	C10H17NO4	12917729	2-amino-8-(oxiran-2-yl)-8-oxooctanoic acid	NC(CCCCCC(=O)C1CO1)C(=O)O	215.24628	"['FAD*', 'FA']"		Norine		
+238	Gln	Glutamine	NRPS	C5H10N2O3	5961	"(2S)-2,5-diamino-5-oxopentanoic acid"	NC(=O)CCC(N)C(=O)O	146.1445	"['Gln*', 'Glx']"	Q	Norine	1	
+239	3Me-4Me-Gln	"3,4-dimethylglutamine"	unknown	C7H14N2O3			CC(C(C)C(N)C(O)=O)C(N)=O	174.19766	"['Gln*', 'Glx']"	Q*	Norine		
+240	D-Gln	D-Glutamine	NRPS	C5H10N2O3	145815	"(2R)-2,5-diamino-5-oxopentanoic acid"	NC(=O)CCC(N)C(=O)O	146.1445	"['Gln*', 'Glx']"	Q*	Norine		
+241	NFo-Gln	N-formyl-Glutamine	NRPS	C6H10N2O4	3293755	5-amino-2-formamido-5-oxopentanoic acid	NC(=O)CCC(NC=O)C(=O)O	174.1546	"['Gln*', 'Glx']"	Q*	Norine		
+242	bOH-Gln	beta-hydroxyglutamine	NRPS	C5H10N2O4	22592766	"2,5-diamino-3-hydroxy-5-oxopentanoic acid"	NC(=O)CC(O)C(N)C(=O)O	162.1439	"['Gln*', 'Glx']"	Q*	Norine		
+243	NMe-Gln	N-methylglutamine	NRPS	C6H12N2O	738177	5-amino-2-methylamino-5-oxopentanoic acid	CNC(CCC(N)=O)C(=O)O	128.17227	"['Gln*', 'Glx']"	Q*	Norine		
+244	bMe-Gln	beta-methylglutamine	NRPS	C6H12N2O3	44602399	"(2S,3S)-2,5-diamino-3-methyl-5-oxopentanoic acid"	CC(CC(N)=O)C(N)C(=O)O	160.17108	"['Gln*', 'Glx']"	Q*	Norine		
+245	D-bMe-Gln	D-beta-methylglutamine	NRPS	C6H12N2O3	20193636	"2,5-diamino-3-methyl-5-oxopentanoic acid"	CC(CC(N)=O)C(N)C(=O)O	160.17108	"['Gln*', 'Glx']"	Q*	Norine		
+246	Glu	Glutamic Acid	NRPS	C5H9NO4	7847075	(2S)-2-aminopentanedioic acid	NC(CCC(=O)O)C(=O)O	147.12926	"['Glu*', 'Glx']"	E	Norine	1	
+247	D-Glu	D-Glutamic Acid	NRPS	C5H9NO4	165901	(2R)-2-aminopentanedioic acid	NC(CCC(=O)O)C(=O)O	147.12926	"['Glu*', 'Glx']"	E*	Norine		
+248	MeO-Glu	Glutamic Acid methyl ester	NRPS	C6H11NO4	10365295	2-amino-5-methoxy-5-oxopentanoic acid	COC(=O)CCC(N)C(=O)O	161.15584	"['Glu*', 'Glx']"	E*	Norine		
+249	3Me-Glu	3-Methyl-Glutamic acid	NRPS	C6H11NO4	237657	2-amino-3-methylpentanedioic acid	CC(CC(=O)O)C(N)C(=O)O	161.15584	"['Glu*', 'Glx']"	E*	Norine		
+250	2Me-3Me-pGlu	"2,3-dimethylpyroglutamic acid"	unknown	C7H11NO3			CC1C(C)C(NC1(=O))C(=O)O	157.16714	"['Glu*', 'Glx']"	E*	Norine		
+251	pGlu	pyroglutamic acid	NRPS	C5H7NO3	7405	(2S)-5-oxopyrrolidine-2-carboxylic acid	O=C(O)C1CCC(=O)N1	129.11398	"['Glu*', 'Glx']"	E*	Norine		
+252	D-MeO-Glu	D-Glutamic Acid methyl ester	NRPS	C6H11NO4	10365295	2-amino-5-methoxy-5-oxopentanoic acid	COC(=O)CCC(N)C(=O)O	161.15584	"['Glu*', 'Glx']"	E*	Norine		
+253	MeO-D-Glu	D-Glutamic Acid methyl ester	NRPS	C6H11NO4	688481	(2R)-2-amino-5-methoxy-5-oxopentanoic acid	COC(=O)CCC(N)C(=O)O	161.15584	"['Glu*', 'Glx']"	E*	Norine		
+254	Hysp	hydroxysecbutyl acetyl propionyl	unknown	C9H16O4			CCC(C)C(O)C(=O)C(C)C(=O)O	188.22095	"['Hap*', 'Hap*']"		Norine		
+255	Hip	hydroxyisovalerylpropionyl	unknown	C8H14O4	18942657	"4-hydroxy-2,5-dimethyl-3-oxohexanoic acid"	CC(C)C(O)C(=O)C(C)C(=O)O	174.19437	"['Hap*', 'Hap*']"		Norine		
+256	Hap	hydroxyacetyl propionyl	unknown	C5H8O4			CC(C(=O)O)C(=O)CO	132.11462	"['Hap*', 'Hap*']"		Norine		
+257	OH-His	Hydroxyhistidine	NRPS	C6H9N3O3	429096	2-amino-3-hydroxy-3-(3H-imidazol-4-yl)propanoic acid	NC(C(=O)O)C(O)c1cnc[nH]1	171.15396	"['His*', 'His*']"	H*	Norine		
+258	His	Histidine	NRPS	C6H9N3O2	6274	(2S)-2-amino-3-(3H-imidazol-4-yl)propanoic acid	NC(Cc1cnc[nH]1)C(=O)O	155.15456	"['His*', 'His*']"	H	Norine	1	
+259	Hiv	2-hydroxyisovalerate	NRPS	C5H10O3	853180	(2S)-2-hydroxy-3-methylbutanoic acid	CC(C)C(O)C(=O)O	118.131096	"['Hiv*', 'Hiv*']"		Norine		
+260	D-Hiv	D-2-hydroxyisovalerate	NRPS	C5H10O3	5289545	(2R)-2-hydroxy-3-methylbutanoic acid	CC(C)C(O)C(=O)O	118.131096	"['Hiv*', 'Hiv*']"		Norine		
+261	D-Dhpg	"D-3,5-dihydroxyphenylglycine"	NRPS	C8H9NO4	108001	"D-2-amino-2-(3,5-dihydroxyphenyl)acetic acid"	NC(C(=O)O)c1cc(O)cc(O)c1	183.16136	"['Hpg*', 'Hpg*']"		Norine		
+262	D-OH-dHpg	D-N-hydroxy-dehydro-HydroxyPhenylGlycine	NRPS	C8H7NO4			ON=C(C(=O)O)c1ccc(O)cc1	181.14548	"['Hpg*', 'Hpg*']"		Norine		
+263	Cl-Hpg	3-chloro-4-hydroxyphenylglycine	NRPS	C8H8ClNO3	11401421	(2S)-2-amino-2-(3-chloro-4-hydroxyphenyl)acetic acid	NC(C(=O)O)c1ccc(O)c(c1)Cl	201.60703	"['Hpg*', 'Hpg*']"		Norine		
+264	Hpg	HydroxyPhenylGlycine	NRPS	C8H9NO3	36143	(2S)-2-amino-2-(4-hydroxyphenyl)acetic acid	NC(C(=O)O)c1ccc(O)cc1	167.16196	"['Hpg*', 'Hpg*']"		Norine		
+265	Dhpg	"3,5-dihydroxyphenylglycine"	NRPS	C8H9NO4	108001	"2-amino-2-(3,5-dihydroxyphenyl)acetic acid"	NC(C(=O)O)c1cc(O)cc(O)c1	183.16136	"['Hpg*', 'Hpg*']"		Norine		
+266	D-Hpg	D-HydroxyPhenylGlycine	NRPS	C8H9NO3	89853	(2R)-2-amino-2-(4-hydroxyphenyl)ethanoic acid	NC(C(=O)O)c1ccc(O)cc1	167.16196	"['Hpg*', 'Hpg*']"		Norine		
+267	Cl2-Hpg	"3,5-dichloro-4-hydroxyphenylglycine"	NRPS	C8H7Cl2NO3	11630046	"2-amino-2-(3,5-dichloro-4-hydroxyphenyl)acetic acid"	NC(C(=O)O)c1cc(c(O)c(c1)Cl)Cl	236.0521	"['Hpg*', 'Hpg*']"		Norine		
+268	NMe-Hpg	N-methyl-HydroxyPhenylGlycine	NRPS	C9H11NO3	15118056	2-(4-hydroxyphenyl)-2-methylaminoacetic acid	CNC(C(=O)O)c1ccc(O)cc1	181.18854	"['Hpg*', 'Hpg*']"		Norine		
+269	OH-dHpg	N-hydroxy-dehydro-HydroxyPhenylGlycine	NRPS	C8H7NO4	20339127	"2-(hydroxyamino)-2-(4-oxo-1-cyclohexa-2,5-dienylidene)acetic acid"	ONC(C(=O)O)=C1C=CC(=O)C=C1	181.14548	"['Hpg*', 'Hpg*']"		Norine		
+270	D-Kyn	D-kynurenine	NRPS	C10H12N2O3	1152206	(2R)-2-amino-4-(2-aminophenyl)-4-oxobutanoic acid	NC(CC(=O)c1ccccc1(N))C(=O)O	208.21387	"['Kyn*', 'Kyn*']"		Norine		
+271	Kyn	kynurenine	NRPS	C10H12N2O3	161166	(2S)-2-amino-4-(2-aminophenyl)-4-oxobutanoic acid	NC(CC(=O)c1ccccc1(N))C(=O)O	208.21387	"['Kyn*', 'Kyn*']"		Norine		
+272	4OH-D-Ph-Lac	4-hydroxy-D-phenyl-lactate	NRPS	C9H10O4	9378	2-hydroxy-3-(4-hydroxyphenyl)propanoic acid	Oc1ccc(cc1)CC(O)C(=O)O	182.17331	"['Lac*', 'Lac*']"		Norine		
+273	Ph-Lac	Phenyl-lactate	unknown	C9H10O3		2-hydroxy-3-phenylpropanoic acid	O=C(O)C(O)Cc1ccccc1	166.1739	"['Lac*', 'Lac*']"		Norine		
+274	Lac	Lactic acid	NRPS	C3H6O3	107689	(2S)-2-hydroxypropanoic acid	CC(O)C(=O)O	90.07794	"['Lac*', 'Lac*']"		Norine		
+275	D-Ph-Lac	D-Phenyl-lactate	NRPS	C9H10O3	643327	(2R)-2-hydroxy-3-phenylpropanoic acid	O=C(O)C(O)Cc1ccccc1	166.1739	"['Lac*', 'Lac*']"		Norine		
+276	D-Lac	D-lactic acid	NRPS	C3H6O3	61503	(2R)-2-hydroxypropanoic acid	CC(O)C(=O)O	90.07794	"['Lac*', 'Lac*']"		Norine		
+277	bLys	beta lysine	NRPS	C6H14N2O2	439417	"(3S)-3,6-diaminohexanoic acid"	NCCCC(N)CC(=O)O	146.18756	"['Lys*', 'Lys*']"	K*	Norine		
+278	Lys	Lysine	NRPS	C6H14N2O2	5962	"(2S)-2,6-diaminohexanoic acid"	NCCCCC(N)C(=O)O	146.18756	"['Lys*', 'Lys*']"	K	Norine	1	
+279	D-Lys	D-Lysine	NRPS	C6H14N2O2	57449	"(2R)-2,6-diaminohexanoic acid"	NCCCCC(N)C(=O)O	146.18756	"['Lys*', 'Lys*']"	K*	Norine		
+280	NFo-Lys	N-formyl-lysine		C7H14N2O3	12679627		NCCCCC(NC=O)C(=O)O	174.2	"['Lys*', 'Lys*']"	K*	Norine		
+281	D-NFo-Lys	D-N-formyl-lysine		C7H14N2O3	12679627		NCCCCC(NC=O)C(=O)O	174.2	"['Lys*', 'Lys*']"	K*	Norine		
+282	OH-bLys	hydroxy-beta lysine	NRPS	C6H14N2O3	14158724	"3,6-diamino-4-hydroxyhexanoic acid"	NCCC(O)C(N)CC(O)=O	162.189	"['Lys*', 'Lys*']"	K*	Norine		
+283	bbMe2-O-Met	"beta,beta-dimethyl-Methionine-S-oxide"	NRPS	C7H15NO3S			CC(C)(CS(C)=O)C(N)C(=O)O	193.2639	"['Met*', 'Met*']"	M*	Norine		
+284	O2-Met	Methionine sulfone	NRPS	C5H11NO4S	445282	(2S)-2-amino-4-methylsulfonylbutanoic acid	CS(=O)(=O)CCC(N)C(=O)O	181.21014	"['Met*', 'Met*']"	M*	Norine		
+285	O-Met	Methionine-S-oxide	NRPS	C5H11NO3S	158980	(2S)-2-amino-4-methylsulfinylbutanoic acid	CS(=O)CCC(N)C(=O)O	165.21074	"['Met*', 'Met*']"	M*	Norine		
+286	Met	Methionine	NRPS	C5H11NO2S	6137	(2S)-2-amino-4-methylsulfanylbutanoic acid	CSCCC(N)C(=O)O	149.21133	"['Met*', 'Met*']"	M	Norine	1	
+287	NFo-D-Abu	N-formyl-D-aminobutyric acid	unknown	C5H9NO3	10366843	2-formamidobutanoic acid	CCC(NC=O)C(=O)O	131.12985	"['Abu*', 'Nonpolar']"		Norine		
+288	OH-4Abu	4-amino-3-hydroxybutyric acid	unknown	C4H9NO3	10324161	4-amino-3-hydroxybutanoic acid	NCC(O)CC(=O)O	119.119156	"['Abu*', 'Nonpolar']"		Norine		
+289	D-Abu	D-2-Aminobutyric acid	NRPS	C4H9NO2	439691	(2R)-2-aminobutanoic acid	CCC(N)C(=O)O	103.11977	"['Abu*', 'Nonpolar']"		Norine		
+290	dhAbu	"2,3-dehydro-2-aminobutyric acid"	other	C4H7NO2	3883418	(Z)-2-aminobut-2-enoic acid	CC=C(N)C(=O)O	101.10388	"['Abu*', 'Nonpolar']"		Norine		
+291	2Dh-Mabu	2-methylamino-2-dehydrobutyric acid	NRPS	C5H9NO2			CC=C(NC)C(=O)O	115.13046	"['Abu*', 'Nonpolar']"		Norine		
+292	Abu	2-Aminobutyric acid	NRPS	C4H9NO2	80283	(2S)-2-aminobutanoic acid	CCC(N)C(=O)O	103.11977	"['Abu*', 'Nonpolar']"		Norine		
+293	Hil	homoisoleucine	NRPS	C7H15NO2	192784	(2S)-2-amino-4-methylhexanoic acid	CCC(C)CC(N)C(=O)O	145.19951	"['Hil*', 'Nonpolar']"		Norine		
+294	aIle	allo-Isoleucine	NRPS	C6H13NO2	49866323	"(2S,3R)-2-amino-3-methylpentanoic acid"	CCC(C)C(N)C(=O)O	131.17293	"['Ile*', 'Nonpolar']"	I*	Norine		
+295	D-aIle	D-allo-Isoleucine	NRPS	C6H13NO2	49866322	"(2R,3S)-2-amino-3-methylpentanoic acid"	CCC(C)C(N)C(=O)O	131.17293	"['Ile*', 'Nonpolar']"	I*	Norine		
+296	NMe-OMe-Ile	"N,O-dimethyl-isoleucine"	unknown	C8H17NO2			CCC(C)C(NC)C(=O)OC	159.22607	"['Ile*', 'Nonpolar']"	I*	Norine		
+297	D-Ile	D-Isoleucine	NRPS	C6H13NO2	11051686	(2R)-2-amino-3-methylpentanoic acid	CCC(C)C(N)C(=O)O	131.17293	"['Ile*', 'Nonpolar']"	I*	Norine		
+298	diMe-aIle	"N,gamma-alloisoleucine"	NRPS	C8H17NO2			CNC(C(=O)O)C(C)C(C)C	159.2261	"['Ile*', 'Nonpolar']"	I*	Norine		
+299	NMe-OH-Ile	N-methyl-hydroxyisoleucine	unknown	C7H15NO3			CNC(C(O)=O)C(C)CCO	161.1989	"['Ile*', 'Nonpolar']"	I*	Norine		
+300	NMe-NAc-Ile	N-methyl-N-acetyl-Isoleucine		C9H17NO3	63703758	2-[acetyl(methyl)amino]-3-methylpentanoic acid	CCC(C)C(C(=O)O)N(C)C(C)=O	187.121	"['Ile*', 'Nonpolar']"	I*	Norine		
+301	NMe-Ile	N-Methyl-Isoleucine	NRPS	C7H15NO2	5288628	"(2S,3S)-3-methyl-2-methylaminopentanoic acid"	CCC(C)C(NC)C(=O)O	145.19951	"['Ile*', 'Nonpolar']"	I*	Norine		
+302	NMe-aIle	N-methyl-alloIsoleucine	NRPS	C7H15NO2	40475365	"(2S,3R)-3-Methyl-2-methylaminopentanoic acid"	CCC(C)C(NC)C(=O)O	145.19951	"['Ile*', 'Nonpolar']"	I*	Norine		
+303	D-NMe-aIle	D-N-methyl-alloisoleucine	unknown	C7H15NO2			CCC(C)C(NC)C(=O)O	145.19951	"['Ile*', 'Nonpolar']"	I*	Norine		
+304	Cl-Ile	Chloro-Isoleucine	unknown	C6H12ClNO2			CC(C(N)C(O)=O)C(C)Cl	165.61798	"['Ile*', 'Nonpolar']"	I*	Norine		
+305	NFo-Ile	N-formyl-Isoleucine	NRPS	C7H13NO3	575051	2-formamido-3-methylpentanoic acid	CCC(C)C(NC=O)C(=O)O	159.18303	"['Ile*', 'Nonpolar']"	I*	Norine		
+306	NAc-Ile	N-acetyl-Isoleucine		C8H15NO3	7036275	"(2S,3S)-2-acetamido-3-methylpentanoic acid"	CCC(C)C(NC(C)=O)C(=O)O	173.2096	"['Ile*', 'Nonpolar']"	I*	Norine		
+307	MeOx-Ile	methyloxazoline-isoleucine	unknown	C10H18N2O3			CCC(C)C(N)C1=NC(C(=O)O)C(C)O1	214.26152	"['Ile*', 'Nonpolar']"	I*	Norine		
+308	Ileol	Isoleucinol	NRPS	C6H15NO	2724027	"(2S,3S)-2-amino-3-methylpentan-1-ol"	CCC(C)C(N)CO	117.1894	"['Ile*', 'Nonpolar']"	I*	Norine		
+309	Ile	Isoleucine	NRPS	C6H13NO2	6306	"(2S,3S)-2-amino-3-methylpentanoic acid"	CCC(C)C(N)C(=O)O	131.17293	"['Ile*', 'Nonpolar']"	I	Norine	1	
+310	bMe-Ile	beta-methylisoleucine	NRPS	C7H15NO2	15042684	"2-amino-3,3-dimethylpentanoic acid"	CCC(C)(C)C(N)C(=O)O	145.19951	"['Ile*', 'Nonpolar']"	I*	Norine		
+311	NFo-Leu	N-formyl-Leucine	NRPS	C7H13NO3	100119	2-formamido-4-methylpentanoic acid	CC(C)CC(NC=O)C(=O)O	159.18303	"['Leu*', 'Nonpolar']"	L*	Norine		
+312	D-t-Leu	D-tert-Leu	NRPS	C6H13NO2	6950340	"(2R)-2-amino-3,3-dimethylbutanoic acid"	CC(C)(C)C(N)C(=O)O	131.17293	"['Leu*', 'Nonpolar']"	L*	Norine		
+313	t-Leu	tert-Leu	NRPS	C6H13NO2	164608	"(2S)-2-amino-3,3-dimethylbutanoic acid"	CC(C)(C)C(N)C(=O)O	131.17293	"['Leu*', 'Nonpolar']"	L*	Norine		
+314	Cl3-NMe-Leu	tri-chloro-N-methyl-Leucine	unknown	C7H12Cl3NO2			CNC(CC(C)C(Cl)(Cl)Cl)C(O)=O	248.53468	"['Leu*', 'Nonpolar']"	L*	Norine		
+315	Cl3-NMe-dhLeu	tri-chloro-N-methyl-dehydroLeucine	unknown	C7H10Cl3NO2			CNC(=CC(C)C(Cl)(Cl)Cl)C(O)=O	246.51881	"['Leu*', 'Nonpolar']"	L*	Norine		
+316	Cl3-5OH-NMe-Leu	tri-chloro-5-hydroxy-N-methyl-Leucine	unknown	C7H12Cl3NO3			CNC(CC(CO)C(Cl)(Cl)Cl)C(O)=O	264.53406	"['Leu*', 'Nonpolar']"	L*	Norine		
+317	Cl3-2OH-NMe-Leu	tri-chloro-2-hydroxy-N-methyl-Leucine	unknown	C7H12Cl3NO3			CNC(O)(CC(C)C(Cl)(Cl)Cl)C(O)=O	264.53406	"['Leu*', 'Nonpolar']"	L*	Norine		
+318	D-NMe-Leu	D-N-methyl-Leucine	NRPS	C7H15NO2	567743	4-methyl-2-methylaminopentanoic acid	CNC(CC(C)C)C(=O)O	145.19951	"['Leu*', 'Nonpolar']"	L*	Norine		
+319	NMe-bMe-Leu	"N,beta-dimethylLeucine"	unknown	C8H17NO2	15385160	"3,4-dimethyl-2-methylaminopentanoic acid"	CNC(C(=O)O)C(C)C(C)C	159.22607	"['Leu*', 'Nonpolar']"	L*	Norine		
+320	D-Leu	D-Leucine	NRPS	C6H13NO2	439524	(2R)-2-amino-4-methylpentanoic acid	CC(C)CC(N)C(=O)O	131.17293	"['Leu*', 'Nonpolar']"	L*	Norine		
+321	Leuol	Leucinol	NRPS	C6H15NO	79030	2-amino-4-methylpentan-1-ol	CC(C)CC(N)CO	117.1894	"['Leu*', 'Nonpolar']"	L*	Norine		
+322	Leu	Leucine	NRPS	C6H13NO2	6106	(2S)-2-amino-4-methylpentanoic acid	CC(C)CC(N)C(=O)O	131.17293	"['Leu*', 'Nonpolar']"	L	Norine	1	
+323	NMe-Leu	N-Methyl-Leucine	NRPS	C7H15NO2	567743	4-methyl-2-methylaminopentanoic acid	CNC(CC(C)C)C(=O)O	145.19951	"['Leu*', 'Nonpolar']"	L*	Norine		
+324	Cl2-NMe-dhLeu	di-chloro-N-methyl-dehydroLeucine	unknown	C7H11Cl2NO2			CNC(=CC(C)C(Cl)Cl)C(O)=O	212.07376	"['Leu*', 'Nonpolar']"	L*	Norine		
+325	NtMe-Leu	N-trimethyl-leucine	NRPS	C9H20NO2			CC(C)CC(C(=O)O)N(C)(C)C	174.26059	"['Leu*', 'Nonpolar']"	L*	Norine		1
+326	k-Leu	keto-Leucine	unknown	C6H10O3	70	4-methyl-2-oxopentanoic acid	CC(C)CC(=O)C(=O)O	130.1418	"['Leu*', 'Nonpolar']"	L*	Norine		
+327	OAc-Leuol	O-acetyl-leucinol	NRPS	C8H17NO2	23037829	(2-amino-4-methylpentyl) acetate	CC(C)CC(N)COC(C)=O	159.22607	"['Leu*', 'Nonpolar']"	L*	Norine		
+328	3OH-Leu	3-hydroxyleucine	NRPS	C6H13NO3	134611	(2S)-2-amino-3-hydroxy-4-methylpentanoic acid	CC(C)C(O)C(N)C(=O)O	147.17233	"['Leu*', 'Nonpolar']"	L*	Norine		
+329	NdMe-Leu	N-dimethyl-leucine	NRPS	C8H17NO2	575134	2-dimethylamino-4-methylpentanoic acid	CC(C)CC(C(=O)O)N(C)C	159.22607	"['Leu*', 'Nonpolar']"	L*	Norine		
+330	NAc-Leu	N-acetyl-Leucine	unknown	C8H15NO3	70912	(2S)-2-acetamido-4-methylpentanoic acid	CC(C)CC(NC(C)=O)C(=O)O	173.2096	"['Leu*', 'Nonpolar']"	L*	Norine		
+331	Cl2-NMe-Leu	di-chloro-N-methyl-Leucine	unknown	C7H13Cl2NO2			CNC(CC(C)C(Cl)Cl)C(O)=O	214.08963	"['Leu*', 'Nonpolar']"	L*	Norine		
+332	Nva	Norvaline	NRPS	C5H11NO2	65098	(2S)-2-aminopentanoic acid	CCCC(N)C(=O)O	117.14634	"['Nva*', 'Nonpolar']"		Norine		
+333	D-Nva	D-Norvaline	unknown	C5H11NO2	439575	(2R)-2-aminopentanoic acid	CCCC(N)C(=O)O	117.14634	"['Nva*', 'Nonpolar']"		Norine		
+334	Et-Nva	alpha-ethylnorvaline	NRPS	C7H15NO2	518928	2-amino-3-ethylpentanoic acid	CCC(CC)C(N)C(=O)O	145.19951	"['Nva*', 'Nonpolar']"		Norine		
+335	D-NMe-Nva	D-N-methyl-norvaline	unknown	C6H13NO2	15677249	2-methylaminopentanoic acid	CCCC(NC)C(=O)O	131.17293	"['Nva*', 'Nonpolar']"		Norine		
+336	D-Val	D-Valine	NRPS	C5H11NO2	71563	(2R)-2-amino-3-methylbutanoic acid	CC(C)C(N)C(=O)O	117.14634	"['Val*', 'Nonpolar']"	V*	Norine		
+337	NOMe-Ac-Val	N-methoxyacetyl-valine	unknown	C8H15NO4	16771724	2-[(2-methoxyacetyl)amino]-3-methylbutanoic acid	COCC(=O)NC(C(C)C)C(=O)O	189.209	"['Val*', 'Nonpolar']"	V*	Norine		
+338	Valol	valinol	NRPS	C5H13NO	79019	2-amino-3-methylbutan-1-ol	CC(C)C(N)CO	103.16282	"['Val*', 'Nonpolar']"	V*	Norine		
+339	bOH-NMe-Val	beta-hydroxy-N-Methyl-Valine	NRPS	C6H13NO3	11029982	3-hydroxy-3-methyl-2-methylaminobutanoic acid	CNC(C(=O)O)C(C)(C)O	147.17233	"['Val*', 'Nonpolar']"	V*	Norine		
+340	D-NMe-Val	D-N-Methylvaline	NRPS	C6H13NO2	4378	3-methyl-2-methylaminobutanoic acid	CNC(C(C)C)C(=O)O	131.17293	"['Val*', 'Nonpolar']"	V*	Norine		
+341	NFo-Val	N-formyl-Valine	NRPS	C6H11NO3	6950945	(2S)-2-formamido-3-methylbutanoic acid	CC(C)C(NC=O)C(=O)O	145.15645	"['Val*', 'Nonpolar']"	V*	Norine		
+342	D-bOH-Val	D-beta-hydroxyvaline	NRPS	C5H11NO3	192763	(2S)-2-amino-3-hydroxy-3-methylbutanoic acid	CC(C)(O)C(N)C(=O)O	133.14574	"['Val*', 'Nonpolar']"	V*	Norine		
+343	Ac-Ival	N-acetyl-isovaline	NRPS	C7H13NO3	307926	2-acetamido-2-methylbutanoic acid	CCC(C)(NC(C)=O)C(=O)O	159.18303	"['Val*', 'Nonpolar']"	V*	Norine		
+344	Ivalol	isovalinol	NRPS	C5H13NO	10154017	2-amino-2-methylbutan-1-ol	CCC(C)(N)CO	103.16282	"['Val*', 'Nonpolar']"	V*	Norine		
+345	gOH-NMe-Val	gama-hydroxy-N-Methyl-Valine	NRPS	C6H13NO3	12439044	4-hydroxy-3-methyl-2-methylaminobutanoic acid	CNC(C(=O)O)C(C)CO	147.17233	"['Val*', 'Nonpolar']"	V*	Norine		
+346	D-Ival	D-isovaline	NRPS	C5H11NO2		(2R)-2-amino-2-methylbutanoic acid	CCC(C)(N)C(=O)O	117.14634	"['Val*', 'Nonpolar']"	V*	Norine		
+347	Ival	isovaline	NRPS	C5H11NO2	94744	2-amino-2-methylbutanoic acid	CCC(C)(N)C(=O)O	117.14634	"['Val*', 'Nonpolar']"	V*	Norine		
+348	Val	Valine	NRPS	C5H11NO2	6287	(2S)-2-amino-3-methylbutanoic acid	CC(C)C(N)C(=O)O	117.14634	"['Val*', 'Nonpolar']"	V	Norine	1	
+349	NMe-hv-Val	N-methyl homo vinylogous Valine	unknown	C9H17NO2			CNC(C=C(C)C(O)=O)C(C)C	171.23677	"['Val*', 'Nonpolar']"	V*	Norine		
+350	bOH-Val	beta-hydroxyvaline	NRPS	C5H11NO3	192763	(2S)-2-amino-3-hydroxy-3-methylbutanoic acid	CC(C)(O)C(N)C(=O)O	133.14574	"['Val*', 'Nonpolar']"	V*	Norine		
+351	Ac-Val	N-Acetylvaline	NRPS	C7H13NO3	227752	2-acetamido-3-methylbutanoic acid	CC(C)C(NC(C)=O)C(=O)O	159.18303	"['Val*', 'Nonpolar']"	V*	Norine		
+352	NMe-Val	N-Methyl-Valine	NRPS	C6H13NO2	4378	3-methyl-2-methylaminobutanoic acid	CNC(C(C)C)C(=O)O	131.17293	"['Val*', 'Nonpolar']"	V*	Norine		
+353	D-OH-Orn	D-N5-HydroxyOrnithine	NRPS	C5H12N2O3		2-amino-5-(hydroxyamino)pentanoic acid	NC(CCCNO)C(=O)O	148.16037	"['Orn*', 'Orn*']"		Norine		
+354	D-Ac-OH-Orn	D-N-acetyl-HydroxyOrnithine	NRPS	C7H14N2O4	4471904	5-(acetyl-hydroxyamino)-2-aminopentanoic acid	CC(=O)N(O)CCCC(N)C(=O)O	190.19707	"['Orn*', 'Orn*']"		Norine		
+355	D-OH-cOrn	D-Hydroxy-cycloOrnithine	NRPS	C5H10N2O2	18360061	3-amino-1-hydroxypiperidin-2-one	NC1CCCN(O)C1(=O)	130.1451	"['Orn*', 'Orn*']"		Norine		
+356	D-Orn	D-ornithine	NRPS	C5H12N2O2	71082	"(2R)-2,5-diaminopentanoic acid"	NCCCC(N)C(=O)O	132.16098	"['Orn*', 'Orn*']"		Norine		
+357	Fo-OH-Orn	N6-formyl-HydroxyOrnithine	NRPS	C6H12N2O4			NC(CCCN(O)C=O)C(=O)O	176.17047	"['Orn*', 'Orn*']"		Norine		
+358	D-Fo-OH-Orn	D-formyl-hydroxyOrnithine	NRPS	C6H12N2O4			NC(CCCN(O)C=O)C(=O)O	176.17047	"['Orn*', 'Orn*']"		Norine		
+359	Ac-OH-Orn	N-acetyl-HydroxyOrnithine	NRPS	C7H14N2O4	3881713	(2S)-5-(acetyl-hydroxyamino)-2-aminopentanoic acid	CC(=O)N(O)CCCC(N)C(=O)O	190.19707	"['Orn*', 'Orn*']"		Norine		
+360	NAc-Fo-OH-Orn	N-acetyl-N6-formyl-N6-hydroxyOrnithine	unknown	C8H14N2O5			CC(=O)NC(CCCN(O)C=O)C(=O)O	218.20717	"['Orn*', 'Orn*']"		Norine		
+361	OH-cOrn	Hydroxy-cycloOrnithine	NRPS	C5H10N2O2	18360061	3-amino-1-hydroxypiperidin-2-one	NC1CCCN(O)C1(=O)	130.1451	"['Orn*', 'Orn*']"		Norine		
+362	OH-Orn	N5-hydroxy ornithine	NRPS	C5H12N2O3	169671	(2S)-2-amino-5-(hydroxyamino)pentanoic acid	NC(CCCNO)C(=O)O	148.16037	"['Orn*', 'Orn*']"		Norine		
+363	Orn	Ornithine	NRPS	C5H12N2O2	6262	"(2S)-2,5-diaminopentanoic acid"	NCCCC(N)C(=O)O	132.16098	"['Orn*', 'Orn*']"		Norine		
+364	Hph	Homophenylalanine	NRPS	C10H13NO2	2724505	(2S)-2-amino-4-phenylbutanoic acid	NC(CCc1ccccc1)C(=O)O	179.21573	"['Phe*', 'Phe+Trp']"	F*	Norine		
+365	D-bPhe	D-beta-phenylalanine	NRPS	C9H11NO2	69189	3-amino-3-phenylpropanoic acid	NC(CC(=O)O)c1ccccc1	165.18913	"['Phe*', 'Phe+Trp']"	F*	Norine		
+366	bPhe	beta phenylalanine	NRPS	C9H11NO2	10386037	3-amino-3-phenylpropanoic acid	NC(CC(=O)O)c1ccccc1	165.18913	"['Phe*', 'Phe+Trp']"	F*	Norine		
+367	NMe-Phe	N-Methyl-Phenylalanine	NRPS	C10H13NO2	6427037	(2R)-2-methylamino-3-phenylpropanoic acid	CNC(Cc1ccccc1)C(=O)O	179.21573	"['Phe*', 'Phe+Trp']"	F*	Norine		
+368	bOH-NMe-Phe	beta-hydroxy-N-Methyl-Phenylalanine	NRPS	C10H13NO3	13683857	3-hydroxy-2-methylamino-3-phenylpropanoic acid	CNC(C(=O)O)C(O)c1ccccc1	195.21512	"['Phe*', 'Phe+Trp']"	F*	Norine		
+369	bOH-Br-Phe	beta-hydroxy-bromophenylalanine	unknown	C9H10BrNO3	23570533	2-amino-3-(4-bromophenyl)-3-hydroxypropanoic acid	NC(C(=O)O)C(O)c1ccc(cc1)Br	260.0846	"['Phe*', 'Phe+Trp']"	F*	Norine		
+370	NOMe-Ac-D-Phe	N-methoxyacetyl-D-phenylalanine	unknown	C12H15NO4	16774532	2-[(2-methoxyacetyl)amino]-3-phenylpropanoic acid	COCC(=O)NC(Cc1ccccc1)C(=O)O	237.2518	"['Phe*', 'Phe+Trp']"	F*	Norine		
+371	Ac-Phe	N-acetylphenylalanine	NRPS	C11H13NO3	74839	(2S)-2-acetamido-3-phenylpropanoic acid	CC(=O)NC(Cc1ccccc1)C(=O)O	207.22583	"['Phe*', 'Phe+Trp']"	F*	Norine		
+372	3Me-Phe	3-methylphenylalanine	NRPS	C10H13NO2	2761494	(2S)-2-amino-3-(3-methylphenyl)propanoic acid	Cc1cccc(c1)CC(N)C(=O)O	179.21573	"['Phe*', 'Phe+Trp']"	F*	Norine		
+373	NMe-dPhe	"N-methyl-2,3-dehydrophenylalanine"	NRPS	C10H11NO2			CNC(=Cc1ccccc1)C(O)=O	177.19984	"['Phe*', 'Phe+Trp']"	F*	Norine		
+374	bMe-Br-Phe	beta-methyl-bromophenylalanine	unknown	C10H12BrNO2			CC(C(N)C(=O)O)c1ccc(cc1)Br	258.1118	"['Phe*', 'Phe+Trp']"	F*	Norine		
+375	Pheol	phenylalaninol	NRPS	C9H13NO	447213	(2S)-2-amino-3-phenylpropan-1-ol	NC(CO)Cc1ccccc1	151.20563	"['Phe*', 'Phe+Trp']"	F*	Norine		
+376	bMe-Phe	beta-methyl-phenylalanine		C10H13NO2			CC(C(N)C(=O)O)c1ccccc1	179.2291	"['Phe*', 'Phe+Trp']"	F*	Norine		
+377	Phe	Phenylalanine	NRPS	C9H11NO2	6140	(2S)-2-amino-3-phenylpropanoic acid	NC(Cc1ccccc1)C(=O)O	165.18913	"['Phe*', 'Phe+Trp']"	F	Norine	1	
+378	diOH-Phe	"3,4-dihydroxyphenylalanine"	unknown	C9H11NO4	836	"2-amino-3-(3,4-dihydroxyphenyl)propanoic acid"	NC(Cc1ccc(O)c(O)c1)C(=O)O	197.18794	"['Phe*', 'Phe+Trp']"	F*	Norine		
+379	NMe-Me2A-Phe	N-methyl-4-dimethylamino-phenylalanine	NRPS	C12H18N2O2			CNC(Cc1ccc(cc1)N(C)C)C(=O)O	222.28351	"['Phe*', 'Phe+Trp']"	F*	Norine		
+380	Br-Phe	bromophenylalanine	unknown	C9H10BrNO2	85681	2-amino-3-(4-bromophenyl)propanoic acid	NC(Cc1ccc(cc1)Br)C(=O)O	244.0852	"['Phe*', 'Phe+Trp']"	F*	Norine		
+381	D-NMe-Phe	D-N-Methyl-Phenylalanine	unknown	C10H13NO2	4657542	2-methylamino-3-phenylpropanoic acid	CNC(Cc1ccccc1)C(=O)O	179.21573	"['Phe*', 'Phe+Trp']"	F*	Norine		
+382	NMe-MeA-Phe	N-methyl-4-methylamino-phenylalanine	NRPS	C11H16N2O2	21137790	2-methylamino-3-(4-methylaminophenyl)propanoic acid	CNc1ccc(cc1)CC(NC)C(=O)O	208.25694	"['Phe*', 'Phe+Trp']"	F*	Norine		
+383	D-Phe	D-Phenylalanine	NRPS	C9H11NO2	71567	(2R)-2-amino-3-phenylpropanoic acid	NC(Cc1ccccc1)C(=O)O	165.18913	"['Phe*', 'Phe+Trp']"	F*	Norine		
+384	NMe-Br-Trp	N-methyl-2-Bromo-tryptophan	NRPS	C12H13BrN2O2			CNC(Cc1c2ccccc2([nH]c1Br))C(=O)O	297.14783	"['Trp*', 'Phe+Trp']"	W*	Norine		
+385	NMe-Cl-Trp	N-methyl-6-chloro-tryptophan	unknown	C12H13ClN2O2			CNC(Cc1c[nH]c2cc(ccc12)Cl)C(=O)O	252.69682	"['Trp*', 'Phe+Trp']"	W*	Norine		
+386	D-Cl-Trp	D-6_-chloro-tryptophan	unknown	C11H11ClN2O2	65259	6-chloro-DL-tryptophan	NC(Cc1c[nH]c2cc(ccc12)Cl)C(=O)O	238.67024	"['Trp*', 'Phe+Trp']"	W*	Norine		
+387	bbNMe-NMe-Trp	"beta,beta,N1,N-tetramethyltryptophan"	unknown	C15H20N2O2			CNC(C(O)=O)C(C)(C)c2cn(C)c1ccccc12	260.3315	"['Trp*', 'Phe+Trp']"	W*	Norine		
+388	Trp	Tryptophan	NRPS	C11H12N2O2	6305	(2S)-2-amino-3-(1H-indol-3-yl)propanoic acid	NC(Cc1c[nH]c2ccccc12)C(=O)O	204.22517	"['Trp*', 'Phe+Trp']"	W	Norine	1	
+389	Ac-Trp	N-acetyltryptophan	NRPS	C13H14N2O3	2002	2-acetamido-3-(1H-indol-3-yl)propanoic acid	CC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O	246.26186	"['Trp*', 'Phe+Trp']"	W*	Norine		
+390	pTrp	phototryptophan	unknown	C11H12N2O3	10331043	"8b-hydroxy-2,3,3a,4-tetrahydro-1H-pyrrolo[5,4-b]indole-2-carboxylic acid"	O=C(O)C1CC2(O)(c3ccccc3(NC2(N1)))	220.22458	"['Trp*', 'Phe+Trp']"	W*	Norine		
+391	OMe-Trp	methoxytryptophan	NRPS	C12H14N2O3			COn2cc(CC(N)C(=O)O)c1ccccc12	234.25116	"['Trp*', 'Phe+Trp']"	W*	Norine		
+392	OH-Trp	5-hydroxytryptophan	unknown	C11H12N2O3	144	2-amino-3-(5-hydroxy-1H-indol-3-yl)propanoic acid	NC(Cc1c[nH]c2ccc(O)cc12)C(=O)O	220.22458	"['Trp*', 'Phe+Trp']"	W*	Norine		
+393	D-Trp	D-Tryptophan	NRPS	C11H12N2O2	9060	(2R)-2-amino-3-(1H-indol-3-yl)propanoic acid	NC(Cc1c[nH]c2ccccc12)C(=O)O	204.22517	"['Trp*', 'Phe+Trp']"	W*	Norine		
+394	Trpol	tryptophanol	NRPS	C11H14N2O	6951149	(2S)-2-amino-3-(1H-indol-3-yl)propan-1-ol	NC(CO)Cc1c[nH]c2ccccc12	190.24167	"['Trp*', 'Phe+Trp']"	W*	Norine		
+395	N1-COOH-bhTrp	N1-carboxy-bichomotryptophan	unknown	C14H16N2O4			NC(CCCc1cn(C(=O)O)c2ccccc12)C(=O)O	276.28787	"['Trp*', 'Phe+Trp']"	W*	Norine		
+396	dh-Trp	"2,3-Dehydro-Tryptophan"	NRPS	C11H10N2O2	441158	2-amino-3-(1H-indol-3-yl)prop-2-enoic acid	NC(=Cc1c[nH]c2ccccc12)C(=O)O	202.2093	"['Trp*', 'Phe+Trp']"	W*	Norine		
+397	1Me-Trp	N1-methyl-tryptophan	unknown	C12H14N2O2	98112	2-amino-3-(1-methylindol-3-yl)propanoic acid	Cn2cc(CC(N)C(=O)O)c1ccccc12	218.25175	"['Trp*', 'Phe+Trp']"	W*	Norine		
+398	NMe-OH-Trp	N-methyl-5-hydroxytryptophan	unknown	C12H14N2O3			CNC(Cc1c[nH]c2ccc(O)cc12)C(=O)O	234.25116	"['Trp*', 'Phe+Trp']"	W*	Norine		
+399	D-Cl-CONH2-Trp	D-6-chloro-N2-formamidotryptophan	unknown	C12H12ClN3O3			NC(=O)n2cc(CC(N)C(O)=O)c1ccc(cc12)Cl	281.69498	"['Trp*', 'Phe+Trp']"	W*	Norine		
+400	Br-OH-Trp	2-bromo-5-hydroxytryptophan	unknown	C11H11BrN2O3			NC(Cc1c2cc(O)ccc2([nH]c1Br))C(=O)O	299.12064	"['Trp*', 'Phe+Trp']"	W*	Norine		
+401	Br-Trp	5-bromo-tryptophan	unknown	C11H11BrN2O2	96735	2-amino-3-(5-bromo-1H-indol-3-yl)propanoic acid	NC(Cc1c[nH]c2ccc(cc12)Br)C(=O)O	283.12125	"['Trp*', 'Phe+Trp']"	W*	Norine		
+402	bbMe-NMe-Trp	"beta,beta,N-trimethyltryptophan"	unknown	C14H18N2O2			CNC(C(O)=O)C(C)(C)c2c[nH]c1ccccc12	246.30493	"['Trp*', 'Phe+Trp']"	W*	Norine		
+403	D-COOH-Trp	D-2-carboxy-tryptophan	unknown	C12H12N2O4			NC(Cc1c2ccccc2([nH]c1(C(=O)O)))C(O)=O	248.23468	"['Trp*', 'Phe+Trp']"	W*	Norine		
+404	NMe-Cl-OH-Trp	N-methyl-6-chloro-5-hydroxytryptophan	unknown	C12H13ClN2O3			CNC(Cc1c[nH]c2cc(c(O)cc12)Cl)C(=O)O	268.69623	"['Trp*', 'Phe+Trp']"	W*	Norine		
+405	CFA	coronafacic acid	PKS	C12H16O3	114969	"(3aS,6R,7aS)-6-ethyl-1-oxo-2,3,3a,6,7,7a-hexahydroindene-4-carboxylic acid"	CCC1C=C(C(=O)O)C2CCC(=O)C2(C1)	208.25365	"['PKS', 'PKS']"		Norine		
+406	Adda	"3-amino-9-methoxy-2,6,8-trimethyl-10-phenyldeca-4,6-dienoic acid"	PKS	C20H29NO3	4478472	"(2S,3S,4E,6E,8S,9S)-3-amino-9-methoxy-2,6,8-trimethyl-10-phenyldeca-4,6-dienoic acid"	COC(Cc1ccccc1)C(C)C=C(C)C=CC(N)C(C)C(=O)O	331.4492	"['PKS', 'PKS']"		Norine		
+407	Me-Suc	methyl-succinimide	PKS	C5H7NO2	138540	"3-methylpyrrolidine-2,5-dione"	CC1CC(=O)NC1(=O)	113.11458	"['PKS', 'PKS']"		Norine		
+408	ADMAdda	O-Acetyl-O-demethylAdda.	PKS	C21H29NO4			CC(C=CC(N)C(C)C(O)=O)=CC(C)C(Cc1ccccc1)OC(C)=O	359.45926	"['PKS', 'PKS']"		Norine		
+409	C8:3(t2.t4.t6)	"trans2,trans4,trans6-trioctaneic acid"	PKS	C8H10O2	95509	"octa-2,4,6-trienoic acid"	CC=CC=CC=CC(=O)O	138.1638	"['PKS', 'PKS']"		Norine		
+410	DMAdda	O-demethyl-Adda	PKS	C19H27NO3			CC(C=CC(N)C(C)C(O)=O)=CC(C)C(O)Cc1ccccc1	317.4226	"['PKS', 'PKS']"		Norine		
+411	C6:2(t2.t4)	"trans2,trans4-dihexaneic acid"	PKS	C6H8O2	5251	"hexa-2,4-dienoic acid"	CC=CC=CC(=O)O	112.126526	"['PKS', 'PKS']"		Norine		
+412	Pyr	pyrrolidone	unknown	C4H7NO	12025	pyrrolidin-2-one	O=C1CCCN1	85.10448	"['Pyr*', 'Pyr*']"		Norine		
+413	Pya	pyruvate	unknown	C3H4O3	1060	2-oxopropanoic acid	CC(=O)C(=O)O	88.062065	"['Pyr*', 'Pyr*']"		Norine		
+414	OH-Pyr	hydroxy pyrrolidone	unknown	C4H7NO2	155084	(4S)-4-hydroxypyrrolidin-2-one	OC1CNC(=O)C1	101.10388	"['Pyr*', 'Pyr*']"		Norine		
+415	dPyr	dehydropyrrolidone	unknown	C6H8N2O3			NC1CC(=O)NC1(=CC(=O)O)	156.13933	"['Pyr*', 'Pyr*']"		Norine		
+416	Dpy	Dolapyrrolidone	unknown	C12H13NO2	10560074	"4-methoxy-5-(phenylmethyl)-1,5-dihydropyrrol-2-one"	COC2=CC(=O)NC2(Cc1ccccc1)	203.23712	"['Pyr*', 'Pyr*']"		Norine		
+417	Spd	spermidine	unknown	C7H19N3	1102	"N-(3-aminopropyl)butane-1,4-diamine"	NCCCCNCCCN	145.24586	"['Spd*', 'Spd*']"		Norine		
+418	GSpd	guanylspermidine	unknown	C8H21N5	541551	2-[3-(4-aminobutylamino)propyl]guanidine	NCCCNCCCCN=C(N)N	187.28586	"['Spd*', 'Spd*']"		Norine		
+419	NSpd	norspermidine	other	C6H17N3	5942	"N-(3-aminopropyl)propane-1,3-diamine"	NCCCNCCCN	131.21928	"['Spd*', 'Spd*']"		Norine		
+420	Sta	statine	unknown	C8H17NO3	3387569	4-amino-3-hydroxy-6-methylheptanoic acid	CC(C)CC(N)C(O)CC(=O)O	175.22548	"['Sta*', 'Sta*']"		Norine		
+421	Nst	norstatine	unknown	C7H15NO3	173844	3-amino-2-hydroxy-5-methylhexanoic acid	CC(C)CC(N)C(O)C(=O)O	161.1989	"['Sta*', 'Sta*']"		Norine		
+422	Ist	isostatine	unknown	C8H17NO3	14428564	4-amino-3-hydroxy-5-methylheptanoic acid	CCC(C)C(N)C(O)CC(=O)O	175.22548	"['Sta*', 'Sta*']"		Norine		
+423	aThr	allo-Threonine	NRPS	C4H9NO3	99289	"(2S,3S)-2-amino-3-hydroxybutanoic acid"	CC(O)C(N)C(=O)O	119.119156	"['Thr*', 'Thr*']"	T*	Norine		
+424	D-Thr	D-Threonine	NRPS	C4H9NO3	69435	"(2R,3S)-2-amino-3-hydroxybutanoic acid"	CC(O)C(N)C(=O)O	119.119156	"['Thr*', 'Thr*']"	T*	Norine		
+425	4OH-Thr	4-Hydroxythreonine	NRPS	C4H9NO4	193577	"(2S,3S)-2-amino-3,4-dihydroxybutanoic acid"	NC(C(=O)O)C(O)CO	135.11856	"['Thr*', 'Thr*']"	T*	Norine		
+426	NMe-Thr	N-methylthreonine	NRPS	C5H11NO3	21252500	3-hydroxy-2-methylaminobutanoic acid	CNC(C(C)O)C(=O)O	133.14574	"['Thr*', 'Thr*']"	T*	Norine		
+427	D-aThr	D-allo-Threonine	NRPS	C4H9NO3	90624	"(2R,3R)-2-amino-3-hydroxybutanoic acid"	CC(O)C(N)C(=O)O	119.119156	"['Thr*', 'Thr*']"	T*	Norine		
+428	4Cl-Thr	4-Chloro-Threonine	NRPS	C4H8ClNO3	5460796	"(2S,3S)-2-amino-4-chloro-3-hydroxybutanoic acid"	NC(C(=O)O)C(O)CCl	153.56422	"['Thr*', 'Thr*']"	T*	Norine		
+429	Thr	Threonine	NRPS	C4H9NO3	6288	"(2S,3R)-2-amino-3-hydroxybutanoic acid"	CC(O)C(N)C(=O)O	119.119156	"['Thr*', 'Thr*']"	T	Norine	1	
+430	OMe-Thr	O-methyl-threonine	NRPS	C5H11NO3	2724875	"(2S,3R)-2-amino-3-methoxybutanoic acid"	COC(C)C(N)C(=O)O	133.14574	"['Thr*', 'Thr*']"	T*	Norine		
+431	OMe-bAla-Thz	1-methoxy-beta-alanine-thiazole	NRPS	C7H10N2O2S			COC(=O)CC(N)c1nccs1	186.23152	"['Thz*', 'Thz*']"		Norine		
+432	Pro-Thz	proline-thiazole	unknown	C7H10N2S	3358090	"2-(pyrrolidin-2-yl)-1,3-thiazole"	C1CNC(C1)c2nccs2	154.233	"['Thz*', 'Thz*']"		Norine		
+433	Ala-Thz	Alanine-thiazole	unknown	C6H8N2O2S	24274385	"2-(1-aminoethyl)-1,3-thiazole-4-carboxylic acid"	CC(N)c1nc(cs1)C(=O)O	172.20493	"['Thz*', 'Thz*']"		Norine		
+434	NMe-Gly-Thz	N-Methyl-Glycine-thiazole	unknown	C5H8N2S	18939834	"N-methyl-1-(1,3-thiazol-2-yl)methanamine"	CNCc1nccs1	128.19542	"['Thz*', 'Thz*']"		Norine		
+435	Phe-Thz	thiazolylphenylalanine	unknown	C12H12N2O2S			NC(Cc1ccccc1)c2nc(cs2)C(O)=O	248.30087	"['Thz*', 'Thz*']"		Norine		
+436	Apv	alpha-amino-phenyl-valeric acid	NRPS	C11H15NO2	296866	2-amino-5-phenylpentanoic acid	NC(CCCc1ccccc1)C(=O)O	193.2423	"['Vaa*', 'Vaa*']"		Norine		
+437	C5:0-NH2(3)	3-amino-pentanoic acid	unknown	C5H11NO2	14731978	3-aminopentanoic acid	CCC(N)CC(=O)O	117.14634	"['Vaa*', 'Vaa*']"		Norine		
+438	Amv	alpha-amino-methoxyphenyl-valeric acid	NRPS	C12H17NO3	11506835	2-amino-5-(4-methoxyphenyl)pentanoic acid	COc1ccc(CCCC(N)C(=O)O)cc1	223.26828	"['Vaa*', 'Vaa*']"		Norine		
+439	Me-Vaa	3-methylvaleric acid	unknown	C6H12O2	7755	3-methylpentanoic acid	CCC(C)CC(=O)O	116.15829	"['Vaa*', 'Vaa*']"		Norine		
+440	4Me-Hva	"2-hydroxy-4-methylpentanoic acid, 2-hydroxy-4-methylvaleric acid"		C6H12O3	92779	2-hydroxy-4-methylpentanoic acid	CC(C)CC(O)C(=O)O	132.078644	"['Vaa*', 'Vaa*']"		Norine		
+441	Ahv	alpha-amino-hydroxyphenyl-valeric acid	NRPS	C11H15NO3			NC(CCCc1ccc(O)cc1)C(=O)O	209.2417	"['Vaa*', 'Vaa*']"		Norine		
+442	D-Hmp	D-2-hydroxy-3-methylpentanoic acid	NRPS	C6H12O3	164623	2-hydroxy-3-methylpentanoic acid	CCC(C)C(O)C(=O)O	132.15768	"['Vaa*', 'Vaa*']"		Norine		
+443	OSu-Hmp	O-sulfate-2-hydroxy-3-methylpentanoic acid	unknown	C6H12O6S			CCC(C)C(OS(=O)(=O)O)C(=O)O	212.22089	"['Vaa*', 'Vaa*']"		Norine		
+444	4Me-D-Hva	"4-Methyl-D-2-hydroxy-valeric acid, 4-Methyl-D-2-hydroxy-pentanoic acid"	NRPS	C6H12O3			CC(C)CC(O)C(=O)O	132.15768	"['Vaa*', 'Vaa*']"		Norine		
+445	Hmp	2-hydroxy-3-methyl-pentanoic acid	NRPS	C6H12O3	164623	2-hydroxy-3-methylpentanoic acid	CCC(C)C(O)C(=O)O	132.15768	"['Vaa*', 'Vaa*']"		Norine		
+446	v-Arg	vinylogous arginine	unknown	C8H16N4O2			N=C(N)NCCCC(N)C=CC(=O)O	200.23824	"['Arg*', 'XArg']"	R*	Norine		
+447	D-Arg	D-Arginine	NRPS	C6H14N4O2	71070	(2R)-2-amino-5-(diaminomethylideneamino)pentanoic acid	NC(N)=NCCCC(N)C(=O)O	174.20096	"['Arg*', 'XArg']"	R*	Norine		
+448	ck-Arg	cyclo alpha-ketoarginine	unknown	C7H12N4O2			NC1CCCN2C(=N)NC(=O)C12(O)	184.19579	"['Arg*', 'XArg']"	R*	Norine		
+449	Argal	arginal	unknown	C6H14N4O	19919009	2-(4-amino-5-oxopentyl)guanidine	NC(N)=NCCCC(N)C=O	158.20155	"['Arg*', 'XArg']"	R*	Norine		
+450	Arg	Arginine	NRPS	C6H14N4O2	6322	(2S)-2-amino-5-(diaminomethylideneamino)pentanoic acid	N[C@@H](CCCNC(=N)N)C(=O)O	174.20096	"['Arg*', 'XArg']"	R	Norine	1	
+451	diOH-Arg	"3,4-dihydroxyArginine"	unknown	C6H14N4O4			NC(N)=NCC(O)C(O)C(N)C(O)=O	206.19975	"['Arg*', 'XArg']"	R*	Norine		
+452	hk-Arg	hydrated alpha-ketoarginine	unknown	C7H16N4O3			N=C(N)NCCCC(N)C(O)C(=O)O	204.22694	"['Arg*', 'XArg']"	R*	Norine		
+453	k-Arg	alpha-ketoarginine	unknown	C7H14N4O3			N=C(N)NCCCC(N)C(=O)C(=O)O	202.21106	"['Arg*', 'XArg']"	R*	Norine		
+454	D-Har	D-homoarginine	unknown	C7H12N4O3	59108	6-(cyano-nitrosoamino)-2-hydroxyhexanamide	N#CN(CCCCC(O)C(N)=O)N=O	200.19518	"['Har*', 'XArg']"	R*	Norine		
+455	Har	homoarginine	NRPS	C7H16N4O2	9085	(2S)-2-amino-6-(diaminomethylideneamino)hexanoic acid	NC(N)=NCCCCC(N)C(=O)O	188.22755	"['Har*', 'XArg']"	R*	Norine		
+456	4oxo-Hpr	4-oxo-homoproline	NRPS	C6H9NO3		(S)-4-OXO-PIPERIDINE-2-CARBOXYLIC ACID	O=C1CCNC(C1)C(=O)O	143.14056	"['Hpr*', 'XPro']"	P*	Norine		
+457	Hpr	homoproline	NRPS	C6H11NO2	439227	(2S)-piperidine-2-carboxylic acid	O=C(O)C1CCCCN1	129.15704	"['Hpr*', 'XPro']"	P*	Norine		
+458	D-Hpr	D-homoproline	NRPS	C6H11NO2	736316	(2R)-piperidine-2-carboxylic acid	O=C(O)C1CCCCN1	129.15704	"['Hpr*', 'XPro']"	P*	Norine		
+459	4oxo-5Me-Pro	4-oxo-5-methylproline	NRPS	C6H9NO3	3316607	5-methyl-4-oxopyrrolidine-2-carboxylic acid	CC1NC(CC1(=O))C(=O)O	143.14056	"['Pro*', 'XPro']"	P*	Norine		
+460	NFo-Pro	N-Formyl-Proline	NRPS	C6H9NO3	116310	1-formylpyrrolidine-2-carboxylic acid	O=CN1CCCC1(C(=O)O)	143.14056	"['Pro*', 'XPro']"	P*	Norine		
+461	4oxo-Pro	4-oxo-proline	NRPS	C5H7NO3	107541	(2S)-4-oxopyrrolidine-2-carboxylic acid	O=C1CNC(C1)C(=O)O	129.11398	"['Pro*', 'XPro']"	P*	Norine		
+462	5Me-Pro	5-methylproline	NRPS	C6H11NO2	3734743	5-methylpyrrolidine-2-carboxylic acid	CC1CCC(N1)C(=O)O	129.15704	"['Pro*', 'XPro']"	P*	Norine		
+463	D-Pro	D-Proline	NRPS	C5H9NO2	213262	(2R)-pyrrolidine-2-carboxylic acid	O=C(O)C1CCCN1	115.13046	"['Pro*', 'XPro']"	P*	Norine		
+464	Pro	Proline	NRPS	C5H9NO2	145742	(2S)-pyrrolidine-2-carboxylic acid	O=C(O)C1CCCN1	115.13046	"['Pro*', 'XPro']"	P	Norine	1	
+465	Ac-Pro	acetylproline	NRPS	C7H11NO3	322640	1-acetylpyrrolidine-2-carboxylic acid	CC(=O)N1CCCC1(C(=O)O)	157.16714	"['Pro*', 'XPro']"	P*	Norine		
+466	D-4OH-Pro	D-hydroxyproline	unknown	C5H9NO3	440014	"(2R,4R)-4-hydroxypyrrolidine-2-carboxylic acid"	OC1CNC(C1)C(=O)O	131.12985	"['Pro*', 'XPro']"	P*	Norine		
+467	3OH-Pro	3-Hydroxyproline	NRPS	C5H9NO3	728306	(2S)-3-hydroxypyrrolidine-2-carboxylic acid	O=C(O)C1NCCC1(O)	131.12985	"['Pro*', 'XPro']"	P*	Norine		
+468	ProC	proline carboxamid	NRPS	C5H10N2O	550774	(2S)-pyrrolidine-2-carboxamide	NC(=O)C1CCCN1	114.1457	"['Pro*', 'XPro']"	P*	Norine		
+469	3OH-5Me-Pro	3-Hydroxy-5-methylproline	NRPS	C6H11NO3	768844	"(2S,3S,5S)-3-hydroxy-5-methylpyrrolidine-2-carboxylic acid"	CC1CC(O)C(N1)C(=O)O	145.15645	"['Pro*', 'XPro']"	P*	Norine		
+470	3Me-Pro	3-methylproline	NRPS	C6H11NO2	3141166	"(2S,3S)-3-methylpyrrolidine-2-carboxylic acid"	CC1CCNC1(C(=O)O)	129.15704	"['Pro*', 'XPro']"	P*	Norine		
+471	Cl2-Pro	"3,4-dichloro-proline"	unknown	C5H7Cl2NO2	21295133	"3,4-dichloropyrrolidine-2-carboxylic acid"	O=C(O)C1NCC(C1Cl)Cl	184.02057	"['Pro*', 'XPro']"	P*	Norine		
+472	4OH-Pro	4-Hydroxyproline	NRPS	C5H9NO3	5810	"(2S,4R)-4-hydroxypyrrolidine-2-carboxylic acid"	OC1CNC(C1)C(=O)O	131.12985	"['Pro*', 'XPro']"	P*	Norine		
+473	4Me-Pro	4-methylproline	NRPS	C6H11NO2	10365019	4-methylpyrrolidine-2-carboxylic acid	CC1CNC(C1)C(=O)O	129.15704	"['Pro*', 'XPro']"	P*	Norine		
+474	D-Hse	D-Homoserine	NRPS	C4H9NO3	2724170	(2R)-2-amino-4-hydroxybutanoic acid	NC(CCO)C(=O)O	119.119156	"['Hse*', 'XSer']"	S*	Norine		
+475	Hse	Homoserine	NRPS	C4H9NO3	12647	(2S)-2-amino-4-hydroxybutanoic acid	NC(CCO)C(=O)O	119.119156	"['Hse*', 'XSer']"	S*	Norine		
+476	Ser	Serine	NRPS	C3H7NO3	5951	(2S)-2-amino-3-hydroxypropanoic acid	NC(CO)C(=O)O	105.09258	"['Ser*', 'XSer']"	S	Norine	1	
+477	NMe-Ser	N-Methyl-Serine	NRPS	C4H9NO3	10358101	3-hydroxy-2-methylaminopropanoic acid	CNC(CO)C(=O)O	119.119156	"['Ser*', 'XSer']"	S*	Norine		
+478	NFo-Iser	N-formyl-isoserine	unknown	C4H7NO4			O=CNCC(O)C(=O)O	133.10269	"['Ser*', 'XSer']"	S*	Norine		
+479	D-Ser	D-Serine	NRPS	C3H7NO3	71077	(2R)-2-amino-3-hydroxypropanoic acid	NC(CO)C(=O)O	105.09258	"['Ser*', 'XSer']"	S*	Norine		
+480	Ph-Ser	phenylserine	unknown	C9H11NO3	73562	"(2S,3S)-2-amino-3-hydroxy-3-phenylpropanoic acid"	NC(C(=O)O)C(O)c1ccccc1	181.18854	"['Ser*', 'XSer']"	S*	Norine		
+481	Iser	isoserine	unknown	C3H7NO3	6999797	(2S)-3-amino-2-hydroxypropanoic acid	NCC(O)C(=O)O	105.09258	"['Ser*', 'XSer']"	S*	Norine		
+482	gSer	alpha-guanidino Serine	unknown	C3H8N4O3			N=C(N)NC(N)(O)C(=O)O	148.12062	"['Ser*', 'XSer']"	S*	Norine		
+483	D-NMe-Ser	N-Methyl-D-Serine	NRPS	C4H9NO3		3-hydroxy-2-methylaminopropanoic acid	CNC(CO)C(=O)O	119.119156	"['Ser*', 'XSer']"	S*	Norine		
+484	Ac-Ser	O-acetyl-Serine	NRPS	C5H9NO4	99478	(2S)-3-acetyloxy-2-aminopropanoic acid	CC(=O)OCC(N)C(=O)O	147.12926	"['Ser*', 'XSer']"	S*	Norine		
+485	Serol	Serinol	NRPS	C3H9NO2	68294	"2-aminopropane-1,3-diol"	NC(CO)CO	91.109055	"['Ser*', 'XSer']"	S*	Norine		
+486	NMe-Hty	N-methyl-homotyrosine	NRPS	C11H15NO3			CNC(CCc1ccc(O)cc1)C(=O)O	209.2417	"['Hty*', 'XTyr']"	Y*	Norine		
+487	Hty	Homotyrosine	NRPS	C10H13NO3	4153395	2-amino-4-(4-hydroxyphenyl)butanoic acid	NC(CCc1ccc(O)cc1)C(=O)O	195.21512	"['Hty*', 'XTyr']"	Y*	Norine		
+488	3Me-Hty	3-methyl-homotyrosine	NRPS	C11H15NO3			CC(Cc1ccc(O)cc1)C(N)C(=O)O	209.2417	"['Hty*', 'XTyr']"	Y*	Norine		
+489	Cl-Tyr	chloro-tyrosine	NRPS	C9H10ClNO3	119226	2-amino-3-(3-chloro-4-hydroxyphenyl)propanoic acid	NC(Cc1ccc(O)c(c1)Cl)C(=O)O	215.6336	"['Tyr*', 'XTyr']"	Y*	Norine		
+490	D-Cl-NMe-Tyr	D-3-chloro-N-methyl-Tyrosine	unknown	C10H12ClNO3			CNC(Cc1ccc(O)c(c1)Cl)C(=O)O	229.66017	"['Tyr*', 'XTyr']"	Y*	Norine		
+491	D-I-NMe-Tyr	D-3-iodo-N-methyl-Tyrosine	unknown	C10H12INO3			CNC(Cc1ccc(O)c(c1)I)C(=O)O	321.11163	"['Tyr*', 'XTyr']"	Y*	Norine		
+492	bTyr	beta-tyrosine	NRPS	C9H11NO3	440311	3-amino-3-(4-hydroxyphenyl)propanoic acid	NC(CC(=O)O)c1ccc(O)cc1	181.18854	"['Tyr*', 'XTyr']"	Y*	Norine		
+493	Br-Tyr	bromotyrosine	unknown	C9H10BrNO3	148708	2-amino-3-(3-bromo-4-hydroxyphenyl)propanoic acid	NC(Cc1ccc(O)c(c1)Br)C(=O)O	260.0846	"['Tyr*', 'XTyr']"	Y*	Norine		
+494	D-NMe-OMe-Tyr	"D-N,O-dimethyl-tyrosine"	unknown	C11H15NO3	18925327	3-(4-methoxyphenyl)-2-methylaminopropanoic acid	CNC(Cc1ccc(cc1)OC)C(=O)O	209.2417	"['Tyr*', 'XTyr']"	Y*	Norine		
+495	bOMe-Tyr	beta-methoxy-tyrosine	unknown	C10H13NO4	23143915	2-amino-3-(4-hydroxyphenyl)-3-methoxypropanoic acid	COC(C(N)C(=O)O)c1ccc(O)cc1	211.21452	"['Tyr*', 'XTyr']"	Y*	Norine		
+496	D-Tyr	D-Tyrosine	NRPS	C9H11NO3	71098	(2R)-2-amino-3-(4-hydroxyphenyl)propanoic acid	NC(Cc1ccc(O)cc1)C(=O)O	181.18854	"['Tyr*', 'XTyr']"	Y*	Norine		
+497	dv-Tyr	dehydro vinylogous tyrosine	unknown	C11H11NO3			NC(C=CC(=O)O)=Cc1ccc(O)cc1	205.20995	"['Tyr*', 'XTyr']"	Y*	Norine		
+498	bOH-Tyr	beta-hydroxy-tyrosine	NRPS	C9H11NO4	13309269	2-amino-3-hydroxy-3-(4-hydroxyphenyl)propanoic acid	NC(C(=O)O)C(O)c1ccc(O)cc1	197.18794	"['Tyr*', 'XTyr']"	Y*	Norine		
+499	e-Tyr	ethylene inserted tyrosine	unknown	C11H15NO3			NC(CCC(=O)O)Cc1ccc(O)cc1	209.2417	"['Tyr*', 'XTyr']"	Y*	Norine		
+500	bOH-Cl-Tyr	beta-hydroxy-chloro-tyrosine	NRPS	C9H10ClNO4	19383048	2-amino-3-(3-chloro-4-hydroxyphenyl)-3-hydroxypropanoic acid	NC(C(=O)O)C(O)c1ccc(O)c(c1)Cl	231.63301	"['Tyr*', 'XTyr']"	Y*	Norine		
+501	Tyr	Tyrosine	NRPS	C9H11NO3	6057	(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid	NC(Cc1ccc(O)cc1)C(=O)O	181.18854	"['Tyr*', 'XTyr']"	Y	Norine	1	
+502	v-OH-Tyr	vinylogous hydroxy tyrosine	unknown	C11H13NO4			NC(C=CC(=O)O)Cc1ccc(O)c(O)c1	223.22523	"['Tyr*', 'XTyr']"	Y*	Norine		
+503	v-Tyr	vinylogous tyrosine	unknown	C11H13NO3			NC(C=CC(=O)O)Cc1ccc(O)cc1	207.22583	"['Tyr*', 'XTyr']"	Y*	Norine		
+504	NMe-OMe-Tyr	"N,O-dimethyl-tyrosine"	NRPS	C11H15NO3	18925327	3-(4-methoxyphenyl)-2-methylaminopropanoic acid	CNC(Cc1ccc(cc1)OC)C(=O)O	209.2417	"['Tyr*', 'XTyr']"	Y*	Norine		
+505	NMe-OMe-TyrC	"N,O-dimethyl-tyrosinecarboxamid"	unknown	C11H16N2O2	19003692	3-(4-methoxyphenyl)-2-methylaminopropanamide	CNC(Cc1ccc(cc1)OC)C(N)=O	208.25694	"['Tyr*', 'XTyr']"	Y*	Norine		
+506	NMe-Tyr	N-methyltyrosine	NRPS	C10H13NO3	210432	(2S)-3-(4-hydroxyphenyl)-2-methylaminopropanoic acid	CNC(Cc1ccc(O)cc1)C(=O)O	195.21512	"['Tyr*', 'XTyr']"	Y*	Norine		
+507	3NO2-Tyr	3-nitrotyrosine	NRPS	C9H10N2O5	235719	2-amino-3-(4-hydroxy-3-nitrophenyl)propanoic acid	NC(Cc1ccc(O)c(c1)[N+](=O)[O-])C(=O)O	226.1861	"['Tyr*', 'XTyr']"	Y*	Norine		
+508	D-Br-NMe-Tyr	D-3-bromo-N-methyl-Tyrosine	unknown	C10H12BrNO3			CNC(Cc1ccc(O)c(c1)Br)C(=O)O	274.11118	"['Tyr*', 'XTyr']"	Y*	Norine		
+509	Cl-NMe-Tyr	Chloro-N-methyl-tyrosine	NRPS	C10H12ClNO3			CNC(Cc1ccc(O)c(c1)Cl)C(=O)O	229.66017	"['Tyr*', 'XTyr']"	Y*	Norine		
+510	Aca	Anticapsin	NRPS	C9H13NO4	72647	"(2S)-2-amino-3-[(1R,2R,6R)-5-oxo-7-oxabicyclo[4.1.0]heptan-2-yl]propanoic acid"	NC(CC1CCC(=O)C2OC12)C(=O)O	199.20383	[]		Norine		
+511	Agdha	"4-amino-7-guanidino-2,3-dihydroxyheptanoic acid"	other	C8H18N4O4			N=C(N)NCCCC(N)C(O)C(O)C(O)=O	234.25293	[]		Norine		
+512	Ahp	3-amino-6-hydroxy-2-piperidone	NRPS	C9H16N2O5			CC(O)C(C(=O)O)N1C(O)CCC(N)C1(=O)	232.23373	[]		Norine		
+513	Azd	aziridine dicarboxylic acid	unknown	C4H5NO4	22712963	"aziridine-2,3-dicarboxylic acid"	O=C(O)C1NC1(C(=O)O)	131.0868	[]		Norine		
+514	Choi	2-carboxy-6-hydroxyoctahydroindole	unknown	C9H15NO3			OC1CCC2CC(NC2(C1))C(=O)O	185.22029	[]		Norine		
+515	CO	oxo group	unknown	CO			C=O	28.010101	[]		Norine		
+516	COOH-Qui	2-carboxyquinoxaline	NRPS	C9H6N2O2	96695	quinoxaline-2-carboxylic acid	O=C(O)c1cnc2ccccc2(n1)	174.1561	[]		Norine		
+517	Daz	"2,6-diamino-7-hydroxyazelaic acid"	unknown	C9H18N2O5	443585	"2,6-diamino-7-hydroxynonanedioic acid"	NC(CCCC(N)C(O)CC(=O)O)C(=O)O	234.2496	[]		Norine		
+518	DHMDA	"8,10-Dimethyl-9-hydroxy-7-methoxytridecadienoic acid"	unknown	C16H28O4			CCCC(C)C(O)C(C)C(C=CC=CCC(=O)O)OC	284.3911	[]		Norine		
+519	DHPT	dihydroxyphenylthiazol group	NRPS	C10H9NO4S			OC(=O)C1CSC(=N1)c2cccc(O)c2(O)	239.24776	[]		Norine		
+520	DMOG	DHP-methyloxazolinyl group	other	C11H11NO5			CC1OC(=NC1(C(O)=O))c2cccc(O)c2(O)	237.20876	[]		Norine		
+521	Doe	Dolaphenine	unknown	C11H12N2S	369619	"2-phenyl-1-(1,3-thiazol-2-yl)ethanamine"	NC(Cc1ccccc1)c2nccs2	204.29138	[]		Norine		
+522	Dov	Dolavaline	NRPS	C7H15NO2		2-(dimethylamino)-3-methylbutanoic acid	CC(C)C(C(=O)O)N(C)C	145.19951	[]		Norine		
+523	Hpa	hydroxypicolinic acid	NRPS	C6H5NO3	13401	3-hydroxypyridine-2-carboxylic acid	O=C(O)c1ncccc1(O)	139.10881	[]		Norine		
+524	Hpoe	2-hydroxyphenyl-2-oxo-ethanoic acid	NRPS	C8H6O4	355	2-(4-hydroxyphenyl)-2-oxoacetic acid	Oc1ccc(cc1)C(=O)C(=O)O	166.13084	[]		Norine		
+525	HseL	homoserine lactone	NRPS	C4H7NO2	73509	3-aminooxolan-2-one	NC1CCOC1(=O)	101.10388	[]		Norine		
+526	Ibu	"4-amino-2,2-dimethyl-3-oxopentanoic acid"	unknown	C7H13NO3			CC(N)C(=O)C(C)(C)C(O)=O	159.18303	[]		Norine		
+527	Mab	2-methyl-3-aminobutanoic acid	unknown	C5H11NO2	10336926	3-amino-2-methylbutanoic acid	CC(N)C(C)C(=O)O	117.14634	[]		Norine		
+528	Map	2-methyl-3-aminopentanoic acid	unknown	C6H13NO2			CCC(N)C(C)C(=O)O	131.17293	[]		Norine		
+529	MCP	N-methylchloropyrrole	unknown	C6H6ClNO2	9115266	4-chloro-1-methylpyrrole-2-carboxylic acid	Cn1cc(cc1(C(=O)O))Cl	159.57034	[]		Norine		
+530	MdCP	N-methyldichloropyrrole-2-carboxylic acid	unknown	C6H5Cl2NO2			Cn1c(cc(c1Cl)Cl)C(=O)O	194.01541	[]		Norine		
+531	Me-AOA	methyl-2-aminooctanoic acid	NRPS	C9H19NO2			CCCCCCCC(N)C(=O)O	173.25266	[]		Norine		
+532	NMe-Dha	N-Methyl-dehydroalanine	NRPS	C4H7NO2	711113	2-methylaminoprop-2-enoic acid	CNC(=C)C(=O)O	101.10388	[]		Norine		
+533	NMe-Lan	N-Methyl-Lanthionine	NRPS	C6H12N2O5S			NC(CSCC(NO)C(O)=O)C(=O)O	224.23488	[]		Norine		
+534	N-OH-Hta	N-Hydroxy-histamine	NRPS	C6H14N2O2			ONCCC1CNCN1	146.18756	[]		Norine		
+535	N-Suc	Succinamid acid		C4H7NO3	12522	4-amino-4-oxobutanoic acid	NC(=O)CCC(=O)O	117.104	[]		Norine		
+536	PALOA	propenoyl-alanyloxazole acid	unknown	C8H10N2O3			CC(N)c1nc(C=CC(=O)O)co1	182.1766	[]		Norine		
+537	PAOA	propenoyl-2-aminobutanoyloxazole acid	unknown	C9H12N2O3			CCC(N)c1nc(C=CC(=O)O)co1	196.20317	[]		Norine		
+538	Pda	pentanedioic acid	unknown	C5H8O4	743	pentanedioic acid	O=C(O)CCCC(=O)O	132.11462	[]		Norine		
+539	Pha	phenylacetic acid	unknown	C8H8O2	999	2-phenylacetic acid	O=C(O)Cc1ccccc1	136.14792	[]		Norine		
+540	PMST	propenoyl-O-methylserinylthiazole acid	unknown	C9H12N2O3S			COCC(N)c1nc(C=CC(=O)O)cs1	228.26817	[]		Norine		
+541	PT	phosphinothricin	NRPS	C5H12NO4P	4794	2-amino-4-(hydroxy-methylphosphoryl)butanoic acid	CP(=O)(O)CCC(N)C(=O)O	181.12683	[]		Norine		
+542	PTTA	4-propenoyl-2-tyrosylthiazole acid	unknown	C14H14N2O3S			NC(Cc1ccc(O)cc1)c2nc(C=CC(O)=O)cs2	290.3376	[]		Norine		
+543	Put	putrescine	other	C4H12N2	1045	"butane-1,4-diamine"	NCCCCN	88.15148	[]		Norine		
+544	Suc	succinic acid		C4H6O4	1110	butanedioic acid	O=C(O)CCC(=O)O	118.026609	[]		Norine		
+545	Pen	Penicillamine	unknown	C5H11NO2S	92863	L-Penicillamine	CC(C)(C(C(=O)O)N)S	149.2	[]		PubChem		

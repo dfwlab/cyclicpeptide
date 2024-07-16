@@ -1,0 +1,16 @@
+﻿Number of Atoms,None
+Number of Rings,None
+Exact Mass,None
+Topological Polar Surface Area,"Measures the surface area occupied by polar atoms, often used to predict drug transport properties."
+Complexity,"Indicates the structural complexity of the molecule, with higher values representing more intricate structures."
+Crippen Log(P),"Represents the logarithm of the partition coefficient between n-octanol and water, used to estimate the molecule's hydrophobicity."
+Heavy Atom Count,"Counts the number of non-hydrogen atoms in the molecule, reflecting its size and complexity."
+Hydrogen Bond Donor Count,"The number of atoms in the molecule that can donate hydrogen bonds, important for molecular interactions."
+Hydrogen Bond Acceptor Count,"The number of atoms capable of accepting hydrogen bonds, crucial for molecular recognition and binding."
+Rotatable Bond Count,"Counts the number of bonds that allow free rotation around themselves, affecting the molecule's flexibility."
+Formal Charge,"The overall electric charge of the molecule, with zero indicating a neutral molecule."
+Refractivity,"Measures the molecule's ability to refract light, related to polarizability and electronic properties."
+RDKit Fingerprint,This is an RDKit-specific fingerprint.
+Daylight-like Fingerprint,This is an RDKit-specific fingerprint that is inspired by (though it differs significantly from) public descriptions of the Daylight fingerprint.
+Morgan Fingerprint,"The RDKit implementation uses the feature types Donor, Acceptor, Aromatic, Halogen, Basic, and Acidic."
+MACCS Keys,SMARTS definitions for the publicly available MACCS keys and a MACCS fingerprinter.
