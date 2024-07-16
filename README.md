@@ -1,6 +1,6 @@
 # Project Name
 
-Detailed documentation for the cyclicpeptide(https://willow0316.github.io/cyclicpeptide-doc/index.html).
+Detailed documentation for the cyclicpeptide(https://dfwlab.github.io/cyclicpeptide-doc/index.html).
 
 ## Installation
 
