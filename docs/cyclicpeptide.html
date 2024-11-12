@@ -1,0 +1,1721 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cyclicpeptide package &mdash; cyclicpeptide 1.3.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=1f29e9d3"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to cyclicpeptide’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            cyclicpeptide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">cyclicpeptide package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.IOManager">cyclicpeptide.IOManager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.IOManager.graph2svg"><code class="docutils literal notranslate"><span class="pre">graph2svg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.IOManager.plot_graph"><code class="docutils literal notranslate"><span class="pre">plot_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.IOManager.plot_smiles"><code class="docutils literal notranslate"><span class="pre">plot_smiles()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.IOManager.save_mol"><code class="docutils literal notranslate"><span class="pre">save_mol()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.IOManager.save_pdb"><code class="docutils literal notranslate"><span class="pre">save_pdb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.IOManager.save_svg"><code class="docutils literal notranslate"><span class="pre">save_svg()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.Structure2Sequence">cyclicpeptide.Structure2Sequence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.aa_matching"><code class="docutils literal notranslate"><span class="pre">aa_matching()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.aa_side_chain_extend"><code class="docutils literal notranslate"><span class="pre">aa_side_chain_extend()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.aa_xyz"><code class="docutils literal notranslate"><span class="pre">aa_xyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.blend_colors"><code class="docutils literal notranslate"><span class="pre">blend_colors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.detect_backbone"><code class="docutils literal notranslate"><span class="pre">detect_backbone()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_complete_aas"><code class="docutils literal notranslate"><span class="pre">get_complete_aas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_connected_chain"><code class="docutils literal notranslate"><span class="pre">get_connected_chain()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_connected_pairs"><code class="docutils literal notranslate"><span class="pre">get_connected_pairs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.highlight_atom"><code class="docutils literal notranslate"><span class="pre">highlight_atom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.mol2seq_for_essentialAA"><code class="docutils literal notranslate"><span class="pre">mol2seq_for_essentialAA()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.order_backbone"><code class="docutils literal notranslate"><span class="pre">order_backbone()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.reference_aa_monomer"><code class="docutils literal notranslate"><span class="pre">reference_aa_monomer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.reorder_result"><code class="docutils literal notranslate"><span class="pre">reorder_result()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.search_one_chain"><code class="docutils literal notranslate"><span class="pre">search_one_chain()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.sequence_map"><code class="docutils literal notranslate"><span class="pre">sequence_map()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.sequence_str"><code class="docutils literal notranslate"><span class="pre">sequence_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.side_chain_neighbor"><code class="docutils literal notranslate"><span class="pre">side_chain_neighbor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.split_aa_unit"><code class="docutils literal notranslate"><span class="pre">split_aa_unit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Structure2Sequence.transform"><code class="docutils literal notranslate"><span class="pre">transform()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.Sequence2Structure">cyclicpeptide.Sequence2Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.code2symbol"><code class="docutils literal notranslate"><span class="pre">code2symbol()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.connect_two_aa_with_peptide_bond"><code class="docutils literal notranslate"><span class="pre">connect_two_aa_with_peptide_bond()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.create_peptide_of_essentialAA"><code class="docutils literal notranslate"><span class="pre">create_peptide_of_essentialAA()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.create_peptide_of_no_essentialAA"><code class="docutils literal notranslate"><span class="pre">create_peptide_of_no_essentialAA()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.detect_backbone"><code class="docutils literal notranslate"><span class="pre">detect_backbone()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.get_molblock"><code class="docutils literal notranslate"><span class="pre">get_molblock()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.get_molblock_from_smiles"><code class="docutils literal notranslate"><span class="pre">get_molblock_from_smiles()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.link_aa_by_peptide_bond"><code class="docutils literal notranslate"><span class="pre">link_aa_by_peptide_bond()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.reference_aa_monomer"><code class="docutils literal notranslate"><span class="pre">reference_aa_monomer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.seq2stru_essentialAA"><code class="docutils literal notranslate"><span class="pre">seq2stru_essentialAA()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.Sequence2Structure.seq2stru_no_essentialAA"><code class="docutils literal notranslate"><span class="pre">seq2stru_no_essentialAA()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.GraphAlignment">cyclicpeptide.GraphAlignment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.amino_acid_composition_freq"><code class="docutils literal notranslate"><span class="pre">amino_acid_composition_freq()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.create_graph"><code class="docutils literal notranslate"><span class="pre">create_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.find_max_match_subgraph"><code class="docutils literal notranslate"><span class="pre">find_max_match_subgraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.generate_subgraphs_from_edges"><code class="docutils literal notranslate"><span class="pre">generate_subgraphs_from_edges()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.graph_similarity"><code class="docutils literal notranslate"><span class="pre">graph_similarity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.is_subgraph_of"><code class="docutils literal notranslate"><span class="pre">is_subgraph_of()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.mcs2similarity"><code class="docutils literal notranslate"><span class="pre">mcs2similarity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.mcs_similarity"><code class="docutils literal notranslate"><span class="pre">mcs_similarity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.node_match"><code class="docutils literal notranslate"><span class="pre">node_match()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.GraphAlignment.sequence_to_node_edge"><code class="docutils literal notranslate"><span class="pre">sequence_to_node_edge()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.PropertyAnalysis">cyclicpeptide.PropertyAnalysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.cal_MACCS_keys"><code class="docutils literal notranslate"><span class="pre">cal_MACCS_keys()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.cal_RDKit_fingerprint"><code class="docutils literal notranslate"><span class="pre">cal_RDKit_fingerprint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.cal_chemial_physical_properties"><code class="docutils literal notranslate"><span class="pre">cal_chemial_physical_properties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.cal_daylight_like_fingerprint"><code class="docutils literal notranslate"><span class="pre">cal_daylight_like_fingerprint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.cal_morgan_fingerprint"><code class="docutils literal notranslate"><span class="pre">cal_morgan_fingerprint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.cal_rules"><code class="docutils literal notranslate"><span class="pre">cal_rules()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.calculate_amino_acid_composition"><code class="docutils literal notranslate"><span class="pre">calculate_amino_acid_composition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.chemial_physical_properties_from_smiles"><code class="docutils literal notranslate"><span class="pre">chemial_physical_properties_from_smiles()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.SequenceTransformer">cyclicpeptide.SequenceTransformer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_amino_acid_chain"><code class="docutils literal notranslate"><span class="pre">create_amino_acid_chain()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_graph_presentation"><code class="docutils literal notranslate"><span class="pre">create_graph_presentation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_iupac_condensed"><code class="docutils literal notranslate"><span class="pre">create_iupac_condensed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_one_letter_peptide"><code class="docutils literal notranslate"><span class="pre">create_one_letter_peptide()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_sequence"><code class="docutils literal notranslate"><span class="pre">create_sequence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.read_graph_representation"><code class="docutils literal notranslate"><span class="pre">read_graph_representation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.read_iupac_condensed"><code class="docutils literal notranslate"><span class="pre">read_iupac_condensed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.read_one_letter_sequence"><code class="docutils literal notranslate"><span class="pre">read_one_letter_sequence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.read_sequence"><code class="docutils literal notranslate"><span class="pre">read_sequence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceTransformer.replace_hyphen"><code class="docutils literal notranslate"><span class="pre">replace_hyphen()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.StructureTransformer">cyclicpeptide.StructureTransformer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.StructureTransformer.mol2molblock"><code class="docutils literal notranslate"><span class="pre">mol2molblock()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.StructureTransformer.mol2pdbblock"><code class="docutils literal notranslate"><span class="pre">mol2pdbblock()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.StructureTransformer.mol_optimize"><code class="docutils literal notranslate"><span class="pre">mol_optimize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.StructureTransformer.output_molecule"><code class="docutils literal notranslate"><span class="pre">output_molecule()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.StructureTransformer.predict_3d_conformation"><code class="docutils literal notranslate"><span class="pre">predict_3d_conformation()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cyclicpeptide.SequenceGeneration">cyclicpeptide.SequenceGeneration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceGeneration.generate_similar_sequences"><code class="docutils literal notranslate"><span class="pre">generate_similar_sequences()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceGeneration.read_replacement_rules_from_file"><code class="docutils literal notranslate"><span class="pre">read_replacement_rules_from_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cyclicpeptide.SequenceGeneration.save_sequences_to_csv"><code class="docutils literal notranslate"><span class="pre">save_sequences_to_csv()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">cyclicpeptide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">cyclicpeptide package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/cyclicpeptide.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cyclicpeptide-package">
+<h1>cyclicpeptide package<a class="headerlink" href="#cyclicpeptide-package" title="Link to this heading"></a></h1>
+<section id="module-cyclicpeptide.IOManager">
+<span id="cyclicpeptide-iomanager"></span><h2>cyclicpeptide.IOManager<a class="headerlink" href="#module-cyclicpeptide.IOManager" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.IOManager.graph2svg">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.IOManager.</span></span><span class="sig-name descname"><span class="pre">graph2svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">G</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'outpot.svg'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dpi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.IOManager.graph2svg" title="Link to this definition"></a></dt>
+<dd><p>Convert a graph object to an SVG file and optionally save it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>G</strong> (<em>nx.Graph</em>) – The graph object to be converted, typically a networkx graph (e.g., <cite>nx.Graph</cite>).</p></li>
+<li><p><strong>output_file</strong> (<em>str</em>) – (Optional) The name of the file to which the SVG will be saved. Defaults to ‘outpot.svg’.</p></li>
+<li><p><strong>dpi</strong> (<em>int</em>) – (Optional) The dots per inch (resolution) of the graph layout. Defaults to 60.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>svg file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.IOManager.plot_graph">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.IOManager.</span></span><span class="sig-name descname"><span class="pre">plot_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">G</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output.pdf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dpi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.IOManager.plot_graph" title="Link to this definition"></a></dt>
+<dd><p>Plot a graph object and optionally save the plot as a PDF file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>G</strong> (<em>nx.Graph</em>) – The graph object to be plotted, typically a networkx graph (e.g., <cite>nx.Graph</cite>).</p></li>
+<li><p><strong>output_file</strong> (<em>str</em>) – (Optional) The name of the file to which the plot will be saved. Defaults to ‘output.pdf’.</p></li>
+<li><p><strong>dpi</strong> (<em>int</em>) – (Optional) The dots per inch (resolution) for the saved plot. Defaults to 60.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pdf file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.IOManager.plot_smiles">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.IOManager.</span></span><span class="sig-name descname"><span class="pre">plot_smiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output.svg'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isdisplay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.IOManager.plot_smiles" title="Link to this definition"></a></dt>
+<dd><p>Plot a molecule represented by its SMILES (Simplified Molecular Input Line Entry System) string and optionally save or display the resulting SVG image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smiles</strong> (<em>str</em>) – The SMILES string representing the molecule to be plotted.</p></li>
+<li><p><strong>output_file</strong> (<em>str</em>) – (Optional) The name of the file to which the SVG image of the molecule will be saved. Defaults to ‘output.svg’.</p></li>
+<li><p><strong>w</strong> (<em>int</em>) – (Optional) The width of the SVG image in pixels. Defaults to 600.</p></li>
+<li><p><strong>h</strong> (<em>int</em>) – (Optional) The height of the SVG image in pixels. Defaults to 600.</p></li>
+<li><p><strong>isdisplay</strong> (<em>bool</em>) – (Optional) A boolean flag indicating whether to display the SVG image. If True, the image will be displayed; if False, only the SVG string will be returned. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>If <cite>isdisplay</cite> is False, the SVG string representing the plotted molecule is returned. If <cite>isdisplay</cite> is True, nothing is returned as the image is directly displayed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str or None</p>
+</dd>
+</dl>
+<p>This function first attempts to convert the given SMILES string into a molecule object using <cite>Chem.MolFromSmiles</cite>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.IOManager.save_mol">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.IOManager.</span></span><span class="sig-name descname"><span class="pre">save_mol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molblock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.IOManager.save_mol" title="Link to this definition"></a></dt>
+<dd><p>Save a molecule represented by a MolBlock string to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molblock</strong> (<em>str</em>) – The MolBlock string representation of the molecule to be saved.</p></li>
+<li><p><strong>output_file</strong> (<em>str</em>) – The name of the file to which the molecule will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>molblock file</p>
+</dd>
+</dl>
+<p>This function takes a MolBlock string (molblock) and saves the corresponding molecule to a file with the specified output_file name.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.IOManager.save_pdb">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.IOManager.</span></span><span class="sig-name descname"><span class="pre">save_pdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdbblock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.IOManager.save_pdb" title="Link to this definition"></a></dt>
+<dd><p>Save a molecule represented by a PDBBlock string to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pdbblock</strong> (<em>str</em>) – The PDBBlock string representation of the molecule to be saved.</p></li>
+<li><p><strong>output_file</strong> (<em>str</em>) – The name of the file to which the molecule will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pdbblock file</p>
+</dd>
+</dl>
+<p>This function takes a PDBBlock string (<cite>pdbblock</cite>) and saves the corresponding molecule to a file with the specified <cite>output_file</cite> name.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.IOManager.save_svg">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.IOManager.</span></span><span class="sig-name descname"><span class="pre">save_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">svg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.IOManager.save_svg" title="Link to this definition"></a></dt>
+<dd><p>Save an SVG (Scalable Vector Graphics) string to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>svg</strong> (<em>str</em>) – The SVG string to be saved.</p></li>
+<li><p><strong>output_file</strong> (<em>str</em>) – The name of the file to which the SVG will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>svg file</p>
+</dd>
+</dl>
+<p>This function takes an SVG string and saves it to a file with the specified output_file name.</p>
+</dd></dl>
+
+</section>
+<section id="module-cyclicpeptide.Structure2Sequence">
+<span id="cyclicpeptide-structure2sequence"></span><h2>cyclicpeptide.Structure2Sequence<a class="headerlink" href="#module-cyclicpeptide.Structure2Sequence" title="Link to this heading"></a></h2>
+<p>File Name: structure2sequence.py
+Author: Dingfeng Wu
+Creator: Dingfeng Wu
+Date Created: 2022-11-15
+Last Modified: 2023-12-26
+Version: 1.0.1
+License: MIT License
+Description: Structure-to-Sequence (Struc2seq) is a computing process based on RDkit and the characteristics of cyclic peptide sequences, which can convert cyclic peptide SMILES into sequence information.</p>
+<p>Copyright Information: Copyright (c) 2023 dfwlab (<a class="reference external" href="https://dfwlab.github.io/">https://dfwlab.github.io/</a>)</p>
+<p>The code in this script can be used under the MIT License.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.aa_matching">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">aa_matching</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_aas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_mappings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connected_pairs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_essentials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_others</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.aa_matching" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query_aas</strong> (<strong>List</strong>, obtained from <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_complete_aas" title="cyclicpeptide.Structure2Sequence.get_complete_aas"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_complete_aas()</span></code></a>) – The list of amino acids contained in the target cyclic peptide..</p></li>
+<li><p><strong>atom_mappings</strong> (obtained from <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_complete_aas" title="cyclicpeptide.Structure2Sequence.get_complete_aas"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_complete_aas()</span></code></a>) – Cyclic peptide atom mapping.</p></li>
+<li><p><strong>connected_pairs</strong> (<strong>List</strong>, obtained from <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_connected_pairs" title="cyclicpeptide.Structure2Sequence.get_connected_pairs"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_connected_pairs()</span></code></a>) – Amino acids in cyclic peptides are linked in pairs.</p></li>
+<li><p><strong>ref_essentials</strong> (<strong>List</strong>, obtained from <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.reference_aa_monomer" title="cyclicpeptide.Structure2Sequence.reference_aa_monomer"><code class="xref py py-func docutils literal notranslate"><span class="pre">reference_aa_monomer()</span></code></a>) – The essential amino acid contained in target cyclic peptide.</p></li>
+<li><p><strong>ref_others</strong> (<strong>List</strong>, obtained from <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.reference_aa_monomer" title="cyclicpeptide.Structure2Sequence.reference_aa_monomer"><code class="xref py py-func docutils literal notranslate"><span class="pre">reference_aa_monomer()</span></code></a>) – The nonessential amino acid contained in the target cyclic peptide.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A treated cyclic peptide chain</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.aa_side_chain_extend">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">aa_side_chain_extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa_set</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.aa_side_chain_extend" title="Link to this definition"></a></dt>
+<dd><p>Expand the side chains of amino acids within a molecule to include neighboring atoms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> (<em>Chem.Mol</em>) – The molecule object containing the amino acids whose side chains are to be extended.</p></li>
+<li><p><strong>aa_set</strong> (<em>list</em><em>[</em><em>set</em><em>[</em><em>int</em><em>]</em><em>]</em>) – A list of sets, where each set likely represents the atom indices of an amino acid.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of lists, where each list contains the expanded set of atom indices for an amino acid after including its side chain neighbors.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[list[int]]</p>
+</dd>
+</dl>
+<p>This function aims to extend the side chains of amino acids in the given molecule (<cite>m</cite>).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.aa_xyz">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">aa_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conformer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.aa_xyz" title="Link to this definition"></a></dt>
+<dd><p>Calculate the mean x and y coordinates of a set of atoms within a conformer corresponding to a specific amino acid index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conformer</strong> (<em>object</em><em> (</em><em>presumably a relevant conformer type in the context</em><em>, </em><em>e.g.</em><em>, </em><em>related to molecular conformations</em><em>)</em>) – The conformer object from which the atom positions will be retrieved.</p></li>
+<li><p><strong>aa_idx</strong> (<em>int</em>) – The index of the amino acid for which the atom coordinates are to be calculated.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the mean x and y coordinates of the atoms within the conformer that belong to the specified amino acid.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[float, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.blend_colors">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">blend_colors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.blend_colors" title="Link to this definition"></a></dt>
+<dd><p>Blend two colors based on a given alpha value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>c1</strong> (<em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – The first color represented as a tuple of three values (red, green, blue).</p></li>
+<li><p><strong>c2</strong> (<em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – The second color represented as a tuple of three values (red, green, blue).</p></li>
+<li><p><strong>alpha</strong> (<em>float</em>) – The blending factor, a value between 0 and 1 that determines the proportion of each color in the blend.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple representing the blended color with values for red, green, and blue.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[int, int, int]</p>
+</dd>
+</dl>
+<p>This function takes two colors (<cite>c1</cite> and <cite>c2</cite>) represented as tuples of red, green, and blue values, along with a blending factor (<cite>alpha</cite>). It then calculates the blended color by applying a weighted average formula for each color channel (red, green, and blue). The resulting blended color is returned as a tuple of the new red, green, and blue values.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.detect_backbone">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">detect_backbone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.detect_backbone" title="Link to this definition"></a></dt>
+<dd><p>Detect the backbone of a given molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule object for which the backbone is to be detected.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing two elements:
+- The first element is the backbone of the molecule represented as a tuple of atom indices if matches are found; otherwise, an empty string.
+- The second element is a list of the backbone atom indices in reverse order if matches are found; otherwise, None.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, list[int] or None]</p>
+</dd>
+</dl>
+<p>This function aims to identify the backbone of a molecule.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.get_complete_aas">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">get_complete_aas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa_units</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.get_complete_aas" title="Link to this definition"></a></dt>
+<dd><p><strong>Obtain complete amino acid structures</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;m&quot;</span></code> is generated from SMILE in mol or read in MOL file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;aa_units&quot;</span></code> is an amino acid residue separated by <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.split_aa_unit" title="cyclicpeptide.Structure2Sequence.split_aa_unit"><code class="xref py py-func docutils literal notranslate"><span class="pre">split_aa_unit()</span></code></a> function.</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aas</span><span class="p">,</span> <span class="n">atom_mappings</span> <span class="o">=</span> <span class="n">struc2seq</span><span class="o">.</span><span class="n">get_complete_aas</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">aa_units</span><span class="p">)</span>
+<span class="n">aa3</span> <span class="o">=</span> <span class="n">struc2seq</span><span class="o">.</span><span class="n">highlight_atom</span><span class="p">(</span><span class="n">aas</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[[]])</span>
+<span class="n">IO_set</span><span class="o">.</span><span class="n">save_as_Image</span><span class="p">(</span><span class="n">aa3</span><span class="p">,</span> <span class="s1">&#39;aa3.png&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/aa3.png"><img alt="Description of the image" class="align-center" src="_images/aa3.png" style="width: 377.4px; height: 310.2px;" />
+</a>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.get_connected_chain">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">get_connected_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connected_pairs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N_aa</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.get_connected_chain" title="Link to this definition"></a></dt>
+<dd><p>Retrieve the connected chain from a set of connected pairs within a given number of amino acids.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>connected_pairs</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>str</em><em>]</em><em>]</em>) – A list of tuples where each tuple contains three elements: two indices (i and j) and a connection type (t). These pairs represent the connections between different elements (presumably amino acids).</p></li>
+<li><p><strong>N_aa</strong> (<em>int</em>) – The total number of amino acids in the context.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list representing the connected chain of indices that covers as many of the amino acids as possible, based on the given connected pairs.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+</dl>
+<p>This function aims to find the connected chain within the given <cite>connected_pairs</cite> for a specific number of amino acids (<cite>N_aa</cite>).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.get_connected_pairs">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">get_connected_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_mappings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.get_connected_pairs" title="Link to this definition"></a></dt>
+<dd><p>Verify that the main chain is connected end to end</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> – target molecule MOL file.</p></li>
+<li><p><strong>atom_mappings</strong> (obtained from <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_complete_aas" title="cyclicpeptide.Structure2Sequence.get_complete_aas"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_complete_aas()</span></code></a>) – Cyclic peptide atom mapping.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Amino acid-linked pair</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Tuple[int, int, str]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.highlight_atom">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">highlight_atom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transparency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isdisplay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.highlight_atom" title="Link to this definition"></a></dt>
+<dd><p>Highlight amino acid residues in cyclic peptides with different colors.</p>
+<ul class="simple">
+<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">basic.detect_backbone()</span></code> and <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.order_backbone" title="cyclicpeptide.Structure2Sequence.order_backbone"><code class="xref py py-func docutils literal notranslate"><span class="pre">order_backbone()</span></code></a> function should be used before the use of cyclic peptide molecules for Identify peptide backbone and renumber atoms.</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">backbone_idx</span> <span class="o">=</span> <span class="n">basic</span><span class="o">.</span><span class="n">detect_backbone</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">m</span><span class="p">,</span> <span class="n">backbone_idx</span> <span class="o">=</span> <span class="n">structure2sequence</span><span class="o">.</span><span class="n">order_backbone</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">backbone_idx</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">structure2sequence</span><span class="o">.</span><span class="n">highlight_atom</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="p">[</span><span class="n">backbone_idx</span><span class="p">])</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/highlight.png"><img alt="Description of the image" class="align-center" src="_images/highlight.png" style="width: 370.8px; height: 332.4px;" />
+</a>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.mol2seq_for_essentialAA">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">mol2seq_for_essentialAA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.mol2seq_for_essentialAA" title="Link to this definition"></a></dt>
+<dd><p><strong>Using the RDKit function “Chem.MolToSequence” conversion</strong></p>
+<ul class="simple">
+<li><p>Can convert peptide sequences with essential amino acids;</p></li>
+<li><p>Sequences containing modified or non-essential amino acids cannot be accurately identified;</p></li>
+<li><p>Suitable for linear peptides, unable to recognize the cyclization position of cyclic peptides;</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smiles</span> <span class="o">=</span> <span class="s1">&#39;CCC(C)[C@H](N)C1=NCC(C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(=O)O)C(=O)N[C@H](C(=O)N[C@H]2CCCCNC(=O)[C@H](CC(N)=O)NC(=O)[C@@H](CC(=O)O)NC(=O)[C@H](Cc3cnc[nH]3)NC(=O)[C@@H](Cc3ccccc3)NC(=O)[C@H](C(C)CC)NC(=O)[C@@H](CCCN)NC2=O)C(C)CC)S1&#39;</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Chem</span><span class="o">.</span><span class="n">MolFromSmiles</span><span class="p">(</span><span class="n">smiles</span><span class="p">)</span>
+<span class="n">m_renum</span><span class="p">,</span> <span class="n">seq</span> <span class="o">=</span> <span class="n">struc2seq</span><span class="o">.</span><span class="n">mol2seq_for_essentialAA</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SEQ:&#39;</span><span class="p">,</span> <span class="n">seq</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>SEQ: IRHTCCVGVCFLMACICIEQFDPCEM</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.order_backbone">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">order_backbone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backbone_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.order_backbone" title="Link to this definition"></a></dt>
+<dd><p>Order the atoms of a molecule based on the provided backbone index and then detect the new backbone.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> (<em>Chem.Mol</em>) – The molecule object whose atoms are to be reordered.</p></li>
+<li><p><strong>backbone_idx</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – The list of indices representing the backbone atoms of the molecule.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing two elements:
+- The molecule object with its atoms reordered according to the process described.
+- The new list of indices representing the backbone atoms of the reordered molecule.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[Chem.Mol, list[int]]</p>
+</dd>
+</dl>
+<p>This function first creates a copy of the provided backbone index list (<cite>id_list</cite>). It then iterates through all the atoms in the molecule (<cite>m</cite>) to find the indices of atoms that are not in the original backbone index list. These non-backbone atom indices are added to the <cite>id_list</cite>.</p>
+<p>Next, the function uses the <cite>Chem.RenumberAtoms</cite> method to reorder the atoms of the molecule according to the updated <cite>id_list</cite>. This results in a new molecule object (<cite>m_renum</cite>) with the atoms in a different order.</p>
+<p>Finally, the function calls the <cite>detect_backbone</cite> function (presumably defined elsewhere) on the reordered molecule (<cite>m_renum</cite>) to detect the new backbone. The function then returns the reordered molecule and the new list of indices representing the backbone atoms of the reordered molecule.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.reference_aa_monomer">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">reference_aa_monomer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monomers_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.reference_aa_monomer" title="Link to this definition"></a></dt>
+<dd><p>Identify amino acids based on the monomer reference library</p>
+<ul class="simple">
+<li><p>Identify the type of each amino acid unit;</p></li>
+<li><p>If it can be directly recognized by 20 essential amino acids, then the amino acid can be directly determined;</p></li>
+<li><p>If it cannot be directly recognized by essential amino acids, use library to find the maximum matching reference unit;</p></li>
+<li><p>For cross amino acid units, select the two reference units with the most matching atoms and no cross;</p></li>
+<li><p>If there are multiple best matched amino acid units, it may lead to different peptide chains;</p></li>
+<li><p>Please note that some amino acids cannot be fully matched, users can view detailed information from the results;</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>monomers_path</strong> (<strong>tsv</strong>) – The “monomers_path” to the monomer library file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>essential = {‘code’: [aa, symbol, num_atoms]}, others = {‘code’: [aa, symbol, num_atoms]},</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, list[str]], dict[str, list[str]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.reorder_result">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">reorder_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">order_chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa_units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chains</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connected_pairs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.reorder_result" title="Link to this definition"></a></dt>
+<dd><p>Reorder various data structures related to amino acids and their connections based on a given order chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>order_chain</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – A list representing the new order of indices for the reordering operation.</p></li>
+<li><p><strong>aas</strong> (<em>list</em>) – A list of amino acid related data (the specific nature of which is not clear from this function alone but is likely to be some representation of amino acids).</p></li>
+<li><p><strong>aa_units</strong> (<em>list</em>) – A list of amino acid units (again, the exact nature is not fully defined here but is related to amino acids).</p></li>
+<li><p><strong>chains</strong> (<em>list</em><em>[</em><em>list</em><em>]</em>) – A list of chains, where each chain is likely a list of indices or some other representation related to amino acids.</p></li>
+<li><p><strong>connected_pairs</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>str</em><em>]</em><em>]</em>) – A list of tuples where each tuple contains three elements: two indices (i and j) and a connection type (t), representing the connections between different elements (presumably amino acids).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the reordered versions of the input data structures:
+- new_aas: The reordered list of amino acid related data.
+- new_aa_units: The reordered list of amino acid units.
+- new_chains: The reordered list of chains.
+- new_connected_pairs: The reordered list of connected pairs, sorted based on the minimum of the two indices in each tuple.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[list, list, list[list], list[tuple[int, int, str]]]</p>
+</dd>
+</dl>
+<p>This function takes in various data structures related to amino acids and their connections and reorders them according to the provided order chain.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.search_one_chain">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">search_one_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_idxs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connected_pairs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.search_one_chain" title="Link to this definition"></a></dt>
+<dd><p>Search for a single chain within a set of connected pairs starting from a given query index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query_idx</strong> (<em>int</em>) – The starting index for the search.</p></li>
+<li><p><strong>search_idxs</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – A list of indices within which the search should be conducted.</p></li>
+<li><p><strong>N</strong> (<em>int</em>) – The maximum number of iterations or steps for the search.</p></li>
+<li><p><strong>connected_pairs</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>str</em><em>]</em><em>]</em>) – A list of tuples where each tuple contains three elements: two indices (i and j) and a connection type (t). The connection type can be used to filter out certain connections during the search.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list representing the chain of indices found during the search, starting from the query index and following the connections specified in the connected pairs, excluding connections of type ‘side chain’.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+</dl>
+<p>This function conducts a search to find a chain of indices within the given <cite>search_idxs</cite> starting from the <cite>query_idx</cite>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.sequence_map">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">sequence_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa_units</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connected_pairs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isdisplay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.sequence_map" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> – target molecule MOL file.</p></li>
+<li><p><strong>aa_units</strong> (separated by <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.split_aa_unit" title="cyclicpeptide.Structure2Sequence.split_aa_unit"><code class="xref py py-func docutils literal notranslate"><span class="pre">split_aa_unit()</span></code></a> function) – aa_units is an amino acid residue.</p></li>
+<li><p><strong>chain</strong> (separated by <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.aa_matching" title="cyclicpeptide.Structure2Sequence.aa_matching"><code class="xref py py-func docutils literal notranslate"><span class="pre">aa_matching()</span></code></a> function) – cyclic peptide chain.</p></li>
+<li><p><strong>connected_pairs</strong> (<strong>List</strong>, obtained from <a class="reference internal" href="#cyclicpeptide.Structure2Sequence.get_connected_pairs" title="cyclicpeptide.Structure2Sequence.get_connected_pairs"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_connected_pairs()</span></code></a>) – Amino acids in cyclic peptides are linked in pairs.</p></li>
+<li><p><strong>isdisplay</strong> (<em>True</em><em> or </em><em>False</em>) – Optional “isdisplay”.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.sequence_str">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">sequence_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connected_pairs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.sequence_str" title="Link to this definition"></a></dt>
+<dd><p>Generate a sequence string based on a given chain and connected pairs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain</strong> (<em>list</em><em>[</em><em>tuple</em><em>]</em>) – A list of tuples where each tuple likely represents an element in a sequence, and the first element of each tuple is used to build the sequence string.</p></li>
+<li><p><strong>connected_pairs</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>str</em><em>]</em><em>]</em>) – A list of tuples where each tuple contains three elements: two indices (i and j) and a connection type (t). The connection type can be ‘side chain’ or other types, and the indices are used to determine if a special formatting is needed for the corresponding elements in the sequence.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A string representing the sequence where elements from the chain are joined with ‘–’ and certain elements are formatted with parentheses and a link index based on the connected pairs.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p>This function first extracts the first elements of each tuple in the <cite>chain</cite> list to create an initial sequence list (<cite>seq</cite>). Then, it iterates through the <cite>connected_pairs</cite> list. If the connection type (<cite>t</cite>) is ‘side chain’ or the absolute difference between the two indices (<cite>i</cite> and <cite>j</cite>) is not 1, it adds parentheses and a link index to the corresponding elements in the <cite>seq</cite> list. Finally, it joins all the elements in the <cite>seq</cite> list with ‘–’ to form the final sequence string.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.side_chain_neighbor">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">side_chain_neighbor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin_aa_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.side_chain_neighbor" title="Link to this definition"></a></dt>
+<dd><p>Find the neighboring atoms of side chains within a molecule that are not part of the original amino acid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> (<em>Chem.Mol</em>) – The molecule object in which to search for side chain neighbors.</p></li>
+<li><p><strong>atoms</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – A list of atom indices representing the atoms of the side chains.</p></li>
+<li><p><strong>origin_aa_idx</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – A list of atom indices representing the atoms of the original amino acid.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of atom indices representing the neighboring atoms of the side chains that are not part of the original amino acid.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+</dl>
+<p>This function first initializes an empty set (<cite>neighbor_atoms</cite>) to store the neighboring atom indices. It then iterates through each atom index in the <cite>atoms</cite> list, retrieves the corresponding atom object from the molecule (<cite>m</cite>), and further iterates through its neighboring atoms. For each neighboring atom, if its index is not in the <cite>origin_aa_idx</cite> list (meaning it’s not part of the original amino acid), its index is added to the <cite>neighbor_atoms</cite> set. Finally, the function returns a list of atom indices from the <cite>neighbor_atoms</cite> set that are also not in the <cite>atoms</cite> list, effectively filtering out any self-neighbors and returning only the relevant neighboring atoms of the side chains that are outside the original amino acid.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.split_aa_unit">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">split_aa_unit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.split_aa_unit" title="Link to this definition"></a></dt>
+<dd><p><strong>Identify amino acid units</strong></p>
+<ul class="simple">
+<li><p>Use minimum amino acid unit, GLY (‘NCC=O ‘), to recognize amino acid position on peptide;</p></li>
+<li><p>Expand the branched chain to obtain complete amino acid units;</p></li>
+<li><p>Amino acid units may overlap, especially at the position of ring formation;</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aa_units</span> <span class="o">=</span> <span class="n">structure2sequence</span><span class="o">.</span><span class="n">split_aa_unit</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Structure2Sequence.transform">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Structure2Sequence.</span></span><span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monomers_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Structure2Sequence.transform" title="Link to this definition"></a></dt>
+<dd><p>Transform and report generation through an integrated function.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="n">html</span> <span class="o">=</span> <span class="n">struc2seq</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">smiles</span><span class="p">,</span> <span class="n">monomers_path</span><span class="o">=</span><span class="s1">&#39;monomer.tsv&#39;</span><span class="p">)</span>
+<span class="c1"># show html report</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smiles</strong> – target molecule SMILE.</p></li>
+<li><p><strong>monomers_path</strong> (<strong>tsv</strong>) – The monomers_path” to the monomer library file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>transform report</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>html</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cyclicpeptide.Sequence2Structure">
+<span id="cyclicpeptide-sequence2structure"></span><h2>cyclicpeptide.Sequence2Structure<a class="headerlink" href="#module-cyclicpeptide.Sequence2Structure" title="Link to this heading"></a></h2>
+<p>File Name: sequence2structure.py
+Author: Dingfeng Wu
+Creator: Dingfeng Wu
+Date Created: 2024-01-03
+Last Modified: 2023-01-05
+Version: 1.0.0
+License: MIT License
+Description: Sequence-to-Structure (Seq2struc) is a computing process based on RDkit and the characteristics of cyclic peptide sequences, which can create cyclic peptide sequecne and convert sequence to cyclic peptide SMILES.</p>
+<p>Copyright Information: Copyright (c) 2023 dfwlab (<a class="reference external" href="https://dfwlab.github.io/">https://dfwlab.github.io/</a>)</p>
+<p>The code in this script can be used under the MIT License.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.code2symbol">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">code2symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.code2symbol" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> (<em>amino acid chain format</em>) – sequence.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>One letter code</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.connect_two_aa_with_peptide_bond">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">connect_two_aa_with_peptide_bond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aa1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_index1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_index2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.connect_two_aa_with_peptide_bond" title="Link to this definition"></a></dt>
+<dd><p>Connect two amino acids with a peptide bond.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>aa1</strong> (<em>Chem.Mol</em>) – The first amino acid molecule.</p></li>
+<li><p><strong>c_index1</strong> (<em>int</em>) – The index of the carbon atom in the first amino acid where the peptide bond will be formed.</p></li>
+<li><p><strong>aa2</strong> (<em>Chem.Mol</em>) – The second amino acid molecule.</p></li>
+<li><p><strong>c_index2</strong> (<em>int</em>) – The index of the carbon atom in the second amino acid which will be involved in the peptide bond formation.</p></li>
+<li><p><strong>n_index2</strong> (<em>int</em>) – The index of the nitrogen atom in the second amino acid where the peptide bond will be formed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing two elements:
+- The connected peptide molecule formed by joining the two amino acids with a peptide bond.
+- The updated index of the carbon atom in the second amino acid (after accounting for the combination of the two amino acids).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[Chem.Mol, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.create_peptide_of_essentialAA">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">create_peptide_of_essentialAA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cyclic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.create_peptide_of_essentialAA" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> (<em>One letter code</em>) – sequence of essential AA.</p></li>
+<li><p><strong>cyclic</strong> (<em>True</em><em> or </em><em>False</em>) – Optional “cyclic”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>mol</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.create_peptide_of_no_essentialAA">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">create_peptide_of_no_essentialAA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">references</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cyclic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.create_peptide_of_no_essentialAA" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> (<em>One letter code</em>) – sequence of noessential AA.</p></li>
+<li><p><strong>references</strong> (from <a class="reference internal" href="#cyclicpeptide.Sequence2Structure.reference_aa_monomer" title="cyclicpeptide.Sequence2Structure.reference_aa_monomer"><code class="xref py py-func docutils literal notranslate"><span class="pre">reference_aa_monomer()</span></code></a>) – monomers.</p></li>
+<li><p><strong>cyclic</strong> (<em>True</em><em> or </em><em>False</em>) – Optional “cyclic”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>mol</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.detect_backbone">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">detect_backbone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.detect_backbone" title="Link to this definition"></a></dt>
+<dd><p>Detect the backbone of a given molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule object for which the backbone is to be detected.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing two elements:</p>
+</dd>
+</dl>
+<p>The first element is the backbone of the molecule as a tuple of atom indices if matches are found; otherwise, an empty string.
+The second element is a list of the backbone atom indices in reverse order if matches are found; otherwise, None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, list[int] or None]</p>
+</dd>
+</dl>
+<p>This function aims to identify the backbone of a given molecule.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.get_molblock">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">get_molblock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.get_molblock" title="Link to this definition"></a></dt>
+<dd><p>Retrieve the MolBlock representation of a given molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule object for which the MolBlock is to be retrieved.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The MolBlock string representation of the molecule. The <cite>forceV3000=True</cite> parameter indicates that the MolBlock should be in the V3000 format (if available and applicable).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.get_molblock_from_smiles">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">get_molblock_from_smiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.get_molblock_from_smiles" title="Link to this definition"></a></dt>
+<dd><p>Generate the MolBlock representation of a molecule from its SMILES string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>smiles</strong> (<em>str</em>) – The SMILES string representing the molecule.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The MolBlock string representation of the molecule. The <cite>forceV3000=True</cite> indicates that the MolBlock will be in the V3000 format (if available and applicable).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p>This function first converts the given SMILES string into a molecule object using <cite>Chem.MolFromSmiles</cite>. If the conversion is successful, it then retrieves the MolBlock representation of the molecule using <cite>Chem.MolToMolBlock</cite> with the <cite>forceV3000=True</cite> option to potentially get the MolBlock in the V3000 format. If the conversion from SMILES to molecule fails, it will likely return <cite>None</cite> as <cite>Chem.MolToMolBlock</cite> will be called on a <cite>None</cite> object (since <cite>mol</cite> would be <cite>None</cite> if the <cite>Chem.MolFromSmiles</cite> conversion fails).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.link_aa_by_peptide_bond">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">link_aa_by_peptide_bond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.link_aa_by_peptide_bond" title="Link to this definition"></a></dt>
+<dd><p>Link two amino acids by a peptide bond in a given molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule object representing the amino acids to be linked.</p></li>
+<li><p><strong>c_index</strong> (<em>int</em>) – The index of the carbon atom in the molecule where the peptide bond formation will start (usually the carbonyl carbon of one amino acid).</p></li>
+<li><p><strong>n_index</strong> (<em>int</em>) – The index of the nitrogen atom in the molecule where the peptide bond formation will end (usually the amino nitrogen of another amino acid).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The modified molecule object with the two amino acids linked by a peptide bond.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Chem.Mol</p>
+</dd>
+</dl>
+<p>This function first tries to identify the oxygen and hydrogen atoms of the hydroxyl group attached to the specified carbon atom (<cite>c_index</cite>). It does this by iterating through the neighbors of the carbon atom and looking for an oxygen atom with a single bond to the carbon. Then, it finds the hydrogen atom attached to that oxygen.</p>
+<p>Next, it creates an editable version of the molecule (<cite>emol</cite>) using <cite>Chem.EditableMol</cite>. It then removes the identified hydrogen and oxygen atoms (if they were found) from the editable molecule.</p>
+<p>Finally, it adds a single bond between the specified carbon (<cite>c_index</cite>) and nitrogen (<cite>n_index</cite>) atoms to form the peptide bond. The modified molecule is then retrieved from the editable molecule and returned.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.reference_aa_monomer">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">reference_aa_monomer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monomers_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.reference_aa_monomer" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>monomers_path</strong> – sequence of essential AA.</p></li>
+<li><p><strong>cyclic</strong> (<em>True</em><em> or </em><em>False</em>) – Optional “cyclic”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>mol</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.seq2stru_essentialAA">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">seq2stru_essentialAA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cyclic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.seq2stru_essentialAA" title="Link to this definition"></a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">&quot;cyclic&quot;</span></code> controls whether it is looped, and when <code class="docutils literal notranslate"><span class="pre">&quot;cyclic</span> <span class="pre">=</span> <span class="pre">True&quot;</span></code>, it generates a looped structure, otherwise a chain.</p>
+<p>Exmaple1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smiles</span><span class="p">,</span> <span class="n">peptide</span> <span class="o">=</span> <span class="n">sequence2structure</span><span class="o">.</span><span class="n">seq2stru_essentialAA</span><span class="p">(</span><span class="n">sequence</span><span class="o">=</span><span class="s1">&#39;APG&#39;</span><span class="p">,</span> <span class="n">cyclic</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SMILES:&#39;</span><span class="p">,</span> <span class="n">smiles</span><span class="p">)</span>
+<span class="n">basic</span><span class="o">.</span><span class="n">plot_molecule</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">isdisplay</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>SMILES: C[C&#64;H](N)C(=O)N1CCC[C&#64;H]1C(=O)NCC(=O)O</p>
+<a class="reference internal image-reference" href="_images/s2s.png"><img alt="Description of the image" class="align-center" src="_images/s2s.png" style="width: 306.0px; height: 242.0px;" />
+</a>
+<p><code class="xref py py-func docutils literal notranslate"><span class="pre">basic.plot_molecule()</span></code> function is used to output the resulting structure, or you can use <code class="xref py py-func docutils literal notranslate"><span class="pre">basic.plot_smiles()</span></code> .</p>
+<p>Example2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smiles</span><span class="p">,</span> <span class="n">peptide</span> <span class="o">=</span> <span class="n">sequence2structure</span><span class="o">.</span><span class="n">seq2stru_essentialAA</span><span class="p">(</span><span class="n">sequence</span><span class="o">=</span><span class="s1">&#39;APG&#39;</span><span class="p">,</span> <span class="n">cyclic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SMILES:&#39;</span><span class="p">,</span> <span class="n">smiles</span><span class="p">)</span>
+<span class="n">basic</span><span class="o">.</span><span class="n">plot_smiles</span><span class="p">(</span><span class="n">smiles</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">isdisplay</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>SMILES: C[C&#64;H](N)C(=O)N1CCC[C&#64;H]1C(=O)NCC(=O)O</p>
+<a class="reference internal image-reference" href="_images/s2s.png"><img alt="Description of the image" class="align-center" src="_images/s2s.png" style="width: 306.0px; height: 242.0px;" />
+</a>
+<p>Enter a sequence in ‘Ala-Ala-Cys-Asp’ format that will be converted to a single-letter structure by the <a class="reference internal" href="#cyclicpeptide.Sequence2Structure.code2symbol" title="cyclicpeptide.Sequence2Structure.code2symbol"><code class="xref py py-func docutils literal notranslate"><span class="pre">code2symbol()</span></code></a> function.</p>
+<p>Example3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smiles</span><span class="p">,</span> <span class="n">peptide</span> <span class="o">=</span> <span class="n">sequence2structure</span><span class="o">.</span><span class="n">seq2stru_essentialAA</span><span class="p">(</span><span class="n">sequence</span><span class="o">=</span><span class="s1">&#39;Ala-Ala-Cys-Asp&#39;</span><span class="p">,</span> <span class="n">cyclic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SMILES:&#39;</span><span class="p">,</span> <span class="n">smiles</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>SMILES: C[C&#64;&#64;H]1NC(=O)[C&#64;H](C)NC(=O)[C&#64;H](CC(=O)O)NC(=O)[C&#64;H](CS)NC1=O</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.Sequence2Structure.seq2stru_no_essentialAA">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.Sequence2Structure.</span></span><span class="sig-name descname"><span class="pre">seq2stru_no_essentialAA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">references</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cyclic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.Sequence2Structure.seq2stru_no_essentialAA" title="Link to this definition"></a></dt>
+<dd><p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sequence</span> <span class="o">=</span> <span class="s1">&#39;Aad--NMe-Ala--4OH-Thr--3Me-Pro&#39;</span>
+<span class="n">smiles</span><span class="p">,</span> <span class="n">peptide</span> <span class="o">=</span> <span class="n">sequence2structure</span><span class="o">.</span><span class="n">seq2stru_no_essentialAA</span><span class="p">(</span><span class="n">sequence</span><span class="p">,</span> <span class="n">references</span><span class="p">,</span> <span class="n">cyclic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">smiles</span><span class="p">)</span>
+<span class="n">basic</span><span class="o">.</span><span class="n">plot_molecule</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">isdisplay</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>SMILES : CC1CCN2C(=O)C(C(O)CO)NC(=O)C(C)N(C)C(=O)C(CCCC(=O)O)NC(=O)C12</p>
+<a class="reference internal image-reference" href="_images/ns2s.png"><img alt="Description of the image" class="align-center" src="_images/ns2s.png" style="width: 387.0px; height: 274.0px;" />
+</a>
+</dd></dl>
+
+</section>
+<section id="module-cyclicpeptide.GraphAlignment">
+<span id="cyclicpeptide-graphalignment"></span><h2>cyclicpeptide.GraphAlignment<a class="headerlink" href="#module-cyclicpeptide.GraphAlignment" title="Link to this heading"></a></h2>
+<p>File Name: graph_alignment.py
+Author: Dingfeng Wu
+Creator: Dingfeng Wu
+Date Created: 2023-12-27
+Last Modified: 2024-01-03
+Version: 1.0.0
+License: MIT License
+Description: The alignment algorithm is developed by CyclicPepedia based on networkx extension, which can convert cyclic peptides into graphical structures and align them accordingly.</p>
+<p>Copyright Information: Copyright (c) 2023 dfwlab (<a class="reference external" href="https://dfwlab.github.io/">https://dfwlab.github.io/</a>)</p>
+<p>The code in this script can be used under the MIT License.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.amino_acid_composition_freq">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">amino_acid_composition_freq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.amino_acid_composition_freq" title="Link to this definition"></a></dt>
+<dd><p>Calculate the similarity between the amino acid composition frequencies of two sequences (query and reference).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>sequence-like</em><em> (</em><em>e.g.</em><em>, </em><em>list</em><em>, </em><em>tuple</em><em>, </em><em>string</em><em>)</em>) – The query sequence for which the amino acid composition frequency is to be analyzed.</p></li>
+<li><p><strong>ref</strong> (<em>sequence-like</em><em> (</em><em>e.g.</em><em>, </em><em>list</em><em>, </em><em>tuple</em><em>, </em><em>string</em><em>)</em>) – The reference sequence for comparison.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The similarity value between the amino acid composition frequencies of the query and reference sequences. The similarity is calculated as the ratio of the minimum similarity to the maximum similarity. If the maximum similarity is zero, the returned similarity value is zero.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.create_graph">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">create_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.create_graph" title="Link to this definition"></a></dt>
+<dd><p>Create a graph using the provided nodes and edges.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodes</strong> (<em>list</em><em>[</em><em>tuple</em><em>]</em>) – A list of tuples, where each tuple contains a node identifier and its corresponding code.</p></li>
+<li><p><strong>edges</strong> (<em>list</em><em>[</em><em>tuple</em><em>]</em>) – A list of tuples representing the edges in the graph. Each tuple contains two node identifiers indicating the connection between nodes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A networkx graph object (<cite>nx.Graph</cite>) constructed with the given nodes and edges.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>nx.Graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.find_max_match_subgraph">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">find_max_match_subgraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subgraphs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_G</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.find_max_match_subgraph" title="Link to this definition"></a></dt>
+<dd><p>Find the maximum match subgraph among a collection of subgraphs with respect to a reference graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>subgraphs</strong> (<em>dict</em>) – A dictionary where the keys are some identifiers (presumably related to the subgraphs) and the values are lists of subgraphs. Each subgraph is expected to be of type <cite>nx.Graph</cite>.</p></li>
+<li><p><strong>ref_G</strong> (<em>nx.Graph</em>) – The reference graph against which the subgraphs are being compared to find the maximum match.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing three elements:
+- The identifier <cite>n</cite> corresponding to the group of subgraphs where the maximum match subgraph was found (if any). If no match is found, this could be an arbitrary value from the <cite>sorted(subgraphs.keys())</cite> iteration.
+- The subgraph <cite>subg</cite> that was being checked when the maximum match subgraph was found (if any). If no match is found, this could be an arbitrary subgraph from the last iteration.
+- The maximum match subgraph <cite>max_subg</cite> if it exists; otherwise, <cite>None</cite>. If a match is found, it will be of type <cite>nx.Graph</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.generate_subgraphs_from_edges">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">generate_subgraphs_from_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query_G</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.generate_subgraphs_from_edges" title="Link to this definition"></a></dt>
+<dd><p>Generates a subgraph using the given edge set and finds all the connected components.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.graph_similarity">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">graph_similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.graph_similarity" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>query</strong> (Format conversion by <code class="xref py py-func docutils literal notranslate"><span class="pre">SequenceTransformer.read_sequence()</span></code>) – amino acid chain format.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Sequence nodes and edges information</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Display with <a class="reference internal" href="#cyclicpeptide.GraphAlignment.create_graph" title="cyclicpeptide.GraphAlignment.create_graph"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_graph()</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.is_subgraph_of">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">is_subgraph_of</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.is_subgraph_of" title="Link to this definition"></a></dt>
+<dd><p>Check if a given query graph is a subgraph of a reference graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>nx.Graph</em>) – The graph that is being checked to see if it is a subgraph of the reference graph.</p></li>
+<li><p><strong>ref</strong> (<em>nx.Graph</em>) – The reference graph against which the query graph is being compared.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the query graph is a subgraph of the reference graph (i.e., there is a subgraph in the reference graph that is isomorphic to the query graph), otherwise False.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.mcs2similarity">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">mcs2similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mcs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.mcs2similarity" title="Link to this definition"></a></dt>
+<dd><p>Calculate the similarity between a reference graph and the maximum common subgraph (MCS).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ref</strong> (<em>nx.Graph</em>) – The reference graph used for comparison.</p></li>
+<li><p><strong>mcs</strong> (<em>nx.Graph</em>) – The maximum common subgraph (MCS) identified between the reference graph and another graph.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The similarity value between the reference graph and the MCS, calculated as the ratio of the total number of nodes and edges in the MCS to the total number of nodes and edges in the reference graph.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+<p>This function computes the similarity between a given reference graph (<cite>ref</cite>) and the maximum common subgraph (<cite>mcs</cite>). The similarity is determined by taking the sum of the number of nodes and edges in the MCS and dividing it by the sum of the number of nodes and edges in the reference graph. The resulting value is a float that represents the degree of similarity between the two graphs.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.mcs_similarity">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">mcs_similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.mcs_similarity" title="Link to this definition"></a></dt>
+<dd><p>Calculate the similarity between a query graph and a reference graph based on the maximum common subgraph (MCS).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>nx.Graph</em>) – The query graph for which similarity with the reference graph is to be calculated.</p></li>
+<li><p><strong>reference</strong> (<em>nx.Graph</em>) – The reference graph to compare against the query graph.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing two values. The first value is the total number of nodes and edges in the maximum common subgraph (MCS) if it exists; otherwise, it’s 0. The second value is the similarity score between the reference graph and the MCS calculated using the <cite>mcs2similarity</cite> function if the MCS exists; otherwise, it’s 0.0.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[int, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.node_match">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">node_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.node_match" title="Link to this definition"></a></dt>
+<dd><p>Node matching function that matches only if the node’s code attribute is the same.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.GraphAlignment.sequence_to_node_edge">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.GraphAlignment.</span></span><span class="sig-name descname"><span class="pre">sequence_to_node_edge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.GraphAlignment.sequence_to_node_edge" title="Link to this definition"></a></dt>
+<dd><p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ref_seq</span> <span class="o">=</span> <span class="s1">&#39;Cys(1)(2)--Cys--OH-DL-Val(2)--4OH-Leu--OH-Ile(1)&#39;</span>
+
+<span class="n">ref_nodes</span><span class="p">,</span> <span class="n">ref_edges</span> <span class="o">=</span> <span class="n">ga</span><span class="o">.</span><span class="n">sequence_to_node_edge</span><span class="p">(</span><span class="n">ref_seq</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sequence</strong> (Format conversion by <code class="xref py py-func docutils literal notranslate"><span class="pre">SequenceTransformer.read_sequence()</span></code>) – amino acid chain format.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Sequence nodes and edges information</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Display with <a class="reference internal" href="#cyclicpeptide.GraphAlignment.create_graph" title="cyclicpeptide.GraphAlignment.create_graph"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_graph()</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cyclicpeptide.PropertyAnalysis">
+<span id="cyclicpeptide-propertyanalysis"></span><h2>cyclicpeptide.PropertyAnalysis<a class="headerlink" href="#module-cyclicpeptide.PropertyAnalysis" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.cal_MACCS_keys">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">cal_MACCS_keys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.cal_MACCS_keys" title="Link to this definition"></a></dt>
+<dd><p>Generate MACCS keys fingerprint for a given molecule.</p>
+<p>This function calculates the MACCS (Molecular ACCess System) keys fingerprint,
+which is a 166-bit structural key descriptor used for molecular similarity searches.</p>
+<p>Parameters:
+mol (rdkit.Chem.rdchem.Mol): An RDKit molecule object for which to generate the MACCS keys fingerprint.</p>
+<p>Returns:
+str: A bit string representation of the MACCS keys fingerprint for the input molecule.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.cal_RDKit_fingerprint">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">cal_RDKit_fingerprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.cal_RDKit_fingerprint" title="Link to this definition"></a></dt>
+<dd><p>Generate an RDKit fingerprint for a given molecule and return it as a bit vector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule object for which the RDKit fingerprint is to be generated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The RDKit fingerprint represented as a bit vector (a string of binary digits).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p>This function takes a molecule object (<cite>mol</cite>) and uses the <cite>RDKFingerprint</cite> function to create an RDKit fingerprint. Then, it converts this fingerprint into a bit string using the <cite>ToBitString</cite> method. The resulting bit vector is then returned, which can be used for various purposes such as similarity calculations or molecule identification in cheminformatics applications.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.cal_chemial_physical_properties">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">cal_chemial_physical_properties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.cal_chemial_physical_properties" title="Link to this definition"></a></dt>
+<dd><p>Calculate chemical and physical properties of a molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – An RDKit molecule object for which properties are to be calculated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary containing the calculated properties. Keys are property names and values are the corresponding calculated values.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p>This function computes various chemical and physical properties of a given molecule
+using RDKit’s descriptor calculators.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.cal_daylight_like_fingerprint">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">cal_daylight_like_fingerprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.cal_daylight_like_fingerprint" title="Link to this definition"></a></dt>
+<dd><p>Generates a Daylight-type topological fingerprint from a given molecule.</p>
+<p>Parameters Mol:
+Mol: RDKit Mol object representing the input molecule.</p>
+<p>Return value bit_vector:
+bit_vector: STR type, a Bit string representation of a molecule’s topological fingerprint.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.cal_morgan_fingerprint">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">cal_morgan_fingerprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.cal_morgan_fingerprint" title="Link to this definition"></a></dt>
+<dd><p>Generate a Morgan fingerprint (radius 2)</p>
+<p>This function takes a molecular object as input and generates its Morgan fingerprint.
+The Morgan fingerprint is a type of molecular descriptor used to encode the structural information of a molecule.
+Here, a Morgan fingerprint with a radius of 2 is used, meaning it considers the molecular environment up to 2 bonds away from each atom.</p>
+<p>Parameters mol:
+mol - A molecular object, representing the molecule for which to generate the Morgan fingerprint.</p>
+<p>Returns bit_vector:
+bit_vector - A string representing the Morgan fingerprint of the molecule.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.cal_rules">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">cal_rules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.cal_rules" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>properties</strong> (calculated by <a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.chemial_physical_properties_from_smiles" title="cyclicpeptide.PropertyAnalysis.chemial_physical_properties_from_smiles"><code class="xref py py-func docutils literal notranslate"><span class="pre">chemial_physical_properties_from_smiles()</span></code></a>) – A list of calculated properties.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>properties</p>
+</dd>
+</dl>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Rule of Five</p></td>
+<td><p>Indicates non-compliance with Lipinski’s rule of five, suggesting potential issues with bioavailability as an oral drug.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Veber’s Rule</p></td>
+<td><p>Shows non-adherence to Veber’s rules, potentially impacting oral bioavailability and permeability.</p></td>
+</tr>
+<tr class="row-even"><td><p>Ghose Filter</p></td>
+<td><p>A molecular property filter used to assess the drug-likeness of a compound based on its physicochemical properties.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.calculate_amino_acid_composition">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">calculate_amino_acid_composition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.calculate_amino_acid_composition" title="Link to this definition"></a></dt>
+<dd><p>Calculate the composition of amino acids in a given sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sequence</strong> (<em>str</em>) – The amino acid sequence for which the composition is to be calculated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of tuples where each tuple contains an amino acid and its count in the given sequence.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[tuple[str, int]]</p>
+</dd>
+</dl>
+<p>This function first reads the contents of a text file named ‘AminoAcids.txt’ (the file path should be adjusted as needed). The file is expected to contain a list of amino acid representations, likely in a specific format. The function reads each line of the file, strips the newline character at the end of each line, and then uses <cite>eval</cite> to convert the string representation back to its original data type (assuming it was originally a tuple or some other data structure). These are then added to the <cite>AminoAcids</cite> list.</p>
+<p>Next, it extracts the first element of each tuple in the <cite>AminoAcids</cite> list to create a list of amino acids (<cite>aa_list</cite>).</p>
+<p>Finally, it iterates through the <cite>aa_list</cite> and for each amino acid, it counts how many times it appears in the given <cite>sequence</cite>. The result is a list of tuples where each tuple contains an amino acid and its count in the sequence. If an amino acid is not present in the sequence, its count will be 0.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.PropertyAnalysis.chemial_physical_properties_from_smiles">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.PropertyAnalysis.</span></span><span class="sig-name descname"><span class="pre">chemial_physical_properties_from_smiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.PropertyAnalysis.chemial_physical_properties_from_smiles" title="Link to this definition"></a></dt>
+<dd><p>Calculate the cyclopeptide chemical property from SMILES.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>smiles</strong> – Cyclic peptides SMILES information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>chemial and physical properties</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict{property name: value}</p>
+</dd>
+</dl>
+<p>you can also use <a class="reference internal" href="#cyclicpeptide.PropertyAnalysis.cal_chemial_physical_properties" title="cyclicpeptide.PropertyAnalysis.cal_chemial_physical_properties"><code class="xref py py-func docutils literal notranslate"><span class="pre">cal_chemial_physical_properties()</span></code></a> to calculate the properties from mol</p>
+<p>List of the chemical properties:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Number of Atoms</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of Rings</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p>Exact Mass</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>Topological Polar Surface Area</p></td>
+<td><p>Measures the surface area occupied by polar atoms, often used to predict drug transport properties.</p></td>
+</tr>
+<tr class="row-even"><td><p>Complexity</p></td>
+<td><p>Indicates the structural complexity of the molecule, with higher values representing more intricate structures.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crippen Log(P)</p></td>
+<td><p>Represents the logarithm of the partition coefficient between n-octanol and water, used to estimate the molecule’s hydrophobicity.</p></td>
+</tr>
+<tr class="row-even"><td><p>Heavy Atom Count</p></td>
+<td><p>Counts the number of non-hydrogen atoms in the molecule, reflecting its size and complexity.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hydrogen Bond Donor Count</p></td>
+<td><p>The number of atoms in the molecule that can donate hydrogen bonds, important for molecular interactions.</p></td>
+</tr>
+<tr class="row-even"><td><p>Hydrogen Bond Acceptor Count</p></td>
+<td><p>The number of atoms capable of accepting hydrogen bonds, crucial for molecular recognition and binding.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rotatable Bond Count</p></td>
+<td><p>Counts the number of bonds that allow free rotation around themselves, affecting the molecule’s flexibility.</p></td>
+</tr>
+<tr class="row-even"><td><p>Formal Charge</p></td>
+<td><p>The overall electric charge of the molecule, with zero indicating a neutral molecule.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Refractivity</p></td>
+<td><p>Measures the molecule’s ability to refract light, related to polarizability and electronic properties.</p></td>
+</tr>
+<tr class="row-even"><td><p>RDKit Fingerprint</p></td>
+<td><p>This is an RDKit-specific fingerprint.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Daylight-like Fingerprint</p></td>
+<td><p>This is an RDKit-specific fingerprint that is inspired by (though it differs significantly from) public descriptions of the Daylight fingerprint.</p></td>
+</tr>
+<tr class="row-even"><td><p>Morgan Fingerprint</p></td>
+<td><p>The RDKit implementation uses the feature types Donor, Acceptor, Aromatic, Halogen, Basic, and Acidic.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MACCS Keys</p></td>
+<td><p>SMARTS definitions for the publicly available MACCS keys and a MACCS fingerprinter.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</section>
+<section id="module-cyclicpeptide.SequenceTransformer">
+<span id="cyclicpeptide-sequencetransformer"></span><h2>cyclicpeptide.SequenceTransformer<a class="headerlink" href="#module-cyclicpeptide.SequenceTransformer" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.create_amino_acid_chain">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">create_amino_acid_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.create_amino_acid_chain" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodes</strong> – lists of amino acids.</p></li>
+<li><p><strong>edges</strong> (<em>List</em><em>[</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em><em>]</em>) – link information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>sequence</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Amino acid chain</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.create_graph_presentation">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">create_graph_presentation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.create_graph_presentation" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodes</strong> – lists of amino acids.</p></li>
+<li><p><strong>edges</strong> (<em>List</em><em>[</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em><em>]</em>) – link information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>sequence</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Graph presentation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.create_iupac_condensed">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">create_iupac_condensed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.create_iupac_condensed" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodes</strong> – lists of amino acids.</p></li>
+<li><p><strong>edges</strong> (<em>List</em><em>[</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em><em>]</em>) – link information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>sequence</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>IUPAC condensed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.create_one_letter_peptide">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">create_one_letter_peptide</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.create_one_letter_peptide" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodes</strong> – lists of amino acids.</p></li>
+<li><p><strong>edges</strong> (<em>List</em><em>[</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em><em>]</em>) – link information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>sequence</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>one letter peptide</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.create_sequence">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">create_sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.create_sequence" title="Link to this definition"></a></dt>
+<dd><p><strong>create_sequence</strong> can generate processed nodes(amino acid lists) and edges(link information) into sequences in many different formats.
+you can also use exact function to create, such as <a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_iupac_condensed" title="cyclicpeptide.SequenceTransformer.create_iupac_condensed"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_iupac_condensed()</span></code></a>, <a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_graph_presentation" title="cyclicpeptide.SequenceTransformer.create_graph_presentation"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_graph_presentation()</span></code></a>, <a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_amino_acid_chain" title="cyclicpeptide.SequenceTransformer.create_amino_acid_chain"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_amino_acid_chain()</span></code></a>, and <a class="reference internal" href="#cyclicpeptide.SequenceTransformer.create_one_letter_peptide" title="cyclicpeptide.SequenceTransformer.create_one_letter_peptide"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_one_letter_peptide()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodes</strong> – lists of amino acids.</p></li>
+<li><p><strong>edges</strong> (<em>List</em><em>[</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em><em>]</em>) – link information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>{‘iupac_condensed’: iupac_condensed, ‘amino_acid_chain’: amino_acid_chain,
+‘graph_presentation’: graph_presentation, ‘one_letter_peptide’: one_letter_peptide}</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seq_list</span> <span class="o">=</span> <span class="n">SequenceTransformer</span><span class="o">.</span><span class="n">create_sequence</span><span class="p">([</span><span class="s1">&#39;aThr&#39;</span><span class="p">,</span> <span class="s1">&#39;Tyr&#39;</span><span class="p">,</span> <span class="s1">&#39;dhAbu&#39;</span><span class="p">,</span> <span class="s1">&#39;bOH-Gln&#39;</span><span class="p">,</span> <span class="s1">&#39;Gly&#39;</span><span class="p">,</span> <span class="s1">&#39;Gln&#39;</span><span class="p">,</span> <span class="s1">&#39;His&#39;</span><span class="p">,</span> <span class="s1">&#39;Dab&#39;</span><span class="p">,</span> <span class="s1">&#39;C13:2(t4.t6)-OH(2.3)&#39;</span><span class="p">,</span> <span class="s1">&#39;Lyx&#39;</span><span class="p">,</span> <span class="s1">&#39;dhAbu&#39;</span><span class="p">],</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">seq_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+
+<span class="s1">&#39;iupac_condensed&#39;</span><span class="p">:</span> <span class="s1">&#39;aThr(3)-Tyr(1)-dhAbu-bOH-Gln-Gly-Gln(1)-His(2)-Dab-C13:2(t4.t6)-OH(2.3)(3)-Lyx-dhAbu(2)&#39;</span><span class="p">,</span>
+
+<span class="s1">&#39;amino_acid_chain&#39;</span><span class="p">:</span> <span class="s1">&#39;aThr(3)--Tyr(1)--dhAbu--bOH-Gln--Gly--Gln(1)--His(2)--Dab--C13:2(t4.t6)-OH(2.3)(3)--Lyx--dhAbu(2)&#39;</span><span class="p">,</span>
+
+<span class="s1">&#39;graph_presentation&#39;</span><span class="p">:</span> <span class="s1">&#39;aThr,Tyr,dhAbu,bOH-Gln,Gly,Gln,His,Dab,C13:2(t4.t6)-OH(2.3),Lyx,dhAbu @1,5 @6,10 @0,8&#39;</span><span class="p">,</span>
+
+<span class="s1">&#39;one_letter_peptide&#39;</span><span class="p">:</span> <span class="kc">None</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.read_graph_representation">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">read_graph_representation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.read_graph_representation" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sequence</strong> (<em>graph representation</em>) – cyclic peptide sequence.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>amino acids, edges</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str], List[(int, int)]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.read_iupac_condensed">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">read_iupac_condensed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'-'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.read_iupac_condensed" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> (<em>IUPAC condensed</em>) – cyclic peptide sequence.</p></li>
+<li><p><strong>sep</strong> (<em>Amino acid link in sequences</em>) – Optional “sep”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>amino acids, edges</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str], List[(int, int)]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.read_one_letter_sequence">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">read_one_letter_sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.read_one_letter_sequence" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sequence</strong> (<em>one letter code</em>) – cyclic peptide sequence.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>amino acids, []</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str], []</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.read_sequence">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">read_sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.read_sequence" title="Link to this definition"></a></dt>
+<dd><p><strong>read_sequence</strong> reads sequences in a variety of formats, converting the item into nodes(lists of amino acids) and edges(link information).
+you can also use exact function to transform, such as <a class="reference internal" href="#cyclicpeptide.SequenceTransformer.read_iupac_condensed" title="cyclicpeptide.SequenceTransformer.read_iupac_condensed"><code class="xref py py-func docutils literal notranslate"><span class="pre">read_iupac_condensed()</span></code></a>, <a class="reference internal" href="#cyclicpeptide.SequenceTransformer.read_graph_representation" title="cyclicpeptide.SequenceTransformer.read_graph_representation"><code class="xref py py-func docutils literal notranslate"><span class="pre">read_graph_representation()</span></code></a>, and <a class="reference internal" href="#cyclicpeptide.SequenceTransformer.read_one_letter_sequence" title="cyclicpeptide.SequenceTransformer.read_one_letter_sequence"><code class="xref py py-func docutils literal notranslate"><span class="pre">read_one_letter_sequence()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sequence</strong> (<em>Format</em> [Graph presentation, IUPAC condensed, Amino acid chain, One letter code]) – cyclic peptide sequence.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>seq_format, nodes, edges</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>string, List[str], List[(int, int)]</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seq_format</span><span class="p">,</span> <span class="n">nodes</span><span class="p">,</span> <span class="n">edges</span> <span class="o">=</span> <span class="n">SequenceTransformer</span><span class="o">.</span><span class="n">read_sequence</span><span class="p">(</span><span class="s1">&#39;aThr,Tyr,dhAbu,bOH-Gln,Gly,Gln,His,Dab,C13:2(t4.t6)-OH(2.3),Lyx,dhAbu @1,5 @6,10 @0,8&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">seq_format</span><span class="p">,</span> <span class="n">nodes</span><span class="p">,</span> <span class="n">edges</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Graph</span> <span class="n">presentation</span>
+
+<span class="p">[</span><span class="s1">&#39;aThr&#39;</span><span class="p">,</span> <span class="s1">&#39;Tyr&#39;</span><span class="p">,</span> <span class="s1">&#39;dhAbu&#39;</span><span class="p">,</span> <span class="s1">&#39;bOH-Gln&#39;</span><span class="p">,</span> <span class="s1">&#39;Gly&#39;</span><span class="p">,</span> <span class="s1">&#39;Gln&#39;</span><span class="p">,</span> <span class="s1">&#39;His&#39;</span><span class="p">,</span> <span class="s1">&#39;Dab&#39;</span><span class="p">,</span> <span class="s1">&#39;C13:2(t4.t6)-OH(2.3)&#39;</span><span class="p">,</span> <span class="s1">&#39;Lyx&#39;</span><span class="p">,</span> <span class="s1">&#39;dhAbu&#39;</span><span class="p">]</span>
+
+<span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">)]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceTransformer.replace_hyphen">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceTransformer.</span></span><span class="sig-name descname"><span class="pre">replace_hyphen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">match</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceTransformer.replace_hyphen" title="Link to this definition"></a></dt>
+<dd><p>This function is designed to replace all occurrences of the hyphen character (‘-’) within a matched string with the tilde character (‘~’).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>match</strong> (<em>re.Match</em>) – The match object obtained from a regex matching operation. It represents the portion of the string that matched a particular pattern.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The modified version of the matched string where all hyphens have been replaced with tildes.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p>When called with a valid match object, it accesses the entire matched string using <cite>match.group(0)</cite> and then replaces all hyphens within that string with tildes. This can be useful in scenarios where specific text formatting or substitution within a particular part of a larger text (as identified by the regex match) is required.</p>
+</dd></dl>
+
+</section>
+<section id="module-cyclicpeptide.StructureTransformer">
+<span id="cyclicpeptide-structuretransformer"></span><h2>cyclicpeptide.StructureTransformer<a class="headerlink" href="#module-cyclicpeptide.StructureTransformer" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.StructureTransformer.mol2molblock">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.StructureTransformer.</span></span><span class="sig-name descname"><span class="pre">mol2molblock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.StructureTransformer.mol2molblock" title="Link to this definition"></a></dt>
+<dd><p>Convert a molecule object to a MolBlock string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule object to be converted.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The MolBlock string representation of the input molecule.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.StructureTransformer.mol2pdbblock">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.StructureTransformer.</span></span><span class="sig-name descname"><span class="pre">mol2pdbblock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.StructureTransformer.mol2pdbblock" title="Link to this definition"></a></dt>
+<dd><p>Convert a molecule object to a PDBBlock string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule object to be converted.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The PDBBlock string representation of the input molecule.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.StructureTransformer.mol_optimize">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.StructureTransformer.</span></span><span class="sig-name descname"><span class="pre">mol_optimize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.StructureTransformer.mol_optimize" title="Link to this definition"></a></dt>
+<dd><p>Optimizes the 3D structure of a molecule using the Universal Force Field (UFF).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The molecule to be optimized. This molecule should have 3D coordinates.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The optimized molecule with updated 3D coordinates.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Chem.Mol</p>
+</dd>
+</dl>
+<p>This function utilizes the Universal Force Field (UFF) to optimize the 3D structure of a given molecule. The input molecule must possess 3D coordinates for the optimization process to be carried out effectively. Once the optimization is complete, the function returns the molecule with its 3D coordinates updated to reflect the optimized structure.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.StructureTransformer.output_molecule">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.StructureTransformer.</span></span><span class="sig-name descname"><span class="pre">output_molecule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdbblock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conformation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.StructureTransformer.output_molecule" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mol</strong> – mol file.</p></li>
+<li><p><strong>pdbblock</strong> (<em>pdbblock</em><em> or </em><em>None</em>) – Optional “conformation”.</p></li>
+<li><p><strong>conformation</strong> (<em>conformation</em><em> or </em><em>None</em>) – Optional “conformation”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>mol</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.StructureTransformer.predict_3d_conformation">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.StructureTransformer.</span></span><span class="sig-name descname"><span class="pre">predict_3d_conformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.StructureTransformer.predict_3d_conformation" title="Link to this definition"></a></dt>
+<dd><p>Predict the 3D structure of a molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mol</strong> (<em>Chem.Mol</em>) – The input molecule for which the 3D conformation is to be predicted.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The molecule with predicted 3D conformation, including added hydrogens and generated 3D coordinates.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Chem.Mol</p>
+</dd>
+</dl>
+<p>This function takes an input molecule and predicts its 3D structure. First, it creates a copy of the input molecule and adds hydrogens to it using <cite>Chem.AddHs</cite>. Then, it generates 3D coordinates for the molecule with added hydrogens by employing <cite>AllChem.EmbedMolecule</cite> with the <cite>AllChem.ETKDG()</cite> method. Finally, the function returns the molecule with the predicted 3D conformation.</p>
+</dd></dl>
+
+</section>
+<section id="module-cyclicpeptide.SequenceGeneration">
+<span id="cyclicpeptide-sequencegeneration"></span><h2>cyclicpeptide.SequenceGeneration<a class="headerlink" href="#module-cyclicpeptide.SequenceGeneration" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceGeneration.generate_similar_sequences">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceGeneration.</span></span><span class="sig-name descname"><span class="pre">generate_similar_sequences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replacement_rules_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Replacement_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceGeneration.generate_similar_sequences" title="Link to this definition"></a></dt>
+<dd><p>Generate similar sequences based on a given sequence and optional replacement rules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> (<em>str</em>) – The input sequence for which similar sequences are to be generated.</p></li>
+<li><p><strong>replacement_rules_file</strong> (<em>str</em><em> or </em><em>None</em>) – (Optional) The file path containing the replacement rules. If not provided, default replacement rules will be used.</p></li>
+<li><p><strong>Replacement_ratio</strong> (<em>float</em><em> or </em><em>None</em>) – (Optional) The ratio of amino acids to be replaced. If not provided, it will be set to one-third of the total amino acid count.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of possible similar sequences generated based on the input sequence, replacement rules (either default or from file), and the replacement ratio (either default or specified).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+<p>This function generates similar sequences to the given input sequence.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceGeneration.read_replacement_rules_from_file">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceGeneration.</span></span><span class="sig-name descname"><span class="pre">read_replacement_rules_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceGeneration.read_replacement_rules_from_file" title="Link to this definition"></a></dt>
+<dd><p>Read replacement rules from a specified file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> (<em>str</em>) – The path to the file containing the replacement rules.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary where the keys are amino acids and the values are lists of possible replacement amino acids as read from the file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p>This function reads replacement rules from a given file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cyclicpeptide.SequenceGeneration.save_sequences_to_csv">
+<span class="sig-prename descclassname"><span class="pre">cyclicpeptide.SequenceGeneration.</span></span><span class="sig-name descname"><span class="pre">save_sequences_to_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequences</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cyclicpeptide.SequenceGeneration.save_sequences_to_csv" title="Link to this definition"></a></dt>
+<dd><p>Save a list of sequences to a CSV file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequences</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – A list of sequences to be saved to the CSV file.</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – The name of the CSV file to which the sequences will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p>This function takes a list of sequences and saves them to a CSV file with the specified filename.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to cyclicpeptide’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, willow.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
